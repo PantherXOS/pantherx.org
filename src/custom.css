@@ -1,0 +1,31 @@
+.hero {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+}
+
+.hero img.cover {
+  max-width: 400px;
+}
+
+@media (min-width: 1216px) {
+  .hero {
+    background-image: url("/assets/images/bg_wide.jpg");
+  }
+}
+
+@media (max-width: 1215px) {
+  .hero {
+    background-image: url("/assets/images/bg_desktop.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("/assets/images/bg_mobile.jpg");
+  }
+  .hero img.cover {
+    max-width: 200px;
+  }
+}
