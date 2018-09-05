@@ -17,4 +17,7 @@ gzip:
 s3_endpoint: eu-west-1
 
 ignore_on_server: s3_website.yml
+
+cloudfront_distribution_id: E175HAF845TII7
+
 cloudfront_wildcard_invalidation: true
