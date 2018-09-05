@@ -6,3 +6,16 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 theme: minima
+
+exclude:
+  - src/
+  - gulpfile.js
+  - package.json
+  - yarn.lock
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
