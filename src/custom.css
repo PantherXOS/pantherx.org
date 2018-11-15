@@ -1,30 +1,78 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.title, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container.narrow {
+  max-width: 680px;
+}
+
 .hero {
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
+  background: rgb(33,33,33);
+  background: -moz-radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#212121",endColorstr="#000000",GradientType=1);
 }
 
 .hero img.cover {
-  max-width: 400px;
+  max-width: 800px;
+}
+
+.section.dark {
+  background: #000;
+  border-top: 2px solid #333;
+}
+
+.section.dark pre, .section.dark .input {
+  background: #000;
+}
+
+.section.dark .input {
+  border: 1px solid #333;
+}
+
+.section.dark ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+.section.dark ::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+.section.dark :-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+.section.dark :-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+.section.dark .title, .section.dark .content h1, .section.dark .content h2, .section.dark .content h3, .section.dark .content h4, .section.dark pre, .section.dark .content ul, .section.dark p {
+  color: #fff;
+}
+
+.button.is-link {
+  background-color: #333;
+}
+
+.button.is-link.is-hovered, .button.is-link:hover {
+  background-color: #1d1d1d;
+}
+
+.input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus {
+  box-shadow: #1d1d1d;
 }
 
 @media (min-width: 1216px) {
-  .hero {
-    background-image: url("/assets/images/bg_wide.jpg");
-  }
+
 }
 
 @media (max-width: 1215px) {
-  .hero {
-    background-image: url("/assets/images/bg_desktop.jpg");
-  }
+
 }
 
 @media (max-width: 768px) {
-  .hero {
-    background-image: url("/assets/images/bg_mobile.jpg");
-  }
   .hero img.cover {
     max-width: 200px;
   }

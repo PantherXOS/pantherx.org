@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<section class="section white">
-  <div class="container">
+<section class="section{% if page.dark %} dark{% endif %}">
+  <div class="container{% if page.narrow %} narrow{% endif %}">
 
     <div class="content">
       {{ content }}
