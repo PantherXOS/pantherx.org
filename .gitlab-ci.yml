@@ -1,16 +1,33 @@
-code_quality:
-  image: docker:stable
-  variables:
-    DOCKER_DRIVER: overlay2
-  allow_failure: true
-  services:
-    - docker:stable-dind
+image: franzos/ruby-node-gulp-java
+
+cache:
+  paths:
+  - vendor/
+
+before_script:
+- bundle install --path vendor
+
+stages:
+- build
+- deploy
+
+build:
+  stage: build
   script:
-    - export SP_VERSION=$(echo "$CI_SERVER_VERSION" | sed 's/^\([0-9]*\)\.\([0-9]*\).*/\1-\2-stable/')
-    - docker run
-        --env SOURCE_CODE="$PWD"
-        --volume "$PWD":/code
-        --volume /var/run/docker.sock:/var/run/docker.sock
-        "registry.gitlab.com/gitlab-org/security-products/codequality:$SP_VERSION" /code
+  - yarn
+  - gulp
+  - JEKYLL_ENV=production bundle exec jekyll build -d public/
   artifacts:
-    paths: [gl-code-quality-report.json]
+    when: on_success
+    paths:
+    - public
+    expire_in: 1h
+
+deploy:
+  stage: deploy
+  script:
+  - export AWS_ACCESS_KEY_ID="$(echo "$AWS_ACCESS_KEY_ID")"
+  - export AWS_SECRET_ACCESS_KEY="$(echo "$AWS_SECRET_ACCESS_KEY")"
+  - bundle exec s3_website push
+  only:
+  - master
