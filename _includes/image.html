@@ -1,0 +1,5 @@
+{% if include.type == "logo" %}
+<img src="/assets/images/logos/{{ include.image }}" alt="{{ include.alt }}" class="is-inline-image is-logo">
+{% else %}
+<img src="/assets/images/{{ include.image }}" alt="{{ include.alt }}" class="is-inline-image is-small is-{{ include.direction }}">
+{% endif %}

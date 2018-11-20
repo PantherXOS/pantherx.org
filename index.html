@@ -15,7 +15,34 @@ cover:
   </div>
 </section>
 
-<section class="section dark">
+{% for section in site.sections %}
+<section class="section is-spacious is-dark is-fullheight">
+  <div class="container is-medium">
+    <h2 class="title is-2">{{ section.title }}</h2>
+    <div class="content has-columns-2">
+      {{ section.content }}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<section class="section is-dark">
+  <div class="container">
+    <div class="columns is-mobile is-centered is-multiline has-text-centered">
+      {% for member in site.data.team %}
+      <div class="column is-1 avatar">
+        <img class="is-small" src="/assets/images/team/{{ member.picture }}">
+        <p class="meta">
+          <span class="item name">{{ member.name }}</span>
+          <span class="item position">{{ member.position }}</span>
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section is-dark">
   <div class="container">
     <div class="columns">
       <div class="column is-4 is-offset-4">
@@ -27,7 +54,7 @@ cover:
 
         <h4 class="title is-4">Subscribe</h4>
         <div class="content">
-          <p>Join us on our journey to make history. Be the first to know when PantherX OS 1.0 comes out and get exclusive early-adopter discounts on powerful, dedicated PantherX OS hardware.</p>
+          <p>Join us on our journey to make history. Be the first to know about the PantherX OS 1.0 release in Summer 2019 and get exclusive early-adopter discounts on powerful, dedicated PantherX OS hardware.</p>
         </div>
 
         <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="30FEA77E7D0A9B8D7616376B90063231CC5D83E8491ADF2EAB5EB15571376388D6FD3BEEA9877D7884D87885204DC85CAB184F4D6E439AA590CD1BE02009FE55">
@@ -42,8 +69,6 @@ cover:
             </div>
           </div>
         </form>
-
-        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 
       </div>
     </div>

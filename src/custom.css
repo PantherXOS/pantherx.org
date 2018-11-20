@@ -4,10 +4,55 @@ body {
 
 .title, h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-transform: capitalize;
 }
 
-.container.narrow {
+.container.is-narrow {
   max-width: 680px;
+}
+
+.container.is-medium {
+  max-width: 880px;
+}
+
+.has-columns-2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  column-gap: 6rem;
+}
+
+.is-inline-image.is-left {
+  float: left;
+  margin-right: 2rem;
+}
+
+.is-inline-image.is-right {
+  float: right;
+  margin-left: 2rem;
+}
+
+.is-inline-image.is-small {
+  width: 50%;
+}
+
+.has-inline-images {
+  height: 2rem;
+}
+
+.is-inline-image.is-logo {
+  max-height: 20px;
+  float: left;
+  margin-right: 1rem;
+}
+
+.is-greyscale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.section.is-spacious {
+
 }
 
 .hero {
@@ -22,33 +67,23 @@ body {
   max-width: 800px;
 }
 
-.section.dark {
-  background: #000;
-  border-top: 2px solid #333;
-}
-
-.section.dark pre, .section.dark .input {
+.section.is-dark {
   background: #000;
 }
 
-.section.dark .input {
+.section.is-dark pre, .section.is-dark .input {
+  background: #000;
+}
+
+.section.is-dark .input {
   border: 1px solid #333;
 }
 
-.section.dark ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #fff;
-}
-.section.dark ::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
-}
-.section.dark :-ms-input-placeholder { /* IE 10+ */
-  color: #fff;
-}
-.section.dark :-moz-placeholder { /* Firefox 18- */
-  color: #fff;
+.input::placeholder, .textarea::placeholder {
+  color: #7a7a7a;
 }
 
-.section.dark .title, .section.dark .content h1, .section.dark .content h2, .section.dark .content h3, .section.dark .content h4, .section.dark pre, .section.dark .content ul, .section.dark p {
+.section.is-dark .title, .section.is-dark .content h1, .section.is-dark .content h2, .section.is-dark .content h3, .section.is-dark .content h4, .section.is-dark pre, .section.is-dark .content ul, .section.is-dark p, strong {
   color: #fff;
 }
 
@@ -61,7 +96,28 @@ body {
 }
 
 .input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus {
-  box-shadow: #1d1d1d;
+  box-shadow: #333;
+}
+
+.avatar .meta {
+  line-height: 1.2rem;
+}
+
+.avatar .meta .item {
+  display: block;
+}
+
+.avatar img.is-small {
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.avatar .meta .item.name {
+
+}
+
+.avatar .meta .item.position {
+  color: #333;
 }
 
 @media (min-width: 1216px) {
