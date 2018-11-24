@@ -15,13 +15,6 @@ body {
   max-width: 880px;
 }
 
-.has-columns-2 {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  column-gap: 6rem;
-}
-
 .is-inline-image.is-left {
   float: left;
   margin-right: 2rem;
@@ -121,7 +114,12 @@ body {
 }
 
 @media (min-width: 1216px) {
-
+  .has-columns-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-gap: 6rem;
+  }
 }
 
 @media (max-width: 1215px) {
@@ -130,6 +128,6 @@ body {
 
 @media (max-width: 768px) {
   .hero img.cover {
-    max-width: 200px;
+    max-width: 100%;
   }
 }
