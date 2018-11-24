@@ -7,3 +7,6 @@ yarn.lock
 package-lock.json
 Gemfile.lock
 .idea
+assets/css
+assets/js
+assets/images
