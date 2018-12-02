@@ -1,0 +1,95 @@
+<div id="formContact">
+	<div class="modal" v-bind:class="{ 'is-active': hasError }" v-if="hasError">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification is-warning">
+				<button class="delete" @click="hasError = false"></button>
+				<b><% this.errors.items.length %> details are missing</b>. Please fill out the enquiry form as completely as possible. Thank you!
+			</div>
+		</div>
+		<button class="modal-close is-large" @click="hasError = false" aria-label="close"></button>
+	</div>
+
+	<div class="modal" v-bind:class="{ 'is-active': hasSuccess }" v-if="hasSuccess">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification is-success">
+				<button class="delete" @click="hasSuccess = false"></button>
+				Thank you, <% name_first %>! We will get back to you shortly. <a href="/">back to homepage</a>
+			</div>
+		</div>
+		<button class="modal-close is-large" @click="hasSuccess = false" aria-label="close"></button>
+	</div>
+
+	<div class="modal" v-bind:class="{ 'is-active': hasFailure }" v-if="hasFailure">
+		<div class="modal-background"></div>
+		<div class="modal-content">
+			<div class="notification is-error">
+				<button class="delete" @click="hasFailure = false"></button>
+				<p>
+					<span class="title is-5">Apologies! Something has gone wrong.</span>
+					<br>Please send an email to <a href="mailto:team@sedv.org?subject=PantherMPC Enquiry">team@sedv.org</a> and include the highlighted block. It includes your enquiry and contact details. We will respond to you as soon as possible. Thank you for your patience!
+				</p>
+				<p>
+					<b>1. Copy this block</b>:
+				</p>
+				<p>
+					<code><% data %></code>
+				</p>
+				<p>
+					<b>2. Send it to</b>: <a href="mailto:team@sedv.org?subject=PantherMPC Enquiry">team@sedv.org</a>
+				</p>
+			</div>
+		</div>
+		<button class="modal-close is-large" @click="hasFailure = false" aria-label="close"></button>
+	</div>
+
+	<form ref="form" @submit.prevent="onSubmit">
+
+		<div class="field">
+			<label class="label" for="subject">Your Message</label>
+			<div class="control">
+				<p :class="{ 'control': true }">
+					<textarea v-validate="'required'" id="message" name="message" :class="{'textarea': true, 'is-danger': errors.has('message') }" rows="5" placeholder="What's on your mind?"></textarea>
+					<span v-show="errors.has('message')" class="help is-danger">Tell us more</span>
+				</p>
+			</div>
+		</div>
+
+		<label class="label" for="name_first">Your Contact Details</label>
+
+		<div class="field is-horizontal">
+			<div class="field-body">
+				<div class="field">
+					<p :class="{ 'control': true }">
+						<input v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('name_first') }" name="name_first" v-model="name_first" type="text" placeholder="First name *">
+						<span v-show="errors.has('name_first')" class="help is-danger">Enter your first name</span>
+					</p>
+				</div>
+				<div class="field">
+					<p :class="{ 'control': true }">
+						<input v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('name_last') }" name="name_last" type="text" placeholder="Family name *">
+						<span v-show="errors.has('name_last')" class="help is-danger">Enter your family name</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<div class="control">
+				<p :class="{ 'control': true }">
+					<input v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('email') }" name="email" type="text" placeholder="Email *">
+					<span v-show="errors.has('email')" class="help is-danger">Enter a valid email address</span>
+				</p>
+			</div>
+		</div>
+
+		<input type="hidden" name="venture" value="panther">
+		<input type="hidden" name="page" value="{{ page.url }}">
+
+		<div class="buttons is-right">
+			<input v-if="!isWaiting" type="submit" name="" class="button" value="Send enquiry" onclick="javascript:_paq.push(['trackEvent', 'Contact-Form', 'Submit']);">
+			<a v-if="isWaiting" class="button is-loading">Loading</a>
+		</div>
+
+	</form>
+</div>

@@ -1,11 +1,17 @@
 {
   "dependencies": {
+    "@bit/franz.js.global.jekyll_formmixin": "file:./src/utils/jekyll_formmixin",
+    "axios": "^0.17.1",
+    "buefy": "^0.7.1",
     "bulma": "^0.7.1",
+    "bulma-timeline": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-uglify-es": "^1.0.4",
-    "pump": "^3.0.0"
+    "pump": "^3.0.0",
+    "vee-validate": "^2.0.3",
+    "vue": "^2.5.13"
   }
 }

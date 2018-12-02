@@ -1,7 +1,10 @@
 ---
 title: Ease of Use
 namespace: home
+lang: en
 ---
+
+![PantherNet](/assets/images/px-desktop-alt@0.5x.jpg)
 
 PantherX is designed to be familiar and intuitive, right down to the complicated but important stuff like encryption, Firewall and VPN configuration. What you shouldn't have to deal with, has been automated, and everything else is where you'd expect it.
 

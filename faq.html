@@ -1,0 +1,26 @@
+---
+layout: default
+title: PantherX FAQ
+description: The most frequent questions about PantherX, answered.
+subscribe: true
+permalink: /faq/
+---
+
+<section class="section is-dark">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-10 is-offset-2">
+
+				<div class="content faq">
+					{% for entry in site.data.faq %}
+					<p>
+						<span class="title is-4">{{ entry.q }}</span>
+						<br>{{ entry.a }}
+					</p>
+					{% endfor %}
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,10 @@
+{
+  "name": "@bit/franz.js.global.jekyll_formmixin",
+  "version": "0.0.2",
+  "homepage": "https://bitsrc.io/franz/js/global/jekyll_formmixin",
+  "main": "form.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE"
+}

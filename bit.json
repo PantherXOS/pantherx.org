@@ -1,0 +1,8 @@
+{
+    "env": {},
+    "dependencies": {
+        "franz.js/global/jekyll_formmixin": "0.0.2"
+    },
+    "componentsDefaultDirectory": "src/utils/{name}",
+    "packageManager": "yarn"
+}

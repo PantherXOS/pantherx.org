@@ -1,0 +1,35 @@
+---
+layout: default
+title: About PantherX
+description: The future of Desktop Computing
+subscribe: true
+permalink: /about/
+---
+
+<section class="section is-dark">
+	<div class="container">
+		<div class="columns is-mobile is-centered is-multiline has-text-centered">
+			{% for member in site.data.team %}
+			<div class="column is-half-mobile is-2-tablet is-1-desktop avatar">
+				<img class="is-small" src="/assets/images/team/{{ member.picture }}">
+				<p class="meta">
+					<span class="item name">{{ member.name }}</span>
+					<span class="item position">{{ member.position }}</span>
+				</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+{% assign sections = site.sections | where: "namespace", "about" %}
+{% for section in sections %}
+<section class="section is-spacious is-dark is-fullheight">
+	<div class="container is-medium">
+		<h2 class="title is-2">{{ section.title }}</h2>
+		<div class="content has-columns-2">
+			{{ section.content }}
+		</div>
+	</div>
+</section>
+{% endfor %}

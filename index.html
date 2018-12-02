@@ -1,76 +1,86 @@
 ---
 layout: default
 title: PantherX Operating System
+description: The future of Desktop Computing
 home: true
-cover:
-  description: The future of Desktop Computing
-  image: cover.png
+subscribe: true
 ---
 
-<section class="hero is-fullheight">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <img src="/assets/images/cover.png" class="cover" alt="PantherX">
-    </div>
-  </div>
-</section>
+<div id="tooltip">
 
-{% for section in site.sections %}
-<section class="section is-spacious is-dark is-fullheight">
-  <div class="container is-medium">
-    <h2 class="title is-2">{{ section.title }}</h2>
-    <div class="content has-columns-2">
-      {{ section.content }}
-    </div>
-  </div>
-</section>
-{% endfor %}
-
-<section class="section is-dark">
-  <div class="container">
-    <div class="columns is-mobile is-centered is-multiline has-text-centered">
-      {% for member in site.data.team %}
-      <div class="column is-half-mobile is-2-tablet is-1-desktop avatar">
-        <img class="is-small" src="/assets/images/team/{{ member.picture }}">
-        <p class="meta">
-          <span class="item name">{{ member.name }}</span>
-          <span class="item position">{{ member.position }}</span>
-        </p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section is-dark">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-4 is-offset-4">
-
-        <h4 class="title is-4">Dependable and User-friendly</h4>
-        <div class="content">
-          <p>PantherX OS is a modern, Unix-like operating system with it's own, light-weight, Qt5 based desktop environment and a set of highly polished, homegrown applications.</p>
-        </div>
-
-        <h4 class="title is-4">Subscribe</h4>
-        <div class="content">
-          <p>Join us on our journey to make history. Be the first to know about the PantherX OS 1.0 release in Summer 2019 and get exclusive early-adopter discounts on powerful, dedicated PantherX OS hardware.</p>
-        </div>
-
-        <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="30FEA77E7D0A9B8D7616376B90063231CC5D83E8491ADF2EAB5EB15571376388D6FD3BEEA9877D7884D87885204DC85CAB184F4D6E439AA590CD1BE02009FE55">
-          <div class="field">
-            <div class="control">
-              <input class="input js-cm-email-input" id="fieldEmail" name="cm-vpkkr-vpkkr" type="email" placeholder="Enter your Email">
-            </div>
-          </div>
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-link js-cm-submit-button" type="submit">Send me updates</button>
-            </div>
-          </div>
-        </form>
-
+  {% assign sections = site.sections | where: "namespace", "home" %}
+  {% for section in sections %}
+  <section class="section is-spacious is-dark is-fullheight">
+    <div class="container is-medium">
+      <h2 class="title is-2" id="{{ section.title | url_encode }}">{{ section.title }}</h2>
+      {% if section.subtitle %}<h4 class="subtitle is-4">{{ section.subtitle }}</h4>{% endif %}
+      <div class="content has-columns-2">
+        {{ section.content }}
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  {% endfor %}
+
+  <section class="section is-spacious is-dark is-fullheight">
+    <div class="container is-medium">
+      <h2 class="title is-2">Timeline</h2>
+
+      <div class="timeline">
+
+        {% assign events = site.data.timeline | where: "year", "2018" %}
+        {% for event in events %}
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="heading">{{ event.month }} {{ event.year }}</p>
+            <p>
+              <b>{{ event.title }}</b>
+              {% if event.content %}<br>{{ event.content }}{% endif %}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+
+        <header class="timeline-header">
+          <span class="tag is-primary">2019</span>
+        </header>
+
+        {% assign events = site.data.timeline | where: "year", "2019" %}
+        {% for event in events %}
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <p class="heading">{{ event.month }} {{ event.year }}</p>
+            <p>
+              <b>{{ event.title }}</b>
+              {% if event.content %}<br>{{ event.content }}{% endif %}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+
+        <div class="timeline-header">
+          <span class="tag is-medium is-primary">Official Release</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="section is-dark">
+    <div class="container">
+      <div class="columns is-mobile is-centered is-multiline has-text-centered">
+        {% for member in site.data.team %}
+        <div class="column is-half-mobile is-2-tablet is-1-desktop avatar">
+          <img class="is-small" src="/assets/images/team/{{ member.picture }}">
+          <p class="meta">
+            <span class="item name">{{ member.name }}</span>
+            <span class="item position">{{ member.position }}</span>
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+</div>

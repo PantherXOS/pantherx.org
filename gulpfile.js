@@ -8,7 +8,8 @@ var pump = require('pump');
 gulp.task('css', function () {
 	return gulp.src
     ([
-      'node_modules/bulma/css/bulma.css',
+      'node_modules/buefy/dist/buefy.min.css',
+	    'node_modules/bulma-timeline/dist/css/bulma-timeline.min.css',
       'src/custom.css'
     ])
     .pipe(concat('custom.min.css'))
@@ -21,6 +22,11 @@ gulp.task('js', function (cb) {
 				gulp.src
 				([
 					'src/copypastesubscribeformlogic.js',
+					'node_modules/vue/dist/vue.js',
+					'node_modules/buefy/dist/buefy.min.js',
+					'node_modules/axios/dist/axios.min.js',
+					'node_modules/vee-validate/dist/vee-validate.js',
+					'src/utils/jekyll_formmixin/form.js',
 					'src/custom.js'
 				]),
 				concat('bundle.min.js'),
@@ -40,6 +46,7 @@ gulp.task('images', () =>
 gulp.task('watch', function () {
    gulp.watch('src/*.css', ['css']);
 	 gulp.watch('src/*.js', ['js']);
+	gulp.watch('src/images/**/*.{jpg,png,svg}', ['images']);
 });
 
 gulp.task('default', ['css', 'js', 'images']);

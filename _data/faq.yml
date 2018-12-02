@@ -1,0 +1,35 @@
+-
+  q: How many apps will be available on PantherX OS?
+  a: On launch day, we plan to have over 7000 quality, open source application available for download.
+  lang: en
+-
+  q: What's the main difference between PantherX and other Linux distributions?
+  a: PantherX has been designed specifically for Panther Alpha, a powerful, yet affordable mini computer, that's smaller than your wallet, and runs on less than 4W of power.
+  lang: en
+-
+  q: Does PantherX run Microsoft Word or Adobe Photoshop?
+  a: Not yet. Well, it's unlikely we'll ever need any of those because PantherX comes with thousands of great, open source applications, that often rival their proprietary counterparts. Microsoft Office for example, is replaced by LibreOffice - which supports your Word, Excel and Power Point documents out of the box and much, much more.
+  lang: en
+-
+  q: How is the development of PantherX financed?
+  a: Our initial funding has been provided by a close friend and investor, that cares as much about innovation, as we care about freedom and privacy. In the future, we plan to support PantherX development, trough hardware sales, enterprise support subscriptions and additional investors.
+  lang: en
+-
+  q: When will PantherX be available?
+  a: PantherX is under active development and we expect a final release in late Summer 2019. If you can't wait that long, subscribe to our infrequent newsletter, to stand a chance to participate in the private beta, long before the official release.
+  lang: en
+-
+  q: Will PantherX run on any computer?
+  a: Yes and no. PantherX has been designed specifically for Panther Alpha, and doesn't include the additional drivers that may be required to run on other hardware. We simply wanted to remove all uknown variables that often arise from drivers and different configurations. Instead, we focus on one system with one set of components and one configuration.
+-
+  q: Can I make PantherX run on any computer?
+  a: Because PantherX is open source, it's up to other developers, to make it run on more common hardware. We do not support this however.
+  lang: en
+-
+  q: How frequently will PantherX receive updates?
+  a: We will release new updates as frequently as they are available. This includes both PantherX core updates as well as other software, you may be using on your Panther Alpha.
+  lang: en
+-
+  q: How long will you support major PantherX releases, including 1.*?
+  a: We plan to support major releases for up to 3 years. That means, support for our first 1.* release will end in 2022.
+  lang: en
