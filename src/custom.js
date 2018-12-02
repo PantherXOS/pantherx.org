@@ -31,7 +31,7 @@ var contactUs = new Vue({
 	el: '#formContact',
 	data: {
 		formThankYou: '/thanks/',
-		formAPI: 'https://hooks.zapier.com/hooks/catch/184367/s4wzgw/',
+		formAPI: 'https://hooks.zapier.com/hooks/catch/184367/qqrjjs/',
 		member: false,
 		name: ''
 	}
