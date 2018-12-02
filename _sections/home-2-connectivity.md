@@ -1,5 +1,6 @@
 ---
 title: Connectivity
+namespace: home
 ---
 
 PantherX allows seamless communication with other Panther Alpha users, which enables file synchronisation, video chat and remote login, all without registering any accounts, and both to local, and remote PantherX powered systems. Beyond that, PantherNet enables the hosting, and sharing of websites, including small communities, between any number of Panther users, even without traditional internet access.
@@ -21,7 +22,6 @@ All secrets, including passwords, token's and API keys are encrypted and access 
 ### Networking
 
 Networking has been designed to be as easy to use, and transparent as possible. A quick overview shows how you're connected to the internet, and whether you run additional privacy features such as VPN's, Proxies or even TOR.
-
 
 With one click, you deny all applications internet access, unless you're connected to a specified network or set individual rules, depending on your location and thread level.
 

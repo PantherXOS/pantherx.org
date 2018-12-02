@@ -1,5 +1,6 @@
 ---
 title: Performance
+namespace: home
 ---
 
 ### The latest in tech

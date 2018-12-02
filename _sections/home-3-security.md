@@ -1,5 +1,6 @@
 ---
 title: Security
+namespace: home
 ---
 
 PantherX OS builds on Linux, which already powers the majority of our today's infrastructure, and various super computers. The whole system has been designed to protect your data and itself, even in hostile environments. Take advantage of various security tweaks, such as restricting internet access, or limiting sensitive communication to specific networks.
@@ -14,6 +15,6 @@ PantherX enforces your system configuration, and takes snapshots whenever you in
 
 ### Visibility & Transparency
 
-{% include image.html image="panther-system_preview.jpg" alt="System" direction="right" %}
+{% include image.html image="px-desktop-widget-system.png" alt="System" direction="right" %}
 
 PantherX OS keeps track of the current system state, and informs you about any changes. With a clear overview of how you're connected to your network, what services are running and which applications are allowed to access the internet, and how, when and how much they utilize the connection.

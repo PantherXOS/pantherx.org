@@ -1,5 +1,6 @@
 ---
 title: Privacy
+namespace: home
 ---
 
 PantherX automatically and transparently blocks all advertising networks, trackers and malicious sites, system wide. No matter what browser or application you are using, PantherX OS protects you automatically. Additional features such as pre-configured VPN and proxy Provider, further help improve your privacy, when you need it most.
