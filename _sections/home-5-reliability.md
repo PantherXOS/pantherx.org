@@ -6,7 +6,7 @@ lang: en
 
 ### Full System Updates
 
-PantherX OS supports full-system updates, which ensure that your computer is secured against the latest threats, and applications you use on a daily basis, receive crucial bug fixes and enhancements more frequently.
+PantherX OS supports full-system updates, which ensure that your computer is secured against the latest threats, and applications you use on a daily basis, receive critical bug fixes and enhancements more frequently.
 
 ### Versioned Snapshots
 
@@ -14,7 +14,7 @@ PantherX enforces your system configuration, and takes snapshots whenever you in
 
 #### Resistant to failure
 
-PantherX never applies a installation or update, till it has completed successfully. If anything goes wrong, du to any number of reasons, including a power outage, your system will not be modified, and you can try again later.
+PantherX never applies an installation or update, till it has completed successfully. If anything goes wrong, du to any number of reasons, including a power outage, your system will not be modified, and you can try again later.
 
 #### Roll-back
 

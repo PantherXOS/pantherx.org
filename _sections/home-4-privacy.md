@@ -4,9 +4,11 @@ namespace: home
 lang: en
 ---
 
-PantherX automatically and transparently blocks {% include tooltip.html keyword="all" description="Our various block lists are maintained publicly, and you decide just how aggressively PantherX blocks undesired advertisements and trackers." %} advertising networks, trackers and malicious sites, system wide. No matter what browser or application you are using, PantherX OS protects you automatically. Additional features such as pre-configured VPN and various proxy provider, further help improve your privacy, when you need it most.
+PantherX automatically and transparently blocks {% include tooltip.html keyword="all" description="Our various block lists are maintained publicly, and you decide just how aggressively PantherX blocks undesired advertisements and trackers." %} advertising networks, trackers and malicious sites, system wide. No matter what browser or application you are using, PantherX protects you automatically.
 
-Furthermore, PantherX provides guided tools that help you set-up your own VPN or proxy server, on any of the 3 most popular cloud providers.
+Furthermore, PantherX provides tools that help you set-up your own VPN or proxy server, on any other Panther Alpha, or almost any Linux powered cloud server, anywhere in the world.
+
+If you prefer to stick with a reputable provider, select one of many, pre-configured VPN providers, supporting a number of protocols, including OpenVPN, WireGuard, IPSec and stunnel tunnels.
 
 ### Auditable Open Source Code
 

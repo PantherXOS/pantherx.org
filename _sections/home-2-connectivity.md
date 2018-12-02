@@ -4,7 +4,7 @@ namespace: home
 lang: en
 ---
 
-PantherX allows seamless communication with other Panther Alpha users, which enables file synchronisation, video chat and remote login, all without registering any accounts, and both to local, and remote PantherX powered systems. Beyond that, PantherNet enables the hosting, and sharing of websites, including small communities, between any number of Panther users, even without traditional internet access.
+PantherX allows seamless communication with other Panther Alpha users, which enables file synchronisation, video chat and remote login, all without registering any accounts, and both to local, and remote PantherX powered systems. Beyond that, PantherNet enables the hosting and sharing of websites and small communities like Mastodon, between any number of Panther users, even without traditional internet access.
 
 ### Networking
 
@@ -24,12 +24,12 @@ PantherNet powers all Panther to Panther connectivity features, including the di
 
 #### Self-Contained Infrastructure
 
-PantherX has been designed to perform great in scenarios where you need to bootstrap a self-contained {% include tooltip.html keyword="infrastructure" description="Infrastructure is really a more fancy work for a bunch (or thousands!) of Panther Alpha, connected either directly, or via the Internet." %} with any number of Panther Alpha, with or without central management and even without pre-existing networking infrastructure.
+PantherX has been designed to perform great in scenarios where you need to bootstrap a self-contained {% include tooltip.html keyword="infrastructure" description="Infrastructure is really a more fancy word for a bunch (or thousands!) of Panther Alpha, connected either directly, or via the Internet, to form a new, independent network." %} with any number of Panther Alpha, with or without central management and even without pre-existing networking infrastructure.
 
 ![PantherNet](/assets/images/panthers.png)
 
-To initiate a new, self-contained infrastructure, all you need is a Panther Alpha on which you create the {% include tooltip.html keyword="initiation profile" description="The initiation profile is basically a configuration file, based on which the new Panther Alpha configures itself. That means, you can have any number of initiation profiles, to cover any number of scenario - for example, a file-server, a web-server, or just - your new Desktop" %} which defines each, new Panther's responsibility - for example: DNS, file or application server or staff and student computers.
+To initiate a new, self-contained infrastructure, all you need is a Panther Alpha on which you create the {% include tooltip.html keyword="initiation profile" description="The initiation profile is basically a configuration file, based on which a new Panther Alpha configures itself. That means, you can have any number of initiation profiles, to cover any number of scenarios - for example, a file-server, a web-server, or just - your new Desktop" %}, which defines each, new Panther's responsibility.
 
 ### Remote Access
 
-Because all Panther Alpha are identical, and come with the same core software, PantherX offers the most robust, fast, remote-login feature ever made. This allows you to remotely access your Panther Alpha, using any other Panther Alpha, from anywhere in the world, as long as they are connected. All you need is your password and a matching Panther Key.
+Because all Panther Alpha are identical, and come with the same core software, PantherX offers the most robust, fast, remote-login feature ever made. This allows you to remotely access your Panther Alpha, using any other Panther Alpha, from anywhere in the world, as long as they are connected.
