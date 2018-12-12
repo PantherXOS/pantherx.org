@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="description" content="{% if page.cover.description %}{{ page.cover.description }}{% else %}{{ site.description }}{% endif %}">
+    {% include meta.html %}
     <link rel="stylesheet" href="/assets/css/custom.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz" rel="stylesheet">

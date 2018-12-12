@@ -24,4 +24,6 @@ exclude:
 
 collections:
   sections:
+    output: false
+  topics:
     output: true

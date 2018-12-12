@@ -28,7 +28,7 @@
 				<button class="delete" @click="hasFailure = false"></button>
 				<p>
 					<span class="title is-5">Apologies! Something has gone wrong.</span>
-					<br>Please send an email to <a href="mailto:team@sedv.org?subject=PantherMPC Enquiry">team@sedv.org</a> and include the highlighted block. It includes your enquiry and contact details. We will respond to you as soon as possible. Thank you for your patience!
+					<br>Please send an email to <a href="mailto:franz@pantherx.org?subject=PantherX Message">franz@pantherx.org</a> and include the highlighted block. It includes your enquiry and contact details. We will respond to you as soon as possible. Thank you for your patience!
 				</p>
 				<p>
 					<b>1. Copy this block</b>:
@@ -37,7 +37,7 @@
 					<code><% data %></code>
 				</p>
 				<p>
-					<b>2. Send it to</b>: <a href="mailto:team@sedv.org?subject=PantherMPC Enquiry">team@sedv.org</a>
+					<b>2. Send it to</b>: <a href="mailto:franz@pantherx.org?subject=PantherX Message">franz@pantherx.org</a>
 				</p>
 			</div>
 		</div>
@@ -87,7 +87,7 @@
 		<input type="hidden" name="page" value="{{ page.url }}">
 
 		<div class="buttons is-right">
-			<input v-if="!isWaiting" type="submit" name="" class="button" value="Send enquiry" onclick="javascript:_paq.push(['trackEvent', 'Contact-Form', 'Submit']);">
+			<input v-if="!isWaiting" type="submit" name="" class="button" value="Send message" onclick="javascript:_paq.push(['trackEvent', 'Contact-Form', 'Submit']);">
 			<a v-if="isWaiting" class="button is-loading">Loading</a>
 		</div>
 

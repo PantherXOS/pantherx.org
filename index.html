@@ -3,6 +3,9 @@ layout: default
 title: PantherX Operating System
 description: The future of Desktop Computing
 home: true
+namespace: home
+quicklinks:
+  offset: 1
 subscribe: true
 ---
 
@@ -10,7 +13,7 @@ subscribe: true
 
   {% assign sections = site.sections | where: "namespace", "home" %}
   {% for section in sections %}
-  <section class="section is-spacious is-dark is-fullheight">
+  <section class="section is-spacious is-dark">
     <div class="container is-medium">
       <h2 class="title is-2" id="{{ section.title | url_encode }}">{{ section.title }}</h2>
       {% if section.subtitle %}<h4 class="subtitle is-4">{{ section.subtitle }}</h4>{% endif %}
@@ -21,7 +24,26 @@ subscribe: true
   </section>
   {% endfor %}
 
-  <section class="section is-spacious is-dark is-fullheight">
+  <section class="section is-spacious is-dark">
+    <div class="container is-medium">
+      <h2 class="title is-2">PantherX works for you</h2>
+      <div class="columns">
+        {% for topic in site.topics %}
+        <div class="column is-3 has-text-centered">
+          <a href="{{ topic.permalink }}">
+          <div class="box">
+            <h5 class="title is-5">
+              {{ topic.link }}
+            </h5>
+          </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-spacious is-dark">
     <div class="container is-medium">
       <h2 class="title is-2">Timeline</h2>
 

@@ -47,4 +47,20 @@
 			{% endif %}
 		</div>
 	</div>
+	{% if page.quicklinks %}
+	{% assign sections = site.sections | where: "namespace", page.namespace %}
+	{% if sections.size > 4 %}
+	<div class="hero-foot">
+		<nav class="tabs is-boxed is-fullwidth">
+			<div class="container">
+				<ul>
+					{% for section in sections offset:page.quicklinks.offset %}
+					<li><a href="#{{ section.title | url_encode }}">{{ section.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</nav>
+	</div>
+	{% endif %}
+	{% endif %}
 </section>

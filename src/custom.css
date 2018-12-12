@@ -86,6 +86,24 @@ body {
   margin-bottom: 2rem;
 }
 
+.section.is-dark .box {
+  background-color: #103e69;
+  border: 1px solid #103e69;
+}
+
+.section.is-dark .box:hover {
+  background-color: #000;
+  border: 1px solid #363636;
+}
+
+.section.is-dark .box .title {
+  color: #fff;
+}
+
+.section.is-dark .box a {
+
+}
+
 .section.is-dark, .footer.is-dark {
   background: #000;
 }
@@ -122,9 +140,9 @@ body {
 }
 
 .button.is-hovered, .button:hover {
-  color: #000;
-  border: 1px solid #363636;
-  background-color: #363636;
+  color: #fff;
+  border: 1px solid #103e69;
+  background-color: #103e69;
 }
 
 .input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus {
