@@ -1,6 +1,14 @@
 ---
+layout: feature
 title: Reliability
+description: The future of Desktop Computing
+cover:
+  height: medium
+  image: bg01.jpg
+  background: black
+priority: 1
 namespace: home
+permalink: /reliability/
 lang: en
 ---
 

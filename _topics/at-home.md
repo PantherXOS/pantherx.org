@@ -7,5 +7,4 @@ quicklinks:
   offset: 0
 permalink: /at-home/
 lang: en
-published: false
 ---

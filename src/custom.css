@@ -6,9 +6,13 @@ body {
   font-size: 1.1rem;
 }
 
-.content a {
-  color: #000;
+.content a, .timeline a {
+  color: #4a4a4a;
   text-decoration: underline;
+}
+
+.section.is-dark a {
+  color: #a7a7a7;
 }
 
 .is-dark .content a, .is-dark .timeline-content a {
@@ -19,6 +23,39 @@ body {
 .title, h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-transform: capitalize;
+}
+
+.navbar-item, .navbar-link {
+  color: #fff;
+}
+
+.navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover {
+  background-color: #fafafa4d;
+  color: #fff;
+}
+
+.has-background-orange {
+  background-color: #faac7e;
+}
+
+.has-background-violet {
+  background-color: #9d8499;
+}
+
+.has-background-pink {
+  background-color: #f0787a;
+}
+
+.has-background-black {
+  background-color: #000;
+}
+
+.has-background-sand {
+  background-color: #c7bfac;
+}
+
+.has-background-red {
+  background-color: #b7717c;
 }
 
 .container.is-narrow {
@@ -59,31 +96,52 @@ body {
   filter: grayscale(100%);
 }
 
+.is-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .section.is-spacious {
 
-}
-
-.hero {
-  background: #000;
-}
-
-.hero.cover {
-  background: -moz-radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);
-  background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#212121",endColorstr="#000000",GradientType=1);
 }
 
 .tag:not(body).is-primary {
   background-color: #103e69;
 }
 
-.hero.cover img {
+.hero .title {
+  color: #fff;
+}
+
+.hero img {
   max-width: 800px;
+}
+
+.hero.has-background {
+  background-size: cover;
+  background-position: center;
 }
 
 .content.faq p {
   margin-bottom: 2rem;
+}
+
+
+.section, .footer {
+  background: #ececec;
+}
+
+.section.is-dark, .footer.is-dark {
+  background: #000;
+}
+
+.box .title {
+  color: #fff;
+}
+
+.box:hover {
+  filter: brightness(90%);
 }
 
 .section.is-dark .box {
@@ -100,12 +158,22 @@ body {
   color: #fff;
 }
 
-.section.is-dark .box a {
-
+.section.is-dark .content table {
+  color: #fff;
 }
 
-.section.is-dark, .footer.is-dark {
-  background: #000;
+.section.is-dark .content table td, .section.is-dark .content table th {
+  text-align: center;
+  border-color: #363636;
+}
+
+.section.is-dark .content table thead td, .section.is-dark .content table thead th {
+  text-align: center;
+  color: #fff;
+}
+
+.section.is-dark .content table td:first-child {
+  text-align: left;
 }
 
 .section.is-dark pre, .section.is-dark .input, .section.is-dark .textarea {
@@ -117,11 +185,12 @@ body {
   border: 1px solid #363636;
 }
 
-.input::placeholder, .textarea::placeholder {
-  color: #7a7a7a;
+.section.is-dark .input:focus {
+  border-color: #fff;
+  box-shadow: none;
 }
 
-.section.is-dark .title, .section.is-dark .content h1, .section.is-dark .content h2, .section.is-dark pre, .section.is-dark .content ul, .section.is-dark p, strong, .footer.is-dark p {
+.section.is-dark .title, .section.is-dark .content h1, .section.is-dark .content h2, .section.is-dark pre, .section.is-dark .content ul, .section.is-dark p, .footer.is-dark p, .footer.is-dark strong {
   color: #fff;
 }
 
@@ -133,16 +202,31 @@ body {
   color: #113e6a;
 }
 
+.section.is-dark .input::placeholder, .section.is-dark .textarea::placeholder {
+  color: #7a7a7a;
+}
+
 .button {
+  color: #363636;
+  border: 1px solid #363636;
+  background-color: #ececec;
+}
+
+.button:hover {
+  color: #fff;
+  border: 1px solid #faac7e;
+  background-color: #faac7e;
+}
+
+.section.is-dark .button {
   color: #363636;
   border: 1px solid #363636;
   background-color: #000;
 }
 
-.button.is-hovered, .button:hover {
+.section.is-dark .button.is-hovered, .section.is-dark .button:hover {
   color: #fff;
-  border: 1px solid #103e69;
-  background-color: #103e69;
+  border: 1px solid #fff;
 }
 
 .input.is-active, .input.is-focused, .input:active, .input:focus, .textarea.is-active, .textarea.is-focused, .textarea:active, .textarea:focus {
@@ -188,8 +272,10 @@ body {
   }
 }
 
-@media (max-width: 1215px) {
-
+@media (max-width: 1078px) {
+  .navbar-menu {
+    background-color: #00000080;
+  }
 }
 
 @media (max-width: 768px) {

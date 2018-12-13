@@ -24,7 +24,7 @@ PantherX is secure by default, and our well integrated tools, help you enhance t
 
 #### Anti-Virus
 
-Most exploits, hacks and viruses won't even run on PantherX, as the majority has been designed, to specifically affect Windows PC's.
+Most exploits, hacks and viruses won't even run on PantherX, as they majority have been designed to specifically affect Windows PC's - it's simply the most lucrative.
 
 If you're extra careful, and want to help protect co-workers on Windows PC's, you'll find a number of excellent, open source anti-virus applications, which you can use to scan suspicious USB sticks or external HDD.
 

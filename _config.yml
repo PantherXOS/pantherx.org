@@ -23,6 +23,10 @@ exclude:
   - .bitmap
 
 collections:
+  pages:
+    output: true
+  features:
+    output: true
   sections:
     output: false
   topics:

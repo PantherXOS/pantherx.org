@@ -2,6 +2,9 @@
 layout: default
 title: PantherX Operating System
 description: The future of Desktop Computing
+cover:
+  height: medium
+  image: bg01.jpg
 home: true
 namespace: home
 quicklinks:
@@ -11,39 +14,25 @@ subscribe: true
 
 <div id="tooltip">
 
-  {% assign sections = site.sections | where: "namespace", "home" %}
-  {% for section in sections %}
-  <section class="section is-spacious is-dark">
+  <section class="section is-spacious">
     <div class="container is-medium">
-      <h2 class="title is-2" id="{{ section.title | url_encode }}">{{ section.title }}</h2>
-      {% if section.subtitle %}<h4 class="subtitle is-4">{{ section.subtitle }}</h4>{% endif %}
+      <h2 class="title is-2" id="PantherX+Operating+System">PantherX Operating System</h2>
+      <h4 class="subtitle is-4">for Panther Alpha</h4>
       <div class="content has-columns-2">
-        {{ section.content }}
-      </div>
-    </div>
-  </section>
-  {% endfor %}
-
-  <section class="section is-spacious is-dark">
-    <div class="container is-medium">
-      <h2 class="title is-2">PantherX works for you</h2>
-      <div class="columns">
-        {% for topic in site.topics %}
-        <div class="column is-3 has-text-centered">
-          <a href="{{ topic.permalink }}">
-          <div class="box">
-            <h5 class="title is-5">
-              {{ topic.link }}
-            </h5>
-          </div>
-          </a>
-        </div>
-        {% endfor %}
+        <img src="/assets/images/px-desktop-alt@0.5x.jpg" alt="PantherX Desktop">
+        <p>
+          PantherX is a modern, {% include tooltip.html keyword="Unix-like" description="PantherX is a upstream distribution of GNU GuixSD and uses the Linux Kernel" %} computer operating system, designed to enable everyone without a PHD in computer science, to take control of their computer, data and privacy, and exercise their right to freedom of monitoring and tracking.
+        </p>
+        <p>
+          With it's own, light-weight desktop environment, a set of highly polished, {% include tooltip.html keyword="homegrown applications" description="We've developed a number of apps specifically for PantherX, including Files, Mail, Contacts, Calendar, Music, Pictures, Preview and many more useful utilities, and tools." %}, and access to thousands more trough **Software**, PantherX is set to become **your next, and last (Desktop) OS**.
+        </p>
       </div>
     </div>
   </section>
 
-  <section class="section is-spacious is-dark">
+  {% include loop_feature.html priority='1' limit='5' %}
+
+  <section class="section is-spacious">
     <div class="container is-medium">
       <h2 class="title is-2">Timeline</h2>
 
@@ -87,21 +76,6 @@ subscribe: true
 
       </div>
 
-    </div>
-  </section>
-  <section class="section is-dark">
-    <div class="container">
-      <div class="columns is-mobile is-centered is-multiline has-text-centered">
-        {% for member in site.data.team %}
-        <div class="column is-half-mobile is-2-tablet is-1-desktop avatar">
-          <img class="is-small" src="/assets/images/team/{{ member.picture }}">
-          <p class="meta">
-            <span class="item name">{{ member.name }}</span>
-            <span class="item position">{{ member.position }}</span>
-          </p>
-        </div>
-        {% endfor %}
-      </div>
     </div>
   </section>
 

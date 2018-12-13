@@ -1,0 +1,20 @@
+---
+title: The current dilemma
+layout: default
+permalink: /dilemma/
+lang: en
+---
+
+<section class="section is-spacious is-dark">
+	<div class="container content">
+		{% for entry in site.data.news %}
+		<p>
+			<small>{{ entry.date }} </small>
+			<a href="{{ entry.link }}">
+				{{ entry.title }}
+			</a>
+			<small>- {{ entry.domain }}</small>
+		</p>
+		{% endfor %}
+	</div>
+</section>

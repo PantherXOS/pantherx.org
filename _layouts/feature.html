@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div id="tooltip">
+	<section class="section{% if page.dark %} is-dark{% endif %}">
+		<div class="container is-medium">
+
+			<div class="content has-columns-2">
+				{{ content }}
+			</div>
+
+		</div>
+	</section>
+</div>
+
+{% include loop_feature.html priority='1' limit='6' %}

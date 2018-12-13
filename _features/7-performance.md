@@ -1,6 +1,14 @@
 ---
+layout: feature
 title: Performance
+description: The future of Desktop Computing
+cover:
+  height: medium
+  image: bg01.jpg
+  background: black
 namespace: home
+priority:
+permalink: /performance/
 lang: en
 ---
 

@@ -1,4 +1,3 @@
-{% if page.subscribe == true %}
 <section class="section is-dark">
 	<div class="container">
 		<div class="columns">
@@ -26,11 +25,39 @@
 		</div>
 	</div>
 </section>
-{% endif %}
+
+<section class="section is-dark">
+	<div class="container is-medium">
+		<div class="columns">
+			<div class="column is-3">
+				{% assign features = site.features %}
+				<ul>
+					<li class="title">PantherX OS</li>
+					{% for feature in features %}
+					<li><a href="{{ feature.permalink }}">{{ feature.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="column is-3">
+				{% assign pages = site.pages %}
+				<ul>
+					<li class="title">About Us</li>
+					{% for page in pages %}
+					<li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="column is-6">
+				<img class="is-bottom-right" src="/assets/images/panther.svg" alt="The Power of PantherX OS">
+			</div>
+		</div>
+	</div>
+</section>
+
 <footer class="footer is-dark">
 	<div class="content has-text-centered">
 		<p>
-			<strong>PantherX OS</strong> | The majority of PantherX source code is licensed under the <a href="/license/">GNU General Public License</a> | <a href="/privacy/">Privacy</a>
+			<strong>PantherX OS</strong> | The majority of PantherX source code is licensed under the <a href="/license/">GNU General Public License</a> | <a href="/your-privacy/">Privacy</a>
 		</p>
 	</div>
 </footer>

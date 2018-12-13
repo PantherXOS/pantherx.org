@@ -2,7 +2,11 @@
 layout: page
 title: PantherX OS License Agreement
 narrow: true
+cover:
+  height: medium
+  image: bg01.jpg
 permalink: /license/
+lang: en
 ---
 
         PantherX OS is a modern, Unix-like operating system with it's own,

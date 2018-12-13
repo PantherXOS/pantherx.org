@@ -1,4 +1,4 @@
-<section class="hero is-dark cover{% if page.home == true or page.fullheight == true %} is-fullheight{% endif %}">
+<section class="hero {% if page.cover.height == "full" %} is-fullheight{% elsif page.cover.height == "medium" %} is-medium{% endif %}{% if page.cover.image %} has-background{% endif %}" {% if page.cover.image %}style="background-image:url(/assets/images/{{ page.cover.image }})"{% endif %}>
 	<div class="hero-head">
 		<nav class="navbar">
 			<div class="container">
@@ -20,16 +20,14 @@
 							Home
 						</a>
 						<a href="/#PantherX+Operating+System" class="navbar-item">
-							PantherX
+							PantherX OS
 						</a>
-						<a href="/#subscribe" class="navbar-item">
-							Subscribe
+						<a href="/team/" class="navbar-item">
+							Team
 						</a>
-						<!--
 						<a href="/faq/" class="navbar-item">
 							FAQ
 						</a>
-						-->
 						<a href="/contact/" class="navbar-item">
 							Contact
 						</a>

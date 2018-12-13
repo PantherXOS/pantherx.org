@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="section{% if page.dark %} is-dark{% endif %}">
-  <div class="container{% if page.narrow %} is-narrow{% endif %}">
+  <div class="container{% if page.narrow %} is-narrow{% elsif page.medium %} is-medium{% endif %}">
 
     <div class="content">
       {{ content }}
