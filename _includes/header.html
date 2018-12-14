@@ -22,15 +22,12 @@
 						<a href="/#PantherX+Operating+System" class="navbar-item">
 							PantherX OS
 						</a>
-						<a href="/team/" class="navbar-item">
-							Team
+						{% assign pages = site.pages %}
+						{% for page in pages %}
+						<a href="{{ page.permalink }}" class="navbar-item">
+							{{ page.title }}
 						</a>
-						<a href="/faq/" class="navbar-item">
-							FAQ
-						</a>
-						<a href="/contact/" class="navbar-item">
-							Contact
-						</a>
+						{% endfor %}
 					</div>
 				</div>
 			</div>

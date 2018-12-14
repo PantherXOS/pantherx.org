@@ -1,6 +1,10 @@
 -
   q: How many apps will be available on PantherX OS?
-  a: On launch day, we plan to have over 8000 quality, open source application available for download.
+  a: On launch day, we plan to have over 10,000 quality, open source application available for download.
+  lang: en
+-
+  q: What's the main difference between PantherX, Windows and MacOS?
+  a: Windows and MacOS are propriotary operating systems, developed by large cooperations, to satisify their commercial interests and collect data about it's users.
   lang: en
 -
   q: What's the main difference between PantherX and other Linux distributions?
@@ -12,7 +16,7 @@
   lang: en
 -
   q: How is the development of PantherX financed?
-  a: Our initial funding has been provided by a close friend and investor, that cares as much about innovation, as we care about freedom and privacy. In the future, we plan to support PantherX development, trough hardware sales, enterprise support subscriptions and additional investors.
+  a: Our initial funding has been provided by a close friend and investor, that cares as much about innovation, as we care about freedom and privacy. In the future, we plan to support PantherX development, trough hardware sales, enterprise support subscriptions and crowd funding.
   lang: en
 -
   q: When will PantherX be available?
@@ -22,7 +26,7 @@
   q: Will PantherX run on any computer?
   a: Yes and no. PantherX has been designed specifically for Panther Alpha, and doesn't include the additional drivers that may be required to run on other hardware. We simply wanted to remove all uknown variables that often arise from drivers and different configurations. Instead, we focus on one system with one set of components and one configuration.
 -
-  q: Can I make PantherX run on any computer?
+  q: Can PantherX run on any computer?
   a: Because PantherX is open source, it's up to other developers, to make it run on more common hardware. We do not support this however.
   lang: en
 -

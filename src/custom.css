@@ -127,6 +127,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.section.even {
+  background-color: #e3e3e3;
+}
+
 
 .section, .footer {
   background: #ececec;
@@ -134,6 +138,10 @@ body {
 
 .section.is-dark, .footer.is-dark {
   background: #000;
+}
+
+.section.is-dark.is-light-dark {
+  background-color: #171717;
 }
 
 .box .title {

@@ -2,15 +2,19 @@
 layout: default
 ---
 
+<div id="tooltip">
 {% assign sections = site.sections | where: "namespace", page.namespace %}
 {% for section in sections %}
-<section class="section is-spacious is-dark is-fullheight">
-	<div class="container is-medium">
-		<h2 class="title is-2" id="{{ section.title | url_encode }}">{{ section.title }}</h2>
-		{% if section.subtitle %}<h4 class="subtitle is-4">{{ section.subtitle }}</h4>{% endif %}
-		<div class="content has-columns-2">
-			{{ section.content }}
+	<section class="section is-spacious {% cycle 'odd', 'even' %}">
+		<div class="container is-medium">
+			{% unless section.title == "Intro" %}<h2 class="title is-2" id="{{ section.title | url_encode }}">{{ section.title }}</h2>{% endunless %}
+			{% if section.subtitle %}<h4 class="subtitle is-4">{{ section.subtitle }}</h4>{% endif %}
+			<div class="content has-columns-2">
+				{{ section.content }}
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
 {% endfor %}
+</div>
+
+{% include loop_topic.html priority='1' limit='6' %}
