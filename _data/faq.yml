@@ -24,10 +24,7 @@
   lang: en
 -
   q: Will PantherX run on any computer?
-  a: Yes and no. PantherX has been designed specifically for Panther Alpha, and doesn't include the additional drivers that may be required to run on other hardware. We simply wanted to remove all uknown variables that often arise from drivers and different configurations. Instead, we focus on one system with one set of components and one configuration.
--
-  q: Can PantherX run on any computer?
-  a: Because PantherX is open source, it's up to other developers, to make it run on more common hardware. We do not support this however.
+  a: Yes and no. PantherX will come in two flavours, an unsupported, rolling release, and a supported, LTS _(Long Term Support)_ release, specifically designed to run on Panther Alpha. Unlike the rolling release, the LTS also includes a highly optimized, hardened kernel. When we refer to PantherX, we usually refer to the LTS release.
   lang: en
 -
   q: How frequently will PantherX receive updates?
