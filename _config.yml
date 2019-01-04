@@ -31,3 +31,21 @@ collections:
     output: false
   topics:
     output: true
+  news:
+    output: true
+
+defaults:
+-
+  scope:
+    path: "_news" # an empty string here means all files in the project
+  values:
+    cover:
+      height: medium
+      image: bg01.jpg
+
+author:
+  -
+    title: Franz Geffke
+    picture: franzs.svg
+    about: ...
+    ref: franz

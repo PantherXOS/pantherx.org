@@ -11,10 +11,6 @@ body {
   text-decoration: underline;
 }
 
-.section.is-dark a {
-  color: #a7a7a7;
-}
-
 .is-dark .content a, .is-dark .timeline-content a {
   color: #fff;
   text-decoration: underline;
@@ -25,13 +21,12 @@ body {
   text-transform: capitalize;
 }
 
-.navbar-item, .navbar-link {
+.hero .title, .box .title, .navbar-item, .navbar-link, .navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover, .section.is-dark .box .title, .section.is-dark .content table, .section.is-dark .title, .section.is-dark .content h1, .section.is-dark .content h2, .section.is-dark pre, .section.is-dark .content ul, .section.is-dark p, .footer.is-dark p, .footer.is-dark strong {
   color: #fff;
 }
 
 .navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover {
   background-color: #fafafa4d;
-  color: #fff;
 }
 
 .has-background-orange {
@@ -102,16 +97,8 @@ body {
   right: 0;
 }
 
-.section.is-spacious {
-
-}
-
 .tag:not(body).is-primary {
   background-color: #103e69;
-}
-
-.hero .title {
-  color: #fff;
 }
 
 .hero img {
@@ -123,14 +110,21 @@ body {
   background-position: center;
 }
 
+.box:hover {
+  filter: brightness(90%);
+}
+
 .content.faq p {
   margin-bottom: 2rem;
+}
+
+.section.is-dark a {
+  color: #a7a7a7;
 }
 
 .section.even {
   background-color: #e3e3e3;
 }
-
 
 .section, .footer {
   background: #ececec;
@@ -144,14 +138,6 @@ body {
   background-color: #171717;
 }
 
-.box .title {
-  color: #fff;
-}
-
-.box:hover {
-  filter: brightness(90%);
-}
-
 .section.is-dark .box {
   background-color: #103e69;
   border: 1px solid #103e69;
@@ -160,14 +146,6 @@ body {
 .section.is-dark .box:hover {
   background-color: #000;
   border: 1px solid #363636;
-}
-
-.section.is-dark .box .title {
-  color: #fff;
-}
-
-.section.is-dark .content table {
-  color: #fff;
 }
 
 .section.is-dark .content table td, .section.is-dark .content table th {
@@ -196,10 +174,6 @@ body {
 .section.is-dark .input:focus {
   border-color: #fff;
   box-shadow: none;
-}
-
-.section.is-dark .title, .section.is-dark .content h1, .section.is-dark .content h2, .section.is-dark pre, .section.is-dark .content ul, .section.is-dark p, .footer.is-dark p, .footer.is-dark strong {
-  color: #fff;
 }
 
 .section.is-dark .content h3, .section.is-dark .content .title.is-3 {
@@ -262,6 +236,10 @@ body {
   color: #363636;
 }
 
+img.author {
+  height:46px;
+}
+
 .tooltip.is-top.is-link::before, .tooltip.is-top.is-primary::before {
   border-top: 5px solid #0098c8;
 }
@@ -269,6 +247,10 @@ body {
 .tooltip.is-link::after, .tooltip.is-primary::after {
   font-size: 0.9rem;
   background: #113e6a;
+}
+
+.is-list-item {
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 1216px) {

@@ -1,0 +1,22 @@
+---
+layout: page
+title: News
+description: News about PantherX OS
+cover:
+  height: medium
+  image: bg01.jpg
+permalink: /news/
+narrow: true
+lang: en
+---
+
+{% assign sorted = site.news | sort: 'date' | reverse %}
+{% for news in sorted | reversed %}
+<div class="is-list-item">
+	<a href="{{ news.url }}"><h4 class="title is-4">{{ news.title }}</h4></a>
+	<h5 class="subtitle is-5">{{ news.date | date_to_long_string }}</h5>
+	<div class="content">
+		<p>{{ news.excerpt }}</p>
+	</div>
+</div>
+{% endfor %}

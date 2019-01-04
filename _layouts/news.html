@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<section class="section{% if page.dark %} is-dark{% endif %}">
+	<div class="container is-narrow">
+
+		<div class="columns">
+			<div class="column is-narrow">
+				<img src="/assets/images/team/franzs.svg" alt="Franz Geffke" class="author">
+			</div>
+			<div class="column">
+				<p>
+					<strong>By Franz Geffke</strong>
+					<br><small>{{ page.date | date_to_long_string }}</small>
+				</p>
+			</div>
+		</div>
+
+		<div class="content">
+			{{ content }}
+		</div>
+
+	</div>
+</section>

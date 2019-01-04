@@ -12,14 +12,12 @@ lang: en
 <section class="section">
 	<div class="container">
 		<div class="columns">
-			<div class="column is-10 is-offset-2">
+			<div class="column is-8 is-offset-2">
 
 				<div class="content faq">
 					{% for entry in site.data.faq %}
-					<p>
-						<span class="title is-4">{{ entry.q }}</span>
-						<br>{{ entry.a }}
-					</p>
+					<h4 class="title is-4">{{ entry.q }}</h4>
+					{{ entry.a | markdownify }}
 					{% endfor %}
 				</div>
 
