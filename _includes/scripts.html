@@ -12,3 +12,8 @@
 		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 	})();
 </script>
+
+{% if page.permalink == "/packages/" %}
+<script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.1.1/stitch.js"></script>
+<script src="/assets/js/packages.min.js"></script>
+{% endif %}

@@ -12,13 +12,37 @@ lang: en
 <section class="section">
 	<div class="container">
 		<div class="columns">
-			<div class="column is-4 is-offset-4">
+			<div class="column is-4 is-offset-3">
 
 				<div class="content">
 					<p>We're actively looking for collaborators, to help us bring this project to life. If you're an experienced developer, know something about ARM or like help spread the word, contact us - we're waiting to hear from you!</p>
 				</div>
 
 				{% include form-contact.html %}
+
+			</div>
+			<div class="column is-offset-1">
+
+				<h3 class="title is-3">Connect</h3>
+
+				{% for item in site.contact %}
+				<div class="is-list-item is-aside">
+					<a href="{{ item.url }}"><h5 class="title is-5 is-lowercase">{{ item.title }}</h5></a>
+					<h6 class="subtitle is-6">{{ item.caption }}</h6>
+				</div>
+				{% endfor %}
+
+				<hr>
+
+				<h3 class="title is-3">News</h3>
+
+				{% assign sorted = site.news | sort: 'date' | reverse %}
+				{% for news in sorted | reversed | limit: 5 %}
+				<div class="is-list-item is-aside">
+					<a href="{{ news.url }}"><h5 class="title is-5">{{ news.title }}</h5></a>
+					<h6 class="subtitle is-6">{{ news.date | date_to_long_string }}</h6>
+				</div>
+				{% endfor %}
 
 			</div>
 		</div>

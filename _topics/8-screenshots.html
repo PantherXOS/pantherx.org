@@ -1,0 +1,32 @@
+---
+layout: page
+title: Screenshots
+description: PantherX Impressions
+cover:
+  height: medium
+  image: bg01.jpg
+  background: black
+namespace: screenshots
+priority:
+permalink: /screenshots/
+lang: en
+screenshots:
+ -
+   image: px-desktop.jpg
+   caption: Default PantherX Desktop
+ -
+   image: px-desktop-dev.jpg
+   caption: Atom running on PantherX
+ -
+   image: px-desktop-alt.jpg
+   caption: PantherX applications, including files, music and settings
+---
+
+<div class="columns is-multiline">
+  {% for item in page.screenshots %}
+  <div class="column is-half">
+    <img src="/assets/images/{{ item.image }}" alt="{{ item.caption }}">
+    <p>{{ item.caption }}</p>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,77 @@
+---
+layout: default
+title: Packages
+description: PantherX Packages
+cover:
+  height: medium
+  image: bg01.jpg
+  background: black
+namespace: screenshots
+priority:
+permalink: /packages/
+lang: en
+---
+
+<section class="section">
+  <div class="container">
+
+    <div class="content">
+      <p>
+        Search for packages that are part of the current PantherX rolling release version.
+        <br><small>Simply type the <b>exact package name</b> <em>(for now)</em>, and find all related information, including version, and dependencies.</small>
+      </p>
+    </div>
+
+    <div id="package-search">
+
+      <div class="field has-addons">
+        <div class="control">
+          <input class="input" type="text" v-model="keyword" placeholder="libreoffice" v-on:keyup.enter="search()">
+        </div>
+        <div class="control">
+          <a class="button" v-on:click="search()">
+            Search
+          </a>
+        </div>
+      </div>
+
+      <div v-cloak>
+        <hr v-if="results.count > 0">
+
+        <div class="box" v-for="result in results">
+
+          <h3 class="title is-3"><% result.name %> (<% result.version %>)</h3>
+          <h4 class="subtitle is-4"><% result.synopsis %></h4>
+
+          <div class="columns">
+            <div class="column is-half">
+              <div class="content">
+                <p><% result.description %></p>
+              </div>
+              <ul>
+                <li><b>Version:</b> <% result.version %></li>
+                <li><b>Location:</b> <% result.location %></li>
+                <li><b>Homepage:</b> <% result.homepage %></li>
+                <li><b>Systems:</b> <% result.systems %></li>
+                <li><b>License:</b> <% result.license %></li>
+              </ul>
+            </div>
+            <div class="column">
+              <div class="content">
+                <p><% result.dependencies %></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content">
+      <hr>
+      <p><small>PantherX is a <a href="https://www.gnu.org/software/guix/">GuixSD</a> upstream distribution and uses an almost identical package index.</small></p>
+    </div>
+
+  </div>
+</section>
