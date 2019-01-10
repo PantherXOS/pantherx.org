@@ -11,27 +11,33 @@ let search = new Vue({
 	data: {
 		keyword: '',
 		results: [],
+		status: 'none',
+		ticker: 0
 	},
 	methods: {
 		search: function() {
+			this.ticker = this.ticker + 1;
 			this.auth()
 		},
 		auth: function() {
+			let t = this;
+			t.status = 'waiting';
 			client.auth
 					.loginWithCredential(new stitch.AnonymousCredential())
-					.then(this.get)
+					.then(t.get)
 					.catch(console.error);
 		},
 		get: function() {
 			let t = this;
 			console.log("searching..");
 			db.collection("latest")
-					.find({name: t.keyword}, {limit: 10})
+					.find({name: t.keyword.toLowerCase()}, {limit: 10})
 					.toArray()
 					.then(results => {
 						t.results = results;
 						console.log(results)
 					});
+			t.status = 'done';
 		}
 	}
 });

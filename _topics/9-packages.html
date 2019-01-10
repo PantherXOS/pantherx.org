@@ -12,7 +12,7 @@ permalink: /packages/
 lang: en
 ---
 
-<section class="section">
+<section class="section" xmlns:v-on="http://www.w3.org/1999/xhtml">
   <div class="container">
 
     <div class="content">
@@ -37,6 +37,8 @@ lang: en
 
       <div v-cloak>
         <hr v-if="results.count > 0">
+
+        <p v-if="ticker > 0 && results.length === 0 && status === 'done'">Package not found.</p>
 
         <div class="box" v-for="result in results">
 
