@@ -23,7 +23,7 @@
 						<a href="https://wiki.pantherx.org/" class="navbar-item">
 							Wiki
 						</a>
-						{% assign pages = site.pages %}
+						{% assign pages = site.pages | where: "nav", "main" %}
 						{% for page in pages %}
 						<a href="{{ page.permalink }}" class="navbar-item">
 							{{ page.title }}

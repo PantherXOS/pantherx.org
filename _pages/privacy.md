@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Your Privacy
-medium: true
+narrow: true
 cover:
   height: medium
   image: bg01.jpg
+nav:
 permalink: /your-privacy/
 lang: en
 ---

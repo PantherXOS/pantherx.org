@@ -7,6 +7,7 @@ cover:
   image: bg01.jpg
   background: sand
 namespace: privacy
+nav: features
 priority:
 permalink: /privacy/
 lang: en

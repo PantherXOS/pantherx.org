@@ -7,6 +7,7 @@ cover:
   image: bg01.jpg
   background: red
 namespace: intuitive
+nav: features
 priority: 1
 permalink: /ease-of-use/
 lang: en

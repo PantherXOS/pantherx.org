@@ -1,10 +1,11 @@
 ---
 layout: page
-title: PantherX OS License Agreement
+title: License
 narrow: true
 cover:
   height: medium
   image: bg01.jpg
+nav: support
 permalink: /license/
 lang: en
 ---

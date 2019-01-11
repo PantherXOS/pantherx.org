@@ -7,6 +7,7 @@ cover:
   image: bg01.jpg
   background: pink
 namespace: security
+nav: features
 priority: 1
 permalink: /security/
 lang: en

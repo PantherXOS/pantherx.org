@@ -2,9 +2,11 @@
 layout: default
 title: Contact
 description: Get in touch with the PantherX OS Team
+narrow: false
 cover:
   height: medium
   image: bg01.jpg
+nav: main
 permalink: /contact/
 lang: en
 ---
@@ -36,8 +38,8 @@ lang: en
 
 				<h3 class="title is-3">News</h3>
 
-				{% assign sorted = site.news | sort: 'date' | reverse %}
-				{% for news in sorted | reversed | limit: 5 %}
+				{% assign sorted = site.news | reverse %}
+				{% for news in sorted limit: 5 %}
 				<div class="is-list-item is-aside">
 					<a href="{{ news.url }}"><h5 class="title is-5">{{ news.title }}</h5></a>
 					<h6 class="subtitle is-6">{{ news.date | date_to_long_string }}</h6>

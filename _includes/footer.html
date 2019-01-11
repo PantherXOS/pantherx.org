@@ -29,35 +29,61 @@
 <section class="section is-dark is-light-dark">
 	<div class="container is-medium">
 		<div class="columns">
-			<div class="column is-3">
-				{% assign topics = site.topics %}
+			<div class="column is-2">
+				{% assign topics = site.topics | where: "nav", "features" %}
 				<ul>
-					<li class="title">PantherX OS</li>
-					{% for topic in topics %}
-					<li><a href="{{ topic.permalink }}">{{ topic.title }}</a></li>
+					<li class="title is-5">PantherX OS</li>
+					{% for item in topics %}
+					<li><a href="{{ item.permalink }}">{{ item.title }}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
-			<div class="column is-3">
-				{% assign pages = site.pages %}
+			<div class="column is-2">
+				{% assign topics = site.pages | where: "nav", "support" %}
 				<ul>
-					<li class="title">About Us</li>
-					{% for page in pages %}
-					<li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+					<li class="title is-5">Platform</li>
+					{% for item in site.nav.platform %}
+					<li><a href="{{ item.permalink }}">{{ item.title }}</a></li>
+					{% endfor %}
+				</ul>
+				<ul>
+					<li class="title is-5" style="margin-top:25px;">Support</li>
+					{% for item in topics %}
+					<li><a href="{{ item.permalink }}">{{ item.title }}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
-			<div class="column is-6">
+			<div class="column is-2">
+				{% assign pages = site.pages | where: "nav", "main" %}
+				<ul>
+					<li class="title is-5">About Us</li>
+					{% for item in pages %}
+					<li><a href="{{ item.permalink }}">{{ item.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="column has-bottom-right">
+				<p>Panther Alpha, running PantherX OS, will forever change your perception, of how your computer should work. Fast, dependable, trustworthy and expandable.</p>
 				<img class="is-bottom-right" src="/assets/images/panther.svg" alt="The Power of PantherX OS">
 			</div>
 		</div>
+		<nav class="level">
+			<div class="level-left">
+				<p class="level-item">
+					Panther Alpha MicroPC & PantherX OS - A tremendous step forward.
+				</p>
+			</div>
+			<div class="level-right">
+				<p class="level-item">
+					Copyright © 2019 Panther MPC. All rights reserved.
+				</p>
+				<p class="level-item">
+					<a href="/warrant-canary/">Warrant Canary</a>
+				</p>
+				<p class="level-item">
+					<a href="/your-privacy/">Privacy</a>
+				</p>
+			</div>
+		</nav>
 	</div>
 </section>
-
-<footer class="footer is-dark">
-	<div class="content has-text-centered">
-		<p>
-			<strong>PantherX OS</strong> | The majority of PantherX source code is licensed under the <a href="/license/">GNU General Public License</a> | <a href="/your-privacy/">Privacy</a>
-		</p>
-	</div>
-</footer>

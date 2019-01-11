@@ -6,8 +6,9 @@ cover:
   height: medium
   image: bg01.jpg
   background: sand
-priority: 1
 namespace: reliability
+nav: features
+priority: 1
 permalink: /reliability/
 lang: en
 ---
