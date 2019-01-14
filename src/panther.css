@@ -121,10 +121,6 @@ body {
 	background-color: #e3e3e3;
 }
 
-.section, .footer {
-	background: #ececec;
-}
-
 .section.is-dark, .footer.is-dark {
 	background: #000;
 }
@@ -250,6 +246,10 @@ img.author {
 
 .is-list-item.is-aside {
 	margin-bottom: 1rem;
+}
+
+.icon {
+	width:1rem;
 }
 
 [v-cloak] { display: none; }

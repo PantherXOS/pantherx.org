@@ -1,8 +1,11 @@
 -
   name: Franz G.
   position: Founder
-  picture: franzs.svg
+  picture: franz.svg
   type: I
+  mastodon:
+    name: franz
+    url: https://pantherx.social/@franz
 -
   name: Ali R.
   position: Co-Founder

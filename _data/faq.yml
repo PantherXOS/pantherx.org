@@ -23,10 +23,6 @@
   a: PantherX is under active development and we expect a final release in late Summer 2019. If you can't wait that long, subscribe to our infrequent newsletter, to stand a chance to participate in the private beta, long before the official release.
   lang: en
 -
-  q: Will PantherX run on any computer?
-  a: Yes and no. PantherX will come in two flavours, an unsupported, rolling release, and a supported, LTS _(Long Term Support)_ release, specifically designed to run on Panther Alpha. Unlike the rolling release, the LTS also includes a highly optimized, hardened kernel. When we refer to PantherX, we usually refer to the LTS release.
-  lang: en
--
   q: How frequently will PantherX receive updates?
   a: We will release new updates as frequently as they are available. This includes both PantherX core updates as well as other software, you may be using on your Panther Alpha.
   lang: en
@@ -34,3 +30,6 @@
   q: How long will you support major PantherX releases, including 1.*?
   a: We plan to support major releases for up to 3 years. That means, support for our first 1.* release will end in 2022.
   lang: en
+-
+  q: Will PantherX run on any computer?
+  a: PantherX comes in two flavours, a community and supporter edition. The community edition is available for everyone, and runs on x86_64. The subscriber edition is available both to subscribers, and comes pre-installed on Panther Alpha - aside from team support, supporters are also eligible to vote on new features.

@@ -34,6 +34,7 @@ lang: en
 			<p class="meta">
 				<span class="item name">{{ member.name }}</span>
 				<span class="item position">{{ member.position }}</span>
+				{% if member.mastodon.url %}<br><span class="item"><a href="{{ member.mastodon.url }}">@{{ member.mastodon.name }}</a></span>{% endif %}
 			</p>
 		</div>
 		{% endfor %}
