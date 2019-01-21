@@ -1,0 +1,33 @@
+<div id="mastodonTimeline">
+	<ul class="mastodon" v-if="timeline.length > 0">
+		<li class="mastodon-entry" v-for="entry in timeline.slice(0, {{ include:limit }})">
+			<div class="mastodon-content" v-html="entry.content"></div>
+			<div class="mastodon-author">
+				<nav class="level is-mobile">
+					<div class="level-left">
+						<div class="level-item">
+							<img class="avatar" :src="entry.account.avatar">
+						</div>
+						<div class="level-item">
+							<a :href="entry.url">
+								<% entry.account.display_name %>
+								<br><% entry.account.acct %>
+							</a>
+						</div>
+					</div>
+					<div class="level-right">
+						<div class="level-item">
+							<% entry.created_at | toRelativeDate %>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</li>
+	</ul>
+</div>
+<hr>
+<div class="content">
+	<p>
+		<a href="https://pantherx.social/">Are you on Mastodon?</a>
+	</p>
+</div>

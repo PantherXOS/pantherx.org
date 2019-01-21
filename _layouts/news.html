@@ -3,22 +3,39 @@ layout: default
 ---
 
 <section class="section{% if page.dark %} is-dark{% endif %}">
-	<div class="container is-narrow">
+	<div class="container{% if page.narrow %} is-narrow{% elsif page.medium %} is-medium{% endif %}">
 
 		<div class="columns">
-			<div class="column is-narrow">
-				<img src="/assets/images/team/franzs.svg" alt="Franz Geffke" class="author">
-			</div>
-			<div class="column">
-				<p>
-					<strong>By Franz Geffke</strong>
-					<br><small>{{ page.date | date_to_long_string }}</small>
-				</p>
-			</div>
-		</div>
+			<div class="column is-6 is-offset-1">
 
-		<div class="content">
-			{{ content }}
+				<div class="columns">
+					<div class="column is-narrow">
+						<img src="/assets/images/team/franzs.svg" alt="Franz Geffke" class="author">
+					</div>
+					<div class="column">
+						<p>
+							<strong>By Franz Geffke</strong>
+							<br><small>{{ page.date | date_to_long_string }}</small>
+						</p>
+					</div>
+				</div>
+
+				<div class="content">
+					{{ content }}
+				</div>
+
+			</div>
+			<div class="column is-3 is-offset-1">
+
+				<h3 class="title is-3">Other News</h3>
+
+				{% include loop-news.html limit="4" %}
+
+				<hr>
+
+				{% include snippet-timeline.html limit="1" %}
+
+			</div>
 		</div>
 
 	</div>

@@ -5,7 +5,7 @@ date: 2019-01-08 01:00:00 +0350
 author: franz
 cover:
   height: medium
-  image: bg-passion-led-us-here.jpg
+  image: bg-pantherx-wiki-preview-goes-live.jpg
 lang: en
 ---
 

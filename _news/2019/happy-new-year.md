@@ -5,7 +5,7 @@ date: 2019-01-01 01:00:00 +0350
 author: franz
 cover:
   height: medium
-  image: bg-fireworks.jpg
+  image: bg-happy-new-year.jpg
 lang: en
 ---
 

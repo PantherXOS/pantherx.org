@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 });
 
-Vue.use(Buefy.default)
-Vue.use(VeeValidate)
+Vue.use(Buefy.default);
+Vue.use(VeeValidate);
 
 var tooltip = new Vue({
 	el: '#tooltip'
@@ -28,4 +28,41 @@ var contactUs = new Vue({
 		member: false,
 		name: ''
 	}
+});
+
+var mastodon = new Vue({
+	delimiters:['<%', '%>'],
+	el: '#mastodonTimeline',
+	data: {
+		mastodonAPI: 'https://pantherx.social/api/v1',
+		timeline: ''
+	},
+	filters: {
+		toRelativeDate: function(value) {
+			return moment(value).startOf('day').fromNow();
+		}
+	},
+	methods: {
+		getTimeline: function() {
+			let t = this;
+			axios.get(this.mastodonAPI + '/timelines/public', {
+				params: {
+					limit: 8,
+					local: true
+				}
+			})
+			.then(function (response) {
+				return response;
+			})
+			.catch(function (error) {
+				console.log(error);
+			})
+			.then(function (myJson) {
+				t.timeline = myJson.data;
+			});
+		}
+	},
+	beforeMount(){
+		this.getTimeline()
+	},
 });

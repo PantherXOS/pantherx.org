@@ -9,10 +9,13 @@ contact:
     url: mailto:team@pantherx.org?subject=Team Enquiry
     caption: Discuss ideas, ask questions, join us!
   -
-    title:  support@pantherx.org
+    title: support@pantherx.org
     url: mailto:support@pantherx.org?subject=Support Enquiry
     caption: Get help with PantherX
   -
+    title: pantherx.social
+    url: https://pantherx.social/
+    caption: Join us on the new Twitter - Mastodon
 
 
 # Build settings

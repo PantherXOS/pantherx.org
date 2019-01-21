@@ -28,6 +28,7 @@ gulp.task('js', function (cb) {
 					'node_modules/axios/dist/axios.min.js',
 					'node_modules/vee-validate/dist/vee-validate.js',
 					'src/utils/jekyll_formmixin/form.js',
+					'node_modules/moment/moment.js',
 					'src/custom.js'
 				]),
 				concat('bundle.min.js'),

@@ -38,13 +38,7 @@ lang: en
 
 				<h3 class="title is-3">News</h3>
 
-				{% assign sorted = site.news | reverse %}
-				{% for news in sorted limit: 5 %}
-				<div class="is-list-item is-aside">
-					<a href="{{ news.url }}"><h5 class="title is-5">{{ news.title }}</h5></a>
-					<h6 class="subtitle is-6">{{ news.date | date_to_long_string }}</h6>
-				</div>
-				{% endfor %}
+				{% include loop-news.html limit="3" %}
 
 			</div>
 		</div>
