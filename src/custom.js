@@ -39,7 +39,7 @@ var mastodon = new Vue({
 	},
 	filters: {
 		toRelativeDate: function(value) {
-			return moment(value).startOf('day').fromNow();
+			return moment(value).from();
 		}
 	},
 	methods: {
@@ -47,7 +47,7 @@ var mastodon = new Vue({
 			let t = this;
 			axios.get(this.mastodonAPI + '/timelines/public', {
 				params: {
-					limit: 8,
+					limit: 6,
 					local: true
 				}
 			})

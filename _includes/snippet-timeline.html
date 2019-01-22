@@ -1,6 +1,7 @@
 <div id="mastodonTimeline">
 	<ul class="mastodon" v-if="timeline.length > 0">
 		<li class="mastodon-entry" v-for="entry in timeline.slice(0, {{ include:limit }})">
+			<img v-if="entry.media_attachments.length > 0" :src="entry.media_attachments[0].preview_url">
 			<div class="mastodon-content" v-html="entry.content"></div>
 			<div class="mastodon-author">
 				<nav class="level is-mobile">
