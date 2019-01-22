@@ -46,6 +46,9 @@ exclude:
   - .idea
   - .bit.json
   - .bitmap
+  - yarn-error.log
+  - bit.json
+  - s3_website.yml
 
 collections:
   pages:

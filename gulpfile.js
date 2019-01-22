@@ -23,7 +23,7 @@ gulp.task('js', function (cb) {
 				gulp.src
 				([
 					'src/copypastesubscribeformlogic.js',
-					'node_modules/vue/dist/vue.js',
+					'node_modules/vue/dist/vue.min.js',
 					'node_modules/buefy/dist/buefy.min.js',
 					'node_modules/axios/dist/axios.min.js',
 					'node_modules/vee-validate/dist/vee-validate.js',

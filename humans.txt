@@ -1,0 +1,13 @@
+---
+---
+
+/* EDITOR */
+
+  Franz Geffke <franz@pantherx.org>
+
+/* SITE */
+
+  Last update: {{ site.time }}
+  Language: English
+  Doctype: HTML5
+  IDE: WebStorm, Atom
