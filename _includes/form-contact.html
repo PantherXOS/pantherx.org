@@ -62,7 +62,7 @@
 			<div class="field-body">
 				<div class="field">
 					<p :class="{ 'control': true }">
-						<input v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('name_first') }" name="name_first" v-model="name_first" type="text" placeholder="First name *">
+						<input v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('name_first') }" name="name_first" v-model="name" type="text" placeholder="First name *">
 						<span v-show="errors.has('name_first')" class="help is-danger">Enter your first name</span>
 					</p>
 				</div>

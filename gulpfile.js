@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var cleanCss = require('gulp-clean-css');
 var uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
+var gulpCopy = require('gulp-copy');
 var pump = require('pump');
 
 gulp.task('css', function () {
@@ -23,7 +24,7 @@ gulp.task('js', function (cb) {
 				gulp.src
 				([
 					'src/copypastesubscribeformlogic.js',
-					'node_modules/vue/dist/vue.min.js',
+					'node_modules/vue/dist/vue.js',
 					'node_modules/buefy/dist/buefy.min.js',
 					'node_modules/axios/dist/axios.min.js',
 					'node_modules/vee-validate/dist/vee-validate.js',
@@ -59,10 +60,16 @@ gulp.task('images', () =>
 				.pipe(gulp.dest('assets/images'))
 );
 
+gulp.task('fonts', () =>
+		gulp.src('src/fonts/**/*')
+				.pipe(gulpCopy('assets/fonts', { prefix: 2 }))
+				.pipe(gulp.dest('assets/fonts'))
+);
+
 gulp.task('watch', function () {
    gulp.watch('src/*.css', ['css']);
 	 gulp.watch('src/*.js', ['js', 'packages']);
 	 gulp.watch('src/images/**/*.{jpg,png,svg}', ['images']);
 });
 
-gulp.task('default', ['css', 'js', 'packages', 'images']);
+gulp.task('default', ['css', 'js', 'packages', 'images', 'fonts']);
