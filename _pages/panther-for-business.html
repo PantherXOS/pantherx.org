@@ -1,0 +1,21 @@
+---
+layout: default
+title: Panther for Business
+description: Get in touch with the PantherX OS Team
+narrow: false
+cover:
+  height: medium
+  image: bg01.jpg
+nav: 
+permalink: /panther-for-business/
+lang: en
+---
+
+<section class="section">
+	<div class="container">
+  {% assign image_files = site.static_files | where: "image", true %}
+  {% for myimage in image_files %}
+    <img src="{{ myimage.path }}">
+  {% endfor %}
+  </div>
+</section>

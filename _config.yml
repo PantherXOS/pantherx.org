@@ -29,6 +29,9 @@ nav:
     -
       title: PantherX OS
       permalink: /#PantherX+Operating+System
+    -
+      title: PantherX for Business
+      permalink: /panther-for-business/
 
 
 exclude:
@@ -63,13 +66,18 @@ collections:
     output: true
 
 defaults:
--
-  scope:
-    path: "_news" # an empty string here means all files in the project
-  values:
-    cover:
-      height: medium
-      image: bg01.jpg
+ -
+   scope:
+     path: "_news" # an empty string here means all files in the project
+   values:
+     cover:
+       height: medium
+       image: bg01.jpg
+ -
+   scope:
+     path: "assets/images/panther-for-business"
+   values:
+     image: true
 
 author:
   -
