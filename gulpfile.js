@@ -4,6 +4,7 @@ var cleanCss = require('gulp-clean-css');
 var uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 var gulpCopy = require('gulp-copy');
+var imageResize = require('gulp-image-resize');
 var pump = require('pump');
 
 gulp.task('css', function () {
@@ -60,6 +61,18 @@ gulp.task('images', () =>
 				.pipe(gulp.dest('assets/images'))
 );
 
+gulp.task('image-resize', function () {
+  gulp.src('src/images/central-management/*')
+    .pipe(imageResize({
+			width : 675,
+      height : 480,
+      crop : true,
+			gravity : 'North',
+      upscale : false
+    }))
+    .pipe(gulp.dest('assets/images/central-management/thumbs'));
+});
+
 gulp.task('fonts', () =>
 		gulp.src('src/fonts/**/*')
 				.pipe(gulpCopy('assets/fonts', { prefix: 2 }))
@@ -72,4 +85,4 @@ gulp.task('watch', function () {
 	 gulp.watch('src/images/**/*.{jpg,png,svg}', ['images']);
 });
 
-gulp.task('default', ['css', 'js', 'packages', 'images', 'fonts']);
+gulp.task('default', ['css', 'js', 'packages', 'images', 'image-resize', 'fonts']);

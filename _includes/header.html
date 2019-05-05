@@ -20,9 +20,14 @@
 						<a href="/#PantherX+Operating+System" class="navbar-item">
 							PantherX OS
 						</a>
+						<a href="/panther-for-business/" class="navbar-item">
+							PantherX for Business
+						</a>
+						<!--
 						<a href="https://wiki.pantherx.org/" class="navbar-item">
 							Wiki
 						</a>
+					-->
 						{% assign pages = site.pages | where: "nav", "main" %}
 						{% for page in pages %}
 						<a href="{{ page.permalink }}" class="navbar-item">

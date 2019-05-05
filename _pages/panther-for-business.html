@@ -6,7 +6,7 @@ narrow: false
 cover:
   height: medium
   image: bg01.jpg
-nav: 
+nav:
 permalink: /panther-for-business/
 lang: en
 ---
@@ -15,7 +15,12 @@ lang: en
 	<div class="container">
   {% assign image_files = site.static_files | where: "image", true %}
   {% for myimage in image_files %}
-    <img src="{{ myimage.path }}">
+    <img src="{{ myimage.path }}" alt="PantherX for Business: Central management">
   {% endfor %}
+  </div>
+  <div class="container is-medium" style="margin-top:2rem;">
+    <p>
+      If you'd like to find out more about PantherX for Business, send us an email at <a href="mailto:business@pantherx.org">business@pantherx.org</a>. We're expecting an initial release in Q4 2019 - join our trials, and benefit for life! Since you've come this far: Here's a very early look at <a href="https://invis.io/S3RUS0OP8FH#/361550666_Dashboard">Central Management</a>.
+    </p>
   </div>
 </section>
