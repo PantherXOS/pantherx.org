@@ -2,10 +2,10 @@
   "dependencies": {
     "@bit/franz.js.global.jekyll_formmixin": "file:./src/utils/jekyll_formmixin",
     "axios": "^0.17.1",
-    "buefy": "^0.7.1",
-    "bulma": "^0.7.1",
+    "buefy": "^0.7",
+    "bulma": "^0.7",
     "bulma-timeline": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^4.0.1",

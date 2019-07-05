@@ -9,6 +9,7 @@ cover:
 namespace: reliability
 nav: features
 priority: 1
+type: general
 permalink: /reliability/
 lang: en
 ---

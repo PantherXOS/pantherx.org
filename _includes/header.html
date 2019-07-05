@@ -27,7 +27,7 @@
 						<a href="https://wiki.pantherx.org/" class="navbar-item">
 							Wiki
 						</a>
-					-->
+						-->
 						{% assign pages = site.pages | where: "nav", "main" %}
 						{% for page in pages %}
 						<a href="{{ page.permalink }}" class="navbar-item">
@@ -41,11 +41,14 @@
 	</div>
 	<div class="hero-body">
 		<div class="container has-text-centered">
+			<!--
 			{% if page.home == true %}
 			<img src="/assets/images/cover.png" class="cover" alt="PantherX - Say hello to your new Desktop and goodbye to all the things you should't have to worry about.">
 			{% else %}
 			<h1 class="title is-1">{{ page.title }}</h1>
 			{% endif %}
+			-->
+			<h1 class="title is-1">{{ page.title }}</h1>
 		</div>
 	</div>
 	{% if page.quicklinks %}

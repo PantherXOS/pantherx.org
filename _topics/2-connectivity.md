@@ -9,6 +9,7 @@ cover:
 namespace: connectivity
 nav: features
 priority: 1
+type: general
 permalink: /connectivity/
 lang: en
 ---

@@ -1,15 +1,15 @@
 ---
 layout: topic
-title: Software
+title: 2. Remote management
 description: The future of Desktop Computing
 cover:
   height: medium
   image: bg01.jpg
   background: orange
-namespace: software
-nav: features
+namespace: org-management
+nav: org
 priority: 1
-type: general
-permalink: /software/
+type: org
+permalink: /for-organizations/remote-management/
 lang: en
 ---

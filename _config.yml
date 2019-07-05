@@ -24,7 +24,7 @@ markdown: kramdown
 nav:
   platform:
     -
-      title: Panther Alpha
+      title: Panther Alpha (ext.)
       permalink: http://www.panther-mpc.com/panther-alpha/
     -
       title: PantherX OS

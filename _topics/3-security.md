@@ -9,6 +9,7 @@ cover:
 namespace: security
 nav: features
 priority: 1
+type: general
 permalink: /security/
 lang: en
 ---

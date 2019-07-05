@@ -17,4 +17,8 @@ layout: default
 {% endfor %}
 </div>
 
-{% include loop_topic.html priority='1' limit='6' %}
+{% if page.type == 'org' %}
+{% include loop_topic.html priority='1' limit='6' type='org' %}
+{% else %}
+{% include loop_topic.html priority='1' limit='6' type='general' %}
+{% endif %}

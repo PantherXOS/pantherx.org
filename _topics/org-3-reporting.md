@@ -1,15 +1,15 @@
 ---
 layout: topic
-title: Software
+title: 3. Remote monitoring
 description: The future of Desktop Computing
 cover:
   height: medium
   image: bg01.jpg
   background: orange
-namespace: software
-nav: features
+namespace: org-reporting
+nav: org
 priority: 1
-type: general
-permalink: /software/
+type: org
+permalink: /for-organizations/remote-monitoring/
 lang: en
 ---

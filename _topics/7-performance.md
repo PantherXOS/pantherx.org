@@ -9,6 +9,7 @@ cover:
 namespace: performance
 nav: features
 priority: 1
+type: general
 permalink: /performance/
 lang: en
 ---

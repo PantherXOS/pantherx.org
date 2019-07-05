@@ -9,6 +9,7 @@ cover:
 namespace: privacy
 nav: features
 priority:
+type: general
 permalink: /privacy/
 lang: en
 ---

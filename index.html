@@ -4,7 +4,7 @@ title: PantherX Operating System
 description: The future of Desktop Computing
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg03.jpg
 home: true
 namespace: home
 quicklinks:
@@ -30,9 +30,9 @@ subscribe: true
     </div>
   </section>
 
-  {% include loop_topic.html priority='1' limit='5' %}
+  {% include loop_topic.html priority='1' limit='5' type='general' %}
 
-  <section class="section is-spacious">
+  <section class="section is-spacious even">
     <div class="container is-medium">
       <h2 class="title is-2">PantherX for Business</h2>
       <h3 class="subtitle is-3">Central Device, User and Application Management</h3>
@@ -59,7 +59,13 @@ subscribe: true
       </p>
       <a class="button" style="margin-top:1rem;" href="/panther-for-business/">Discover PantherX for Business</a>
     </div>
-  </div>
+  </section>
+
+  <!-- TODO: Implement!
+
+  {% include loop_topic.html priority='1' limit='5' type='org' %}
+
+  -->
 
   <section class="section is-spacious">
     <div class="container is-medium">
@@ -109,3 +115,9 @@ subscribe: true
   </section>
 
 </div>
+
+<style>
+  .hero.is-medium.has-background {
+    min-height: 350px;
+  }
+</style>

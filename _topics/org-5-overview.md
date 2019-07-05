@@ -1,15 +1,15 @@
 ---
 layout: topic
-title: Ease of Use
+title: All features
 description: The future of Desktop Computing
 cover:
   height: medium
   image: bg01.jpg
-  background: red
-namespace: intuitive
-nav: features
+  background: orange
+namespace: org-overview
+nav: org
 priority: 1
-type: general
-permalink: /ease-of-use/
+type: org
+permalink: /for-organizations/overview/
 lang: en
 ---

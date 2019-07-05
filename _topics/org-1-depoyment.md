@@ -1,15 +1,15 @@
 ---
 layout: topic
-title: Software
+title: 1. Set-up & Deployment
 description: The future of Desktop Computing
 cover:
   height: medium
   image: bg01.jpg
   background: orange
-namespace: software
-nav: features
+namespace: org-deployment
+nav: org
 priority: 1
-type: general
-permalink: /software/
+type: org
+permalink: /for-organizations/deployment/
 lang: en
 ---

@@ -1,4 +1,4 @@
-{% assign features = site.topics | where: "priority", include.priority %}
+{% assign features = site.topics | where: "priority", include.priority | where: "type", include.type %}
 <section class="section is-spacious">
 	<div class="container">
 		<div class="columns">
