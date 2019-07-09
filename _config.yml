@@ -17,7 +17,6 @@ contact:
     url: https://pantherx.social/
     caption: Join us on the new Twitter - Mastodon
 
-
 # Build settings
 markdown: kramdown
 
@@ -32,7 +31,6 @@ nav:
     -
       title: PantherX for Business
       permalink: /panther-for-business/
-
 
 exclude:
   - src/

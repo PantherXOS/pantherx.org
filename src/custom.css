@@ -35,3 +35,7 @@
 .icon {
 	margin-top:1rem;
 }
+
+.modal .modal-content {
+	max-width:680px;
+}
