@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Software
-description: The future of Desktop Computing
+description: PantherX is an open source Linux distribution powered by Guix.
 cover:
   height: medium
   image: bg01.jpg

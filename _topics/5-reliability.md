@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Reliability
-description: The future of Desktop Computing
+description: PantherX supports versioned snapshots, time travel and automatic backup.
 cover:
   height: medium
   image: bg01.jpg

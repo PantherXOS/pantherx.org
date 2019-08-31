@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Security
-description: The future of Desktop Computing
+description: PantherX receives updates on daily basis, and features both system and application firewall.
 cover:
   height: medium
   image: bg01.jpg

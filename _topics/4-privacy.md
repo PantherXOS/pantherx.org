@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Privacy
-description: The future of Desktop Computing
+description: "PantherX doesn't track you: Your life, is yours to keep."
 cover:
   height: medium
   image: bg01.jpg

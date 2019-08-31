@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Performance
-description: The future of Desktop Computing
+description: PantherX spots the latest tech, and has been developed from ground-up.
 cover:
   height: medium
   image: bg01.jpg

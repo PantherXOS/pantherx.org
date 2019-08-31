@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Ease of Use
-description: The future of Desktop Computing
+description: PantherX is the OS, that doesn't need a manual.
 cover:
   height: medium
   image: bg01.jpg

@@ -1,7 +1,7 @@
 ---
 layout: topic
 title: Connectivity
-description: The future of Desktop Computing
+description: PantherX has built-in VPN and proxy support, as well as firewall profiles.
 cover:
   height: medium
   image: bg01.jpg
