@@ -1,25 +1,30 @@
 -
   year: 2019
-  month: April
-  title: Alpha Release
+  month: October
+  title: Alpha 1 Release
   content: At this point we expect most of core-PantherX features to be completed.
 -
   year: 2019
-  month: June
-  title: Beta 1 Release
+  month: November
+  title: Alpha 2 Release
+  content: In-depth testing of all features, discussion of next steps.
+-
+  year: 2020
+  month: January
+  title: Alpha 3 Release
   content: With this release, testing will intensify, to ensure everything is 100% in time for release.
 -
-  year: 2019
-  month: August
-  title: Beta 2 Release
+  year: 2020
+  month: Feburary
+  title: Beta 1 Release
   content: The last release before our public beta should be pretty much done.
 -
-  year: 2019
-  month: November
+  year: 2020
+  month: March
   title: Pre-Order Opens
   content: The computer designed for PantherX; big on performance, smaller than your wallet.
 -
-  year: 2019
-  month: December
+  year: 2020
+  month: April
   title: Public Beta
   content: A selected few will get an early preview of PantherX on Panther Hardware. <a href="#subscribe">Subscribe</a> to participate.

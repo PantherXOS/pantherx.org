@@ -21,10 +21,6 @@
   position: PX Accounts
   picture: reza.svg
 -
-  name: Saeed D.
-  position: PX Security
-  picture: saeed.svg
--
   name: Hamzeh N.
   position: PX Apps
   picture: hamzeh.svg
@@ -33,6 +29,10 @@
   position: PX Apps
   picture: fakhri.svg
 -
-  name: Hossein G.
+  name: Farshid K.
   position: PX Plugins
-  picture: hossein.svg
+  picture: farshid.svg
+-
+  name: Saeed D.
+  position: PX Security
+  picture: saeed.svg
