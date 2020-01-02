@@ -1,38 +1,36 @@
--
-  name: Franz G.
+- name: Franz G.
   position: Founder
   picture: franz.svg
   type: I
   mastodon:
     name: franz
     url: https://pantherx.social/@franz
--
-  name: Ali R.
+- name: Ali R.
   position: Co-Founder
   picture: ali.svg
   type: I
--
-  name: Chaichan A.
+- name: Chaichan A.
   position: Investor
   picture: chaichan.svg
   type: I
--
-  name: Reza A.
+- name: Reza A.
   position: PX Accounts
   picture: reza.svg
--
-  name: Hamzeh N.
+  mastodon:
+    name: ramajd
+    url: https://pantherx.social/@ramajd
+- name: Hamzeh N.
   position: PX Apps
   picture: hamzeh.svg
--
-  name: Fakhri S.
+  mastodon:
+    name: hnasajpour
+    url: https://pantherx.social/@hnasajpour
+- name: Fakhri S.
   position: PX Apps
   picture: fakhri.svg
--
-  name: Farshid K.
+- name: Farshid K.
   position: PX Plugins
   picture: farshid.svg
--
-  name: Saeed D.
+- name: Saeed D.
   position: PX Security
   picture: saeed.svg

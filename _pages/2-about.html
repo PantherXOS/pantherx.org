@@ -12,31 +12,42 @@ lang: en
 ---
 
 <div id="tooltip">
-	{% assign sections = site.sections | where: "namespace", "about" %}
-	{% for section in sections %}
-	<section class="section is-spacious {% cycle 'odd', 'even' %}">
-		<div class="container is-medium">
-			{% unless section.title == "Intro" %}<h2 class="title is-2" id="{{ section.title | url_encode }}">{{ section.title }}</h2>{% endunless %}
-			{% if section.subtitle %}<h4 class="subtitle is-4">{{ section.subtitle }}</h4>{% endif %}
-			<div class="content{% if section.columns %} has-columns-{{ section.columns }}{% endif %}">
-				{{ section.content | markdownify }}
-			</div>
-		</div>
-	</section>
-	{% endfor %}
+  {% assign sections = site.sections | where: "namespace", "about" %} {% for
+  section in sections %}
+  <section class="section is-spacious {% cycle 'odd', 'even' %}">
+    <div class="container is-medium">
+      {% unless section.title == "Intro" %}
+      <h2 class="title is-2" id="{{ section.title | url_encode }}">
+        {{ section.title }}
+      </h2>
+      {% endunless %} {% if section.subtitle %}
+      <h4 class="subtitle is-4">{{ section.subtitle }}</h4>
+      {% endif %}
+      <div
+        class="content{% if section.columns %} has-columns-{{ section.columns }}{% endif %}"
+      >
+        {{ section.content | markdownify }}
+      </div>
+    </div>
+  </section>
+  {% endfor %}
 </div>
 
 <section class="section">
-	<div class="columns is-mobile is-centered is-multiline has-text-centered">
-		{% for member in site.data.team %}
-		<div class="column is-half-mobile is-2-tablet is-1-desktop avatar">
-			<img class="is-small" src="/assets/images/team/{{ member.picture }}">
-			<p class="meta">
-				<span class="item name">{{ member.name }}</span>
-				<span class="item position">{{ member.position }}</span>
-				{% if member.mastodon.url %}<br><span class="item"><a href="{{ member.mastodon.url }}">@{{ member.mastodon.name }}</a></span>{% endif %}
-			</p>
-		</div>
-		{% endfor %}
-	</div>
+  <div class="columns is-mobile is-centered is-multiline has-text-centered">
+    {% for member in site.data.team %}
+    <div class="column is-half-mobile is-2-tablet is-1-desktop avatar">
+      <img class="is-small" src="/assets/images/team/{{ member.picture }}" />
+      <p class="meta">
+        <span class="item name">{{ member.name }}</span>
+        <span class="item position">{{ member.position }}</span>
+        {% if member.mastodon.url %}<br /><span class="item"
+          ><a target="_blank" href="{{ member.mastodon.url }}"
+            >@{{ member.mastodon.name }}</a
+          ></span
+        >{% endif %}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
 </section>

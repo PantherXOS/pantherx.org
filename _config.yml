@@ -4,32 +4,29 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 contact:
-  -
-    title: team@pantherx.org
+  - title: team@pantherx.org
     url: mailto:team@pantherx.org?subject=Team Enquiry
     caption: Discuss ideas, ask questions, join us!
-  -
-    title: support@pantherx.org
+  - title: support@pantherx.org
     url: mailto:support@pantherx.org?subject=Support Enquiry
     caption: Get help with PantherX
-  -
-    title: pantherx.social
+  - title: pantherx.social
     url: https://pantherx.social/
     caption: Join us on the new Twitter - Mastodon
+  - title: chat.pantherx.org
+    url: https://matrix.to/#/#public:pantherx.org
+    caption: Chat with us on Matrix
 
 # Build settings
 markdown: kramdown
 
 nav:
   platform:
-    -
-      title: Panther Alpha (ext.)
+    - title: Panther Alpha (ext.)
       permalink: http://www.panther-mpc.com/panther-alpha/
-    -
-      title: PantherX OS
+    - title: PantherX OS
       permalink: /#PantherX+Operating+System
-    -
-      title: PantherX for Business
+    - title: PantherX for Business
       permalink: /panther-for-business/
 
 exclude:
@@ -64,22 +61,19 @@ collections:
     output: true
 
 defaults:
- -
-   scope:
-     path: "_news" # an empty string here means all files in the project
-   values:
-     cover:
-       height: medium
-       image: bg01.jpg
- -
-   scope:
-     path: "assets/images/panther-for-business"
-   values:
-     image: true
+  - scope:
+      path: "_news" # an empty string here means all files in the project
+    values:
+      cover:
+        height: medium
+        image: bg01.jpg
+  - scope:
+      path: "assets/images/panther-for-business"
+    values:
+      image: true
 
 author:
-  -
-    title: Franz Geffke
+  - title: Franz Geffke
     picture: franzs.svg
     about: ...
     ref: franz
