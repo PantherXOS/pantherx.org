@@ -4,7 +4,7 @@ title: Your Privacy
 narrow: true
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg_106.jpg
 nav:
 permalink: /your-privacy/
 lang: en

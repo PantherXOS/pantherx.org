@@ -25,12 +25,20 @@ body {
 	color: #fff;
 }
 
+.box .title.is-5 {
+	font-size: 1.5rem;
+}
+
 .title.is-1, .navbar-link, a.navbar-item {
 	text-shadow: 2px 2px 2px #0000004d;
 }
 
 .navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover {
 	background-color: #fafafa4d;
+}
+
+.navbar-burger {
+	color: #ffffff;
 }
 
 .has-background-orange {
@@ -55,6 +63,10 @@ body {
 
 .has-background-red {
 	background-color: #b7717c;
+}
+
+.has-background-orange, .has-background-violet, .has-background-pink, .has-background-black, .has-background-sand, .has-background-red {
+	background-size: cover;
 }
 
 .container.is-narrow {
@@ -103,10 +115,24 @@ body {
 	max-width: 800px;
 }
 
+.has-background {
+	background-size: cover;
+	background-position: center;
+	background-color: #b3b3b3;
+}
+
+.has-background-dark h1, .has-background-dark h2, .has-background-dark h3, .has-background-dark .content, .has-background-dark strong {
+	color: #fff;
+}
+
 .hero.has-background {
 	background-size: cover;
 	background-position: center;
-	background-color: #f2c7b4;
+	background-color: #b3b3b3;
+}
+
+.box.has-background-black {
+	background-size: cover;
 }
 
 .box.has-link:hover {
@@ -122,7 +148,7 @@ body {
 }
 
 .section.even {
-	background-color: #e3e3e3;
+	background-color: #ececec;
 }
 
 .section.is-dark, .footer.is-dark {
@@ -210,6 +236,12 @@ body {
 	box-shadow: 0 0 0 .125em #363636;
 }
 
+.menu-list a.is-active {
+	background-color: #b3b3b3;
+	background-size: cover;
+	background-position: center;
+}
+
 .avatar .meta {
 	line-height: 1.2rem;
 }
@@ -283,6 +315,16 @@ img.author {
 
 .mastodon .mastodon-author img.avatar {
 	width: 30px;
+}
+
+.snippet-image-wrapper {
+	margin-top:1rem;
+	margin-bottom:1rem
+}
+.snippet_image {
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1);
 }
 
 [v-cloak] { display: none; }

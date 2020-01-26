@@ -1,4 +1,4 @@
-<section class="hero {% if page.cover.height == "full" %} is-fullheight{% elsif page.cover.height == "medium" %} is-medium{% endif %}{% if page.cover.image %} has-background{% endif %}" {% if page.cover.image %}style="background-image:url(/assets/images/{{ page.cover.image }})"{% endif %}>
+<section class="hero {% if page.cover.height == "full" %} is-fullheight{% elsif page.cover.height == "medium" %} is-medium{% endif %}{% if page.cover.image %} has-background{% endif %}" {% if page.cover.image %}style="background-image:url(/assets/images/{% if page.layout == 'news' %}news/{% else %}covers/bg/{% endif %}{{ page.cover.image }})"{% endif %}>
 	<div class="hero-head">
 		<nav class="navbar">
 			<div class="container">
@@ -20,7 +20,7 @@
 						<a href="/#PantherX+Operating+System" class="navbar-item">
 							PantherX OS
 						</a>
-						<a href="/panther-for-business/" class="navbar-item">
+						<a href="/for-small-business/" class="navbar-item">
 							PantherX for Business
 						</a>
 						<!--

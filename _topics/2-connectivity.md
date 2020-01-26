@@ -4,7 +4,7 @@ title: Connectivity
 description: PantherX has built-in VPN and proxy support, as well as firewall profiles.
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg_012.jpg
   background: violet
 namespace: connectivity
 nav: features

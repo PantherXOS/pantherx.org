@@ -4,7 +4,7 @@ title: License
 narrow: true
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg_105.jpg
 nav: support
 permalink: /license/
 lang: en

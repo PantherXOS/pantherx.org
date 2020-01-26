@@ -4,7 +4,7 @@ title: Ease of Use
 description: PantherX is the OS, that doesn't need a manual.
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg_041.jpg
   background: red
 namespace: intuitive
 nav: features

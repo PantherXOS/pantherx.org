@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div id="tooltip">
+  {% assign sections = site.sections | where: "namespace", page.namespace %} {%
+  for section in sections %}
+  <section class="section is-spacious {% cycle 'odd', 'even' %}">
+    <div class="container is-medium">
+      {% if forloop.index == 1 %}
+      <div class="columns">
+        <div class="column is-8">
+          {% endif %} {% unless section.title == "Intro" %} {% unless
+          section.title == "empty" %}
+          <h2 class="title is-2" id="{{ section.title | url_encode }}">
+            {{ section.title }}
+          </h2>
+          {% endunless %} {% endunless %} {% if section.subtitle %}
+          <h4 class="subtitle is-4">{{ section.subtitle }}</h4>
+          {% endif %}
+          <div
+            class="content {% if section.columns %}has-columns-{{ section.columns }}{% else %}has-columns-2{% endif %}"
+          >
+            {{ section.content }}
+          </div>
+          {% if forloop.index == 1 %}
+        </div>
+        <div class="column is-offset-1">
+          {% include loop_topic_sidebar.html priority='1' limit='6'
+          type=page.type %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+
+{% if page.type %} {% include loop_topic.html priority='1' limit='6'
+type=page.type %} {% else %} {% include loop_topic.html priority='1' limit='6'
+type='general' %} {% endif %}

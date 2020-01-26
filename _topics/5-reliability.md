@@ -4,7 +4,7 @@ title: Reliability
 description: PantherX supports versioned snapshots, time travel and automatic backup.
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg_037.jpg
   background: sand
 namespace: reliability
 nav: features

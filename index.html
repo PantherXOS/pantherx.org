@@ -4,7 +4,7 @@ title: PantherX Operating System
 description: The future of Desktop Computing for Home and Business
 cover:
   height: medium
-  image: bg03.jpg
+  image: bg_131.jpg
 home: true
 namespace: home
 quicklinks:
@@ -21,7 +21,7 @@ subscribe: true
       <h3 class="subtitle is-3">for Panther Alpha</h3>
       <div class="content has-columns-2">
         <img
-          src="/assets/images/px-desktop-alt@0.5x.jpg"
+          src="/assets/images/px-desktop@0.5x.jpg"
           alt="PantherX Desktop"
         />
         <p>
@@ -49,52 +49,6 @@ subscribe: true
 
   <section class="section is-spacious even">
     <div class="container is-medium">
-      <h2 class="title is-2">PantherX for Business</h2>
-      <h3 class="subtitle is-3">
-        Central Device, User and Application Management
-      </h3>
-      <div class="columns">
-        <div class="column is-3 has-text-centered">
-          <img src="/assets/images/central-management/thumbs/device.png" />
-          <span class="is-image-title"
-            >Device administration and monitoring</span
-          >
-        </div>
-        <div class="column is-3 has-text-centered">
-          <img src="/assets/images/central-management/thumbs/users.png" />
-          <span class="is-image-title"
-            >User provisioning and time tracking</span
-          >
-        </div>
-        <div class="column is-3 has-text-centered">
-          <img src="/assets/images/central-management/thumbs/groups.png" />
-          <span class="is-image-title"
-            >Departments with individual access rights</span
-          >
-        </div>
-        <div class="column is-3 has-text-centered">
-          <img src="/assets/images/central-management/thumbs/shares.png" />
-          <span class="is-image-title"
-            >Shares across departments, around the world</span
-          >
-        </div>
-      </div>
-      <p>
-        <b>Discover what PantherX OS can do for your company</b>: Manage 10 or
-        10,000 Computer, and save 2,400 € per workstation, over two years.
-      </p>
-      <a class="button" style="margin-top:1rem;" href="/panther-for-business/"
-        >Discover PantherX for Business</a
-      >
-    </div>
-  </section>
-
-  <!-- TODO: Implement!
-  {% include loop_topic.html priority='1' limit='5' type='org' %}
-  -->
-
-  <section class="section is-spacious">
-    <div class="container is-medium">
       <h2 class="title is-2">PantherX Editions</h2>
       <h3 class="subtitle is-3">crafted to satisfy your individual needs</h3>
       <table class="table fw">
@@ -105,7 +59,43 @@ subscribe: true
           <th class="has-text-centered">Institution</th>
         </tr>
         <tr>
-          <th>Private, Secure, Up-to-date</th>
+          <th>Open source</th>
+          <td>
+            <span class="svg-icon">
+              <img src="/assets/images/icon_circle_checkmark.svg" alt="Yes" />
+            </span>
+          </td>
+          <td>
+            <span class="svg-icon">
+              <img src="/assets/images/icon_circle_checkmark.svg" alt="Yes" />
+            </span>
+          </td>
+          <td>
+            <span class="svg-icon">
+              <img src="/assets/images/icon_circle_checkmark.svg" alt="Yes" />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <th>No Tracking</th>
+          <td>
+            <span class="svg-icon">
+              <img src="/assets/images/icon_circle_checkmark.svg" alt="Yes" />
+            </span>
+          </td>
+          <td>
+            <span class="svg-icon">
+              <img src="/assets/images/icon_circle_checkmark.svg" alt="Yes" />
+            </span>
+          </td>
+          <td>
+            <span class="svg-icon">
+              <img src="/assets/images/icon_circle_checkmark.svg" alt="Yes" />
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <th>Always up to date</th>
           <td>
             <span class="svg-icon">
               <img src="/assets/images/icon_circle_checkmark.svg" alt="Yes" />
@@ -262,19 +252,104 @@ subscribe: true
         </tr>
         <tr>
           <th>Dedicated Hardware</th>
-          <td colspan="3">Panther Alpha, Panther Alpha Pro</td>
+          <td colspan="3">Panther Alpha, Panther Alpha Pro, Panther Alpha </td>
         </tr>
         <tr>
           <th>Pricing</th>
           <td>Free & Open Source</td>
-          <td>TBD / User / Month</td>
+          <td>€ / User / Month</td>
           <td>Contact Us</td>
         </tr>
       </table>
     </div>
   </section>
 
-  <section class="section is-spacious even">
+  {% include loop_topic.html priority='1' limit='5' type='use' even=true %}
+
+  <!--
+  <section class="section is-spacious">
+    <div class="container is-medium">
+      <h2 class="title is-2">PantherX Hardware</h2>
+      <h3 class="subtitle is-3">
+        Panther Alpha
+      </h3>
+      ...
+    </div>
+  </section>
+  -->
+
+  <section class="section is-spacious">
+    <div class="container is-medium">
+      <h2 class="title is-2">PantherX for Business</h2>
+      <h3 class="subtitle is-3">
+        Central Device, User and Application Management
+      </h3>
+      <div class="columns">
+        <div class="column is-3 has-text-centered">
+          <img src="/assets/images/central-management/thumbs/device.png" />
+          <span class="is-image-title"
+            >Device administration and monitoring</span
+          >
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="/assets/images/central-management/thumbs/users.png" />
+          <span class="is-image-title"
+            >User provisioning and time tracking</span
+          >
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="/assets/images/central-management/thumbs/groups.png" />
+          <span class="is-image-title"
+            >Departments with individual access rights</span
+          >
+        </div>
+        <div class="column is-3 has-text-centered">
+          <img src="/assets/images/central-management/thumbs/shares.png" />
+          <span class="is-image-title"
+            >Shares across departments, around the world</span
+          >
+        </div>
+      </div>
+      <p>
+        <b>Discover what PantherX OS can do for your company</b>: Manage 10 or
+        10,000 Computer, and save 2,400 € per workstation, over two years.
+      </p>
+      <a class="button" style="margin-top:1rem;" href="/panther-for-business/"
+        >Discover PantherX Central Management for Business</a
+      >
+    </div>
+  </section>
+
+  <section class="section is-spacious even has-background has-background-dark" style="background:url(/assets/images/covers/bg/bg_087.jpg)">
+    <div class="container is-medium">
+      <h2 class="title is-2">The Panther Vision</h2>
+      <h3 class="subtitle is-3">
+        A brighter future for all.
+      </h3>
+      <div class="content">
+        <ul>
+          <li><strong>Less waste</strong>: Make Desktop and Laptop upgradable for non-techies.</li>
+          <li><strong>Less drain</strong>: A Panther Alpha plus 21inch screen use less than 35W.</li>
+          <li><strong>Less noise</strong>: A silent computer, and a desktop environment that stays out of the way.
+        </ul>
+        <ul>
+          <li><strong>More privacy</strong>: A OS that doesn't track you, and apps that don't phone home</li>
+          <li><strong>More performance</strong>: Lightweight apps that focus on key features</li>
+          <li><strong>More accessibility</strong>: Great software that doesn't cost anything, and that you can improve yourself.</li>
+          <li><strong>More decentralization</strong>: Bitcoin was revolutionary, but other tech should follow the foot-steps.</li>
+        </ul>
+        <p>
+          It's our mission to provide you with a operating system and hardware, that satisfy both your today's and tomorrow's computing needs, and provide a steady stream of updates, so you're not only on the safe site, but receive new features regularly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODO: Implement!
+  {% include loop_topic.html priority='1' limit='5' type='org' %}
+  -->
+
+  <section class="section is-spacious">
     <div class="container is-medium">
       <h2 class="title is-2">Timeline</h2>
 

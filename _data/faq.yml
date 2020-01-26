@@ -1,14 +1,14 @@
 -
   q: How many apps will be available on PantherX OS?
-  a: On launch day, we plan to have over 10,000 quality, open source application available for download.
+  a: On launch day, we plan to have over 12,000 quality, open source application available for download.
   lang: en
 -
   q: What's the main difference between PantherX, Windows and MacOS?
-  a: Windows and MacOS are propriotary operating systems, developed by large cooperations, to satisify their commercial interests and collect data about it's users.
+  a: Windows and MacOS are propriotary operating systems, developed by large cooperations, to satisify their commercial interests and collect data about it's users. PantherX is a open source operating system, developed by a passionate team, to empower individuals to protect themselves.
   lang: en
 -
   q: What's the main difference between PantherX and other Linux distributions?
-  a: PantherX has been designed specifically for Panther Alpha, a powerful, yet affordable mini computer, that's smaller than your wallet, and runs on less than 4W of power.
+  a: PantherX comes with a new breed of package manager that solve much of the dependency issues of the past, and support transactional upgrades and instant roll-back. PantherX is also the official distribution for Panther Alpha.
   lang: en
 -
   q: Does PantherX run Microsoft Word or Adobe Photoshop?
@@ -20,7 +20,7 @@
   lang: en
 -
   q: When will PantherX be available?
-  a: PantherX is under active development and we expect a final release in late Summer 2019. If you can't wait that long, subscribe to our infrequent newsletter, to stand a chance to participate in the private beta, long before the official release.
+  a: PantherX is under active development and we expect a final release in late Summer 2020. If you can't wait that long, subscribe to our infrequent newsletter, to stand a chance to participate in the private beta, long before the official release.
   lang: en
 -
   q: How frequently will PantherX receive updates?
@@ -28,8 +28,8 @@
   lang: en
 -
   q: How long will you support major PantherX releases, including 1.*?
-  a: We plan to support major releases for up to 3 years. That means, support for our first 1.* release will end in 2022.
+  a: We plan to support major releases for up to 5 years. That means, official support for our first 1.* release will end in 2025.
   lang: en
 -
   q: Will PantherX run on any computer?
-  a: PantherX comes in two flavours, a community and supporter edition. The community edition is available for everyone, and runs on x86_64. The subscriber edition is available both to subscribers, and comes pre-installed on Panther Alpha - aside from team support, supporters are also eligible to vote on new features.
+  a: PantherX has been designed specifically for Panther Alpha but should run on any ARM or x86_84 computer. We may consider supporting a number of popular third party devices in the future - to help increase adoption and reduce waste (if you have a working device, why get a new one).

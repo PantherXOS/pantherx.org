@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section class="section{% if page.dark %} is-dark{% endif %}">
+  <div class="container{% if page.narrow %} is-narrow{% elsif page.medium %} is-medium{% endif %}">
+
+    <div class="columns">
+      <div class="column">
+        <div class="content is-8">
+          {{ content }}
+        </div>
+      </div>
+      <div class="column">
+        <img src="/assets/images{{ page.image }}" alt="{{ page.title }}">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      {% for app in site.applications %}
+      <div class="column is-2">
+        {% include snippet_image.html title=app.title image=app.image %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

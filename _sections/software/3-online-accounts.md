@@ -15,7 +15,7 @@ PantherX connects to the most popular services out of the box. It's easy to set-
   {% include image.html image="telegram_square.svg" alt="PantherX supports Telegram" type="logo" %}
 </div>
 
-Online accounts can be added, edited and monitored from a unified interface. This covers everything from the essentials such as mail, contacts, calendar, file synchronisation and various chat services, to Cryptocurrency wallets and API credentials to access popular exchange services.
+Online accounts can be added, edited and monitored from a unified interface. This covers everything from the essentials such as mail, contacts, calendar, file synchronization and various chat services, to Cryptocurrency wallets and API credentials to access popular exchange services.
 
 #### Secure Password Storage
 

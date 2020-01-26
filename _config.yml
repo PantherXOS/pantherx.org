@@ -59,6 +59,8 @@ collections:
     output: true
   news:
     output: true
+  applications:
+    output: true
 
 defaults:
   - scope:
@@ -66,11 +68,17 @@ defaults:
     values:
       cover:
         height: medium
-        image: bg01.jpg
+        image: bg_01.jpg
   - scope:
       path: "assets/images/panther-for-business"
     values:
       image: true
+  - scope:
+      path: "_applications"
+    values:
+      cover:
+        height: medium
+        image: bg_122.jpg
 
 author:
   - title: Franz Geffke

@@ -1,0 +1,8 @@
+<div class="has-text-centered snippet-image-wrapper">
+  <img class="snippet_image" src="/assets/images{{ include.image }}" alt="{{ include.title }}" />
+  <div class="is-image-title has-text-centered">
+    {{ include.title }}
+    {% if include.short == true %}<br><small>{{ app.short }}</small>{% endif %}
+  </div
+  >
+</div>

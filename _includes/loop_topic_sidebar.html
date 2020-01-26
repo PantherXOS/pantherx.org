@@ -1,0 +1,31 @@
+{% assign featuresT = site.topics | where: "priority", include.priority %}
+{% assign features = featuresT | where: "type", include.type %}
+{% assign featuresGeneralT = site.topics | where: "priority", 1 %}
+{% assign featuresGeneral = featuresGeneralT | where: "type", 'general' %}
+
+<aside class="menu">
+  <p class="menu-label has-text-right" style="margin-right: 0.6rem;">
+    {{ page.title }}
+  </p>
+  <ul class="menu-list has-text-right">
+    {% for feature in features limit:include.limit %}
+    <li>
+      <a {% if feature.permalink == page.permalink %}class="is-active" style="background-image:url('/assets/images/covers/tiny/{{ feature.cover.image }}')" {% endif %}href="{{ feature.permalink }}">
+        {{ feature.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="menu-label has-text-right" style="margin-right: 0.6rem;">
+    Features
+  </p>
+  <ul class="menu-list has-text-right">
+    {% for feature in featuresGeneral %}
+    <li>
+      <a href="{{ feature.permalink }}">
+        {{ feature.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>

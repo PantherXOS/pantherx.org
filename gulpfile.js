@@ -28,16 +28,46 @@ function js(cb) {
 			gulp.src
 			([
 				'src/copypastesubscribeformlogic.js',
-				'node_modules/vue/dist/vue.js',
-				'node_modules/buefy/dist/buefy.min.js',
-				'node_modules/axios/dist/axios.min.js',
-				'node_modules/vee-validate/dist/vee-validate.js',
-				'src/utils/jekyll_formmixin/form.js',
-				'node_modules/moment/moment.js',
 				'src/custom.js'
 			]),
-			concat('bundle.min.js'),
 			uglify(),
+			concat('bundle.min.js'),
+			gulp.dest('assets/js')
+		],
+		cb
+	);
+}
+
+function mastodon(cb) {
+	pump([
+			gulp.src
+			([
+				'node_modules/vue/dist/vue.min.js',
+				'node_modules/axios/dist/axios.min.js',
+				'node_modules/moment/min/moment.min.js',
+				'src/mastodon.js'
+			]),
+			uglify(),
+			concat('mastodon.min.js'),
+			gulp.dest('assets/js')
+		],
+		cb
+	);
+}
+
+function contact(cb) {
+	pump([
+			gulp.src
+			([
+				'node_modules/vue/dist/vue.min.js',
+				'node_modules/axios/dist/axios.min.js',
+				'node_modules/buefy/dist/buefy.min.js',
+				'node_modules/vee-validate/dist/vee-validate.min.js',
+				'src/utils/jekyll_formmixin/form.js',
+				'src/contact.js'
+			]),
+			uglify(),
+			concat('contact.min.js'),
 			gulp.dest('assets/js')
 		],
 		cb
@@ -50,8 +80,8 @@ function packages(cb) {
 			([
 				'src/packages.js'
 			]),
-			concat('packages.min.js'),
 			uglify(),
+			concat('packages.min.js'),
 			gulp.dest('assets/js')
 		],
 		cb
@@ -73,7 +103,42 @@ function imagesResize() {
 			 gravity : 'North',
 			 upscale : false
 		 }))
+		 .pipe(imagemin())
 		 .pipe(gulp.dest('assets/images/central-management/thumbs'));
+}
+
+function imagesCoverBg() {
+  return gulp.src('src/images/covers/*')
+		 .pipe(imageResize({
+			 width : 1920,
+			 height : 500,
+			 crop : true,
+			 upscale : false
+		 }))
+		 .pipe(imagemin())
+		 .pipe(gulp.dest('assets/images/covers/bg'));
+}
+
+function imagesCoverTiny() {
+  return gulp.src('src/images/covers/*')
+		 .pipe(imageResize({
+			 width : 500,
+			 height : 140,
+			 crop : true,
+			 upscale : false
+		 }))
+		 .pipe(imagemin())
+		 .pipe(gulp.dest('assets/images/covers/tiny'));
+}
+
+function applicationsThumb() {
+  return gulp.src('src/images/applications/*')
+		 .pipe(imageResize({
+			 width : 800,
+			 upscale : false
+		 }))
+		 .pipe(imagemin())
+		 .pipe(gulp.dest('assets/images/applications/thumb'));
 }
 
 function fonts() {
@@ -88,4 +153,8 @@ function watch() {
 	 gulp.watch('src/images/**/*.{jpg,png,svg}', ['images']);
 }
 
-exports.default = series(css, js, packages, images, imagesResize, fonts);
+exports.default = series(css, js, contact, mastodon, packages, images, imagesResize, imagesCoverBg, imagesCoverTiny, applicationsThumb, fonts);
+
+exports.css = series(css);
+
+exports.js = series(js, contact, packages, mastodon)

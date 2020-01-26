@@ -4,7 +4,7 @@ title: Privacy
 description: "PantherX doesn't track you: Your life, is yours to keep."
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg_025.jpg
   background: sand
 namespace: privacy
 nav: features

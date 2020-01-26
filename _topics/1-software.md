@@ -4,7 +4,7 @@ title: Software
 description: PantherX is an open source Linux distribution powered by Guix.
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg_024.jpg
   background: orange
 namespace: software
 nav: features

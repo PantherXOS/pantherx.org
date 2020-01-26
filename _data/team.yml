@@ -10,7 +10,7 @@
   picture: ali.svg
   type: I
 - name: Chaichan A.
-  position: Investor
+  position: Co-Founder
   picture: chaichan.svg
   type: I
 - name: Reza A.
@@ -31,6 +31,3 @@
 - name: Farshid K.
   position: PX Plugins
   picture: farshid.svg
-- name: Saeed D.
-  position: PX Security
-  picture: saeed.svg

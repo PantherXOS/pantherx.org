@@ -1,18 +1,22 @@
-{% assign features = site.topics | where: "priority", include.priority | where: "type", include.type %}
-<section class="section is-spacious">
-	<div class="container">
-		<div class="columns">
-			{% for feature in features limit:include.limit %}
-			<div class="column has-text-centered">
-				<a href="{{ feature.permalink }}">
-					<div class="box has-link has-background-{{ feature.cover.background }}{% if feature.permalink == page.permalink %} active{% endif %}">
-						<h5 class="title is-5">
-							{{ feature.title }}
-						</h5>
-					</div>
-				</a>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
+{% assign featuresT = site.topics | where: "priority", include.priority %} {%
+assign features = featuresT | where: "type", include.type %}
+<section class="section is-spacious{% if include.even == true %} even{% endif %}">
+  <div class="container">
+    <div class="columns">
+      {% for feature in features limit:include.limit %}
+      <div class="column has-text-centered">
+        <a href="{{ feature.permalink }}">
+          <div
+            class="box has-link has-background-{{ feature.cover.background }}{% if feature.permalink == page.permalink %} active{% endif %}"
+						style="background-image:url('/assets/images/covers/tiny/{{ feature.cover.image }}')"
+          >
+            <h5 class="title is-5">
+              {{ feature.title }}
+            </h5>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>

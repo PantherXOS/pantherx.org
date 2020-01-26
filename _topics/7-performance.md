@@ -4,7 +4,7 @@ title: Performance
 description: PantherX spots the latest tech, and has been developed from ground-up.
 cover:
   height: medium
-  image: bg01.jpg
+  image: bg_038.jpg
   background: black
 namespace: performance
 nav: features

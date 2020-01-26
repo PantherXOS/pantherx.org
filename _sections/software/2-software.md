@@ -4,13 +4,13 @@ namespace: software
 lang: en
 ---
 
-![PantherX Desktop](/assets/images/px-desktop@0.5x.jpg)
+![PantherX Desktop](/assets/images/px-desktop-dev@0.5x.jpg)
 
 On PantherX, all your applications and updates come from one of two sources, similar to an App-Store.
 
 #### Primary Store
 
-Our primary store lists over 10,000 officially approved, rigorously tested applications and plugins and can be accessed trough the **Software** application. Here you'll find all your favourite apps, and discover new tools, to make your life easier.
+Our primary store lists over 10,000 officially approved, rigorously tested applications and plugins and can be accessed trough the **Software** application. Here you'll find all your favorite apps, and discover new tools, to make your life easier.
 
 #### Developers Store
 

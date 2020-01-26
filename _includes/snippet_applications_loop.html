@@ -1,0 +1,7 @@
+<div class="columns is-multiline">
+  {% for app in site.applications limit:include.limit %}
+  <div class="column is-3">
+    {% include snippet_image.html title=app.title image=app.image short=true %}
+  </div>
+  {% endfor %}
+</div>

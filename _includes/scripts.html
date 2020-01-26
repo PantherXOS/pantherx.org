@@ -17,3 +17,11 @@
 <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.1.1/stitch.js"></script>
 <script src="/assets/js/packages.min.js"></script>
 {% endif %}
+
+{% if page.permalink == "/contact/" %}
+<script src="/assets/js/contact.min.js"></script>
+{% endif %}
+
+{% if page.layout == "news" %}
+<script src="/assets/js/mastodon.min.js"></script>
+{% endif %}
