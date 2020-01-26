@@ -12,24 +12,17 @@ if(document.getElementById("mastodonTimeline")!=null) {
 			}
 		},
 		methods: {
-			getTimeline: function () {
+			getTimeline: async function () {
 				let t = this;
-				axios.get(this.mastodonAPI + '/timelines/public', {
-					params: {
-						limit: 6,
-						local: true
-					}
-				})
-						.then(function (response) {
-							return response;
-						})
-						.catch(function (error) {
-							console.log(error);
-						})
-						.then(function (myJson) {
-							t.timeline = myJson.data;
-						});
-			}
+        const url = this.mastodonAPI + `/timelines/public?limit=6&local=true`
+        try {
+          const response = await fetch(url);
+          const timeline = await response.json();
+          t.timeline = timeline
+        } catch(e) {
+          console.log(e)
+        }
+			},
 		},
 		beforeMount() {
 			this.getTimeline()

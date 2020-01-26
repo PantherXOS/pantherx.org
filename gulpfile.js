@@ -43,7 +43,6 @@ function mastodon(cb) {
 			gulp.src
 			([
 				'node_modules/vue/dist/vue.min.js',
-				'node_modules/axios/dist/axios.min.js',
 				'node_modules/moment/min/moment.min.js',
 				'src/mastodon.js'
 			]),
