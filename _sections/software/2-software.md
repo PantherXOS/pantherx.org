@@ -4,7 +4,7 @@ namespace: software
 lang: en
 ---
 
-![PantherX Desktop](/assets/images/px-desktop-dev@0.5x.jpg)
+![PantherX Desktop](/assets/images/px-desktop_ex1@0.5x.jpg)
 
 On PantherX, all your applications and updates come from one of two sources, similar to an App-Store.
 
