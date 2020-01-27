@@ -4,7 +4,7 @@ namespace: connectivity
 lang: en
 ---
 
-PantherNet powers all Panther to Panther connectivity features, including the direct exchange of messages and files, the synchronisation of any number of Panther devices, and {% include tooltip.html keyword="offline internet" description="The offline internet refers to any number of Panther Alpha, connected in a network, forming their own internet, with related services such as web-hosting and message exchange." %}, with automatic resource allocation between any number of Panther devices, connected by any number of ways.
+PantherNet powers all Panther to Panther connectivity features, including the direct exchange of messages and files, the synchronization of any number of Panther devices, and {% include tooltip.html keyword="offline internet" description="The offline internet refers to any number of Panther Alpha, connected in a network, forming their own internet, with related services such as web-hosting and message exchange." %}, with automatic resource allocation between any number of Panther devices, connected by any number of ways.
 
 ### Self-Contained Infrastructure
 

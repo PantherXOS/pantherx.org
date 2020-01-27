@@ -9,7 +9,7 @@ layout: default
     <div class="container is-medium">
       {% if forloop.index == 1 %}
       <div class="columns">
-        <div class="column is-8">
+        <div class="column">
           {% endif %} {% unless section.title == "Intro" %} {% unless
           section.title == "empty" %}
           <h2 class="title is-2" id="{{ section.title | url_encode }}">
@@ -25,7 +25,7 @@ layout: default
           </div>
           {% if forloop.index == 1 %}
         </div>
-        <div class="column is-offset-1">
+        <div class="column is-3 is-offset-1 is-hidden-touch">
           {% include loop_topic_sidebar.html priority='1' limit='6'
           type=page.type %}
         </div>
