@@ -6,8 +6,8 @@ body {
 	font-size: 1.1rem;
 }
 
-.content a, .timeline a, .mastodon .mastodon-author a {
-	color: #4a4a4a;
+table a, .content a, .timeline a, .mastodon .mastodon-author a {
+	color: #363636;
 	text-decoration: underline;
 }
 
