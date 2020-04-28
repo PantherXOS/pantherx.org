@@ -13,3 +13,4 @@ assets/images
 .bitmap
 .bundle/
 vendor/
+.jekyll-cache
