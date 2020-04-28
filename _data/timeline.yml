@@ -1,30 +1,50 @@
 -
-  year: 2019
+  year: 2017
   month: October
+  title: Kick-off
+  content: Initial outline for PantherX is completed, and first team members join.
+-
+  year: 2018
+  month: October
+  title: Pre-Alpha
+  content: Completion of first tech demo that showcase core CLI apps.
+-
+  year: 2020
+  month: February
   title: Alpha 1 Release
-  content: At this point we expect most of core-PantherX features to be completed.
+  content: Stable desktop environment with widgets like Menu and Hub.
 -
-  year: 2019
-  month: November
+  year: 2020
+  month: March
   title: Alpha 2 Release
-  content: In-depth testing of all features, discussion of next steps.
+  content: First release of _Software_ to discover new and manage installed applications.
 -
   year: 2020
-  month: January
+  month: May
   title: Alpha 3 Release
-  content: With this release, testing will intensify, to ensure everything is 100% in time for release.
--
-  year: 2020
-  month: April
-  title: Beta 1 Release
-  content: The last release before our public beta should be pretty much done.
+  content: Seamless networking with first-class VPN support and first privacy features.
 -
   year: 2020
   month: June
-  title: Pre-Order Opens
-  content: The computer designed for PantherX; big on performance, smaller than your wallet.
+  title: Alpha 4 Release
+  content: Early beta release of PIM related features; Email, Contacts, Calendar
 -
   year: 2020
-  month: July
+  month: August
+  title: Beta 1 Release
+  content: Polished desktop environment and support of more 3rd party accounts.
+-
+  year: 2020
+  month: September
+  title: Pre-Order Opens
+  content: Be the first to get your hands on PantherX, on Panther hardware.
+-
+  year: 2020
+  month: October
   title: Public Beta
-  content: A selected few will get an early preview of PantherX on Panther Hardware. <a href="#subscribe">Subscribe</a> to participate.
+  content: A selected few will get an early preview of PantherX. <a href="#subscribe">Subscribe</a> to participate.
+-
+  year: 2020
+  month: December
+  title: Public Release
+  content: PantherX goes public - everyone can join the party!

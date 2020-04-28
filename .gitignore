@@ -11,3 +11,5 @@ assets/css
 assets/js
 assets/images
 .bitmap
+.bundle/
+vendor/
