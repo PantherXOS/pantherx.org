@@ -1,10 +1,6 @@
 Vue.use(Buefy.default);
 Vue.use(VeeValidate);
 
-var tooltip = new Vue({
-	el: '#tooltip'
-});
-
 var contactUs = new Vue({
 	mixins: [formMixin],
 	el: '#formContact',

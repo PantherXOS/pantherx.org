@@ -15,7 +15,7 @@ Easy to use ecosystem that covers all your IT needs, at a fraction of the usual 
   - and encrypted backup storage
 - No learning curve for Windows and MacOS users
 - Works with all your files, and can share to Windows and MacOS
-- Supports all the tools you use: DropBox, Google Apps, Skype, WhatsApp
+- Supports all the tools you use: Dropbox, Google Apps, Skype, WhatsApp
 - Thousands of great apps: office, accounting, 3d modeling, ...
 - With a few clicks, you can run your own ERP server _(PantherX Server)_
 

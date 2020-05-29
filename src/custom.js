@@ -11,3 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 });
+
+var tooltip = new Vue({
+	el: '#tooltip'
+});

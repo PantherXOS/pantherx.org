@@ -4,7 +4,7 @@
   lang: en
 -
   q: What's the main difference between PantherX, Windows and MacOS?
-  a: Windows and MacOS are propriotary operating systems, developed by large cooperations, to satisify their commercial interests and collect data about it's users. PantherX is a open source operating system, developed by a passionate team, to empower individuals to protect themselves.
+  a: Windows and MacOS are proprietary operating systems, developed by large cooperation, to satisfy their commercial interests and collect data about it's users. PantherX is a open source operating system, developed by a passionate team, to empower individuals to protect themselves.
   lang: en
 -
   q: What's the main difference between PantherX and other Linux distributions?
@@ -32,4 +32,4 @@
   lang: en
 -
   q: Will PantherX run on any computer?
-  a: PantherX has been designed specifically for Panther Alpha but should run on any ARM or x86_84 computer. We may consider supporting a number of popular third party devices in the future - to help increase adoption and reduce waste (if you have a working device, why get a new one).
+  a: PantherX has been designed specifically for Panther Alpha but should run on any ARM, Intel or AMD computer with at least 512MB of RAM. We may consider supporting a number of popular third party devices in the future - to help increase adoption and reduce waste (if you have a working device, why get a new one).

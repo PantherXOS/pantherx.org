@@ -27,6 +27,8 @@ function js(cb) {
 	pump([
 			gulp.src
 			([
+				'node_modules/vue/dist/vue.min.js',
+				'node_modules/buefy/dist/buefy.min.js',
 				'src/copypastesubscribeformlogic.js',
 				'src/custom.js'
 			]),

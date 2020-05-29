@@ -1,7 +1,7 @@
 title: PantherX Operating System
-description: PantherX OS is a modern, Unix-like operating system with it's own, light-weight, Qt5 based desktop environment and a set of highly polished, homegrown applications.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: PantherX OS is a modern, secure, privacy-first operating system with a light-weight Qt5 based desktop environment and a set of user-friendly applications.
+baseurl: ""
+url: ""
 
 contact:
   - title: team@pantherx.org
@@ -16,6 +16,9 @@ contact:
   - title: chat.pantherx.org
     url: https://matrix.to/#/#public:pantherx.org
     caption: Chat with us on Matrix
+  - title: pantherx.dev
+    url: https://www.pantherx.dev/
+    caption: Hire us
 
 # Build settings
 markdown: kramdown

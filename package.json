@@ -1,20 +1,31 @@
 {
+  "name": "pantherx.org",
+  "version": "0.3.0",
+  "main": "index.html",
+  "repository": "https://git.pantherx.org/marketing/pantherx.org.git",
+  "author": "Franz Geffke <franz@pantherx.org>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "bundle exec jekyll serve",
+    "build": "node_modules/.bin/gulp; bundle exec jekyll build",
+    "deploy": "npm run build; s3_website push"
+  },
   "dependencies": {
     "@bit/franz.js.global.jekyll_formmixin": "file:./src/utils/jekyll_formmixin",
-    "axios": "^0.17.1",
-    "buefy": "^0.7",
-    "bulma": "^0.7",
+    "axios": "^0.19.0",
+    "buefy": "^0.8",
+    "bulma": "^0.8",
     "bulma-timeline": "^3.0.0",
     "gulp": "^4",
-    "gulp-clean-css": "^3.10.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^4.0.1",
     "gulp-image-resize": "^0.13.0",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-uglify-es": "^1.0.4",
-    "moment": "^2.23.0",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "moment": "^2.26.0",
     "pump": "^3.0.0",
-    "vee-validate": "^2.0.3",
+    "vee-validate": "^2.2.15",
     "vue": "^2.5.13"
   }
 }
