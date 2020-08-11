@@ -20,7 +20,7 @@ build:
   artifacts:
     when: on_success
     paths:
-      - public
+      - _site/
     expire_in: 1h
 
 deploy:
