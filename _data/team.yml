@@ -1,5 +1,5 @@
 - name: Franz G.
-  position: Founder
+  position: Central Mgmt.
   picture: franz.svg
   type: I
   mastodon:
@@ -14,23 +14,17 @@
   picture: chaichan.svg
   type: I
 - name: Reza A.
-  position: PX Accounts
+  position: PX Apps
   picture: reza.svg
   mastodon:
     name: ramajd
     url: https://pantherx.social/@ramajd
 - name: Hamzeh N.
-  position: PX Apps
+  position: PX Desktop
   picture: hamzeh.svg
   mastodon:
     name: hnasajpour
     url: https://pantherx.social/@hnasajpour
-- name: Fakhri S.
-  position: PX Apps
-  picture: fakhri.svg
-- name: Sina M.
-  position: PX Apps
-  picture: sina.svg
 - name: Jonathan B. 
-  position: Releases
+  position: PX Releases
   picture: jonathan.svg
