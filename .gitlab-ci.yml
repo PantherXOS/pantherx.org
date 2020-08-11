@@ -16,7 +16,7 @@ build:
   script:
     - npm install
     - node_modules/.bin/gulp
-    - JEKYLL_ENV=production bundle exec jekyll build -d public/
+    - JEKYLL_ENV=production bundle exec jekyll build -d _site/
   artifacts:
     when: on_success
     paths:
