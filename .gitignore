@@ -14,3 +14,4 @@ assets/images
 .bundle/
 vendor/
 .jekyll-cache
+project.config

@@ -11,7 +11,6 @@
     "deploy": "npm run build; s3_website push"
   },
   "dependencies": {
-    "@bit/franz.js.global.jekyll_formmixin": "file:./src/utils/jekyll_formmixin",
     "axios": "^0.19.0",
     "buefy": "^0.8",
     "bulma": "^0.8",

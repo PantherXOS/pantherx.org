@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll', github: 'jekyll/jekyll'
+gem 'jekyll'
 gem "json", "~> 2.3"
 gem "bigdecimal", "~> 2.0"
 gem "sassc", "< 2.2.0"

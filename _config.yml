@@ -37,6 +37,7 @@ exclude:
   - src/
   - gulpfile.js
   - package.json
+  - package-lock.json
   - yarn.lock
   - Gemfile
   - Gemfile.lock
@@ -51,6 +52,8 @@ exclude:
   - yarn-error.log
   - bit.json
   - s3_website.yml
+  - project.config
+  - run.sh
 
 collections:
   pages:
