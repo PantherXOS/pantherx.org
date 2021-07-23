@@ -19,12 +19,12 @@ The below "warrant canary" has been generated on: 2020-01-26
 
 ```
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
+Hash: SHA256
 
 PantherX OS Warrant Canary
 
-Sunday, January 26. 2020 - 22:03 UTC:
-Cloudy, 1°C (33°F) in Berlin, Germany.
+Sunday, July 23. 2021 - 06:30 UTC:
+Cloudy, 16°C (60.8°F) in Berlin, Germany.
 
 1. We have not placed any backdoors into our software or hardware.
 2. We have not received, nor complied with any National Security Letters or FISA court orders.
@@ -32,25 +32,24 @@ Cloudy, 1°C (33°F) in Berlin, Germany.
 
 The below content is an excerpt from http://www.nytimes.com/ to certify the date of today.
 
-Coronavirus Infections Expanding at a Growing Rate
-Sunday, January 26. 2020 19:20:25 UTC
------BEGIN PGP SIGNATURE-----
-Version: Keybase OpenPGP v2.1.3
-Comment: https://keybase.io/crypto
+Climate Crisis Turns World’s Subways Into Flood Zones
+Friday July 22. 2021 22:17:02 UTC
 
-wsFcBAABCgAGBQJeLg3zAAoJENtZtjdbsI2iSrIP/0b+GTlS15yz2zFCzk0z1cAy
-IfVIdJo/XwKPdjUxqBvGL8e3BeAH5fATb38lcF9O/Agw0dKtXk3xbwau8Q+E09RC
-pKQhSK+T/4o+OamG/xOr42iJa85ZyVcrZI6taiTPQoAaxXsmlqOiN3mWrN/BL04Y
-asX+6pLxYiodJyHroBCtQI/zduOM3D/x8YLJIHRLnmhVkrxmctVeiSPi7LeyJX/e
-/sZAwdU8qy5dCT04OpUOKs7STXLxNv3MU5YQOiXzFFLiQeJ14ToMT3fJRoTtUgKv
-bIKshbwGzoqCSvlGZ7Fy77M5v9B2G/KVAHmcodrreIrm3LTVz0gXnkvHDl+HSzQx
-O+e1P6Syv+xN+4r4Khg+rGfll+0PWFoi/041a0JE03c0UAgmwB7urtq2Wm1uziP8
-TQGwaoI6hZT09AqW9nMjGVRllg6NLztTjVXhSDQid1PyKCbp5iM8AAhDYwKP9pqm
-GEYNLQiLhcFz8N1LlSA/gyDXIyifnXrOtnazfhANfdndWkmtp9FdXN2yQ0I9h2Z8
-Zg06xdYvoIF+Pix8TvaGnMvWRk1dIu0b0oyzXvnrkrM+YzOekTrDK1DwAOPrM/6B
-WUp2mVoIMgkQKzOWNCNizfUtGyJI88Ru0TOeOPXzpMPvRg0PnI1HomK63nmEfVn+
-TGogiFmTbEC4vd9G2IzS
-=ObRB
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEE9wtGsKxwR66ZY8oNMnzbgKd84UoFAmD6YwIACgkQMnzbgKd8
+4UqfCA/+ILCYLAbVY4cH4hngJnmm+OXS7ZWUhOmc/xlUuLDgjVCSnGdej+MjSemf
+gvFGHoIvg964nawMPNPV4dW1zL7+7315KOCdFj0nEpYpidK9IPBW4r21bNZsn/FH
+MVkB3Pkvd7XMZZSA0wNALMAZ+EjtWL0aRMG5TP+XkSGSMn8KsYg6RFRHu/SNEdZt
+PmnZvT1oGs9mw7MX65Etllff3WdlfXvphdPlnBSQSxviZsJA5CVCq7LbMJmpdZAo
+40LPdH7nYAj1/JLb05w/3b8A+TKDwyfV8F+ngBLVV7jx2TwflkGNiaAYzjCCgqOk
+XaA/pDTzGqVDINwoDanQSGCbDwWdkYj5ahOaqZk3hfrXy+c2/I25LjaJ7Eu+YuMe
+kwbi3rN8m0q7q9N3OO+r/91sJKIxchzVkncGsL0j8emPSioJfWQrAihFFWMDlSCT
+e79mQuu1YPjEff3/K0uxTN8XuA50F9pKMDanwwZI/k6r2i+E3XOEKg8GGSp6Nsm/
+KanoXBXapw7TKaFvPeUkPNWLgoJicTdbxPjba/uLPz1j+CfKp05cKBgXurBTNkGx
+cXwG3vFixchXvOHM8eL2eHzlYTfyWEl+sL8sZSr/qg/iFAwGm7uET5lgdSeglQj1
+WhT6DldGviWkM5nK7kDRZqo918MZR2EZc10aczKgXf5U8smATbw=
+=NDoP
 -----END PGP SIGNATURE-----
 ```
 

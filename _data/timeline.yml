@@ -2,49 +2,42 @@
   year: "2017"
   month: October
   title: Kick-off
-  content: Initial outline for PantherX is completed, and first team members join.
+  content: Initial vision and search for team members.
 -
   year: 2018
   month: October
   title: Pre-Alpha
-  content: Completion of first tech demo that showcase core CLI apps.
+  content: First demo to showcase technical direction and key features.
 -
   year: 2020
   month: February
   title: Alpha 1 Release
-  content: Stable desktop environment with widgets like Menu and Hub.
+  content: Initial integration of new desktop environment.
 -
   year: 2020
   month: March
   title: Alpha 2 Release
-  content: First release of Software to discover new and manage installed applications.
+  content: First preview of Software to discover and manage applications.
 -
   year: 2020
   month: May
   title: Alpha 3 Release
-  content: Seamless networking with first-class VPN support and first privacy features.
+  content: Draft implementation of Online Accounts with 2 plugins.
 -
   year: 2020
   month: June
   title: Alpha 4 Release
-  content: Early beta release of PIM related features; Email, Contacts, Calendar
--
-  year: 2020
-  month: August
-  title: Alpha 5 Release
+  content: Early beta release of PIM related features; Email, Contacts, Calendar.
 -
   year: 2020
   month: October
-  title: Alpha 6 Release
--
-  year: 2020
-  month: November
-  title: Alpha 7 Release
+  title: Alpha 5 Release
+  content: 3 new Online Accounts plugins and preview of Hub.
 -
   year: 2020
   month: December
   title: Beta 1 Release
-  content: Polished desktop environment and support of more 3rd party accounts.
+  content: Polished desktop environment and support of more 3rd-party provider accounts.
 -
   year: 2021
   month: March
@@ -53,10 +46,20 @@
 -
   year: 2021
   month: June
-  title: Public Beta
-  content: A selected few will get an early preview of PantherX. <a href="#subscribe">Subscribe</a> to participate.
+  title: Beta 2 Release
+  content: Infrastructure is ready for public beta launch.
 -
   year: 2021
+  month: July
+  title: Public Beta Central Management
+  content: Paramount Student, powered by PantherX Central Management goes into beta.
+-
+  year: 2021
+  month: August
+  title: Public Beta PantherX OS
+  content: Initial public beta
+-
+  year: 2022
   month: TBD
-  title: Public Release
-  content: PantherX goes public - everyone can join the party!
+  title: Golden Master
+  content: PantherX is ready for prime-time - everyone can join the party!

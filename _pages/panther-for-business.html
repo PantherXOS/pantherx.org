@@ -12,15 +12,26 @@ lang: en
 ---
 
 <section class="section">
-	<div class="container">
-  {% assign image_files = site.static_files | where: "image", true %}
-  {% for myimage in image_files %}
-    <img src="{{ myimage.path }}" alt="PantherX for Business: Central management">
-  {% endfor %}
-  </div>
-  <div class="container is-medium" style="margin-top:2rem;">
+	<div class="container has-text-centered">
+		<div class="presentation">
+			<embed src="/assets/files/PantherX-for-business-r4.pdf" width="100%" height="700" type="application/pdf">
+		</div>
+		<p class="help">If you are having problems viewing the PDF, download it from <a href="/assets/files/PantherX-for-business-r4.pdf">here</a></p>
+	</div>
+</section>
+
+{% include loop_topic.html priority='1' limit='5' type='use' %}
+
+<section class="section pb-1 pt-1">
+  <div class="container is-medium has-text-centered">
     <p>
       If you'd like to find out more about PantherX for Business, send us an email at <a href="mailto:business@pantherx.org">business@pantherx.org</a>. We're expecting an initial release in Q4 2020 - join our trials, and benefit for life! Since you've come this far: Here's a very early look at <a href="https://invis.io/S3RUS0OP8FH#/361550666_Dashboard">Central Management</a>.
     </p>
   </div>
 </section>
+
+<style>
+	.presentation, .presentation embed {
+		height: 700px;
+	}
+</style>
