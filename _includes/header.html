@@ -23,11 +23,12 @@
 						<a href="/for-small-business/" class="navbar-item">
 							PantherX for Business
 						</a>
-						<!--
 						<a href="https://wiki.pantherx.org/" class="navbar-item">
 							Wiki
 						</a>
-						-->
+						<a href="https://community.pantherx.org" class="navbar-item">
+							Community
+						</a>
 						{% assign pages = site.pages | where: "nav", "main" %}
 						{% for page in pages %}
 						<a href="{{ page.permalink }}" class="navbar-item">
