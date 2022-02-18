@@ -4,7 +4,7 @@ namespace: software
 lang: en
 ---
 
-PantherX connects to the most popular services out of the box. It's easy to set-up your Gmail account, get files synced from Dropbox, start a new conversation on WhatsApp or connect to a fast, privacy-first VPN provider.
+PantherX connects to the most popular services out of the box. It's easy to set-up your Gmail account, get files synced from Dropbox, start a new conversation on Matrix or connect to a fast, privacy-first VPN provider.
 
 <div class="has-inline-images is-greyscale">
   {% include image.html image="google_square.svg" alt="PantherX supports Google Apps" type="logo" %}

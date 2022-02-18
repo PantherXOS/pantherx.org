@@ -20,11 +20,14 @@
     name: ramajd
     url: https://pantherx.social/@ramajd
 - name: Hamzeh N.
-  position: PX Desktop
+  position: PX Apps
   picture: hamzeh.svg
   mastodon:
     name: hnasajpour
     url: https://pantherx.social/@hnasajpour
-- name: Jonathan B. 
-  position: PX Releases
-  picture: jonathan.svg
+- name: Fakrhi S.
+  position: PX Desktop
+  picture: fakhri.svg
+  mastodon:
+    name: fsajadi
+    url: https://pantherx.social/@fsajadi

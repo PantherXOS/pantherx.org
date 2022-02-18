@@ -14,7 +14,7 @@ lang: en
         light-weight, Qt5 based desktop environment and a set of highly
         polished, homegrown applications.
 
-        Copyright (C) 2016-2021  Franz Geffke
+        Copyright (C) 2016-2022  Franz Geffke & PantherX Team
 
         This program is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by
