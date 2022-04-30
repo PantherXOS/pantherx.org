@@ -23,6 +23,9 @@
 						<a href="/for-small-business/" class="navbar-item">
 							PantherX for Business
 						</a>
+						<a href="/packages/" class="navbar-item">
+							Packages
+						</a>
 						<a href="https://wiki.pantherx.org/" class="navbar-item">
 							Wiki
 						</a>
@@ -49,7 +52,12 @@
 			<h1 class="title is-1">{{ page.title }}</h1>
 			{% endif %}
 			-->
+			{% if page.home %}
+			<h1 class="title is-1">{{ site.title }}</h1>
+			<h1 class="subtitle is-2 has-text-light">{{ page.description }}</h1>
+			{% else %}
 			<h1 class="title is-1">{{ page.title }}</h1>
+			{% endif %}
 		</div>
 	</div>
 	{% if page.quicklinks %}

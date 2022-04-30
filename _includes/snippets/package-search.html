@@ -1,0 +1,90 @@
+<div class="content">
+	<p>
+		Search for packages that are part of the current PantherX rolling release version.
+		<br><small>Type the <b>package name</b>, and find all related
+			information, including version, and dependencies.</small>
+	</p>
+	<p><small>Last update: 30.04.2022</small></p>
+</div>
+
+<div id="package-search">
+
+	<b-field grouped message="Search by package name">
+		<b-input v-model="keyword" placeholder="libreoffice" expanded></b-input>
+		<p class="control">
+			<b-button label="Search" v-on:click="search()" />
+		</p>
+	</b-field>
+
+	<div v-cloak>
+		<hr v-if="results && results.count > 0">
+
+		<p v-if="results && results.length === 0 && !isBusy">No results found for <% keyword %>...</p>
+
+		<div v-if="results && results.length > 0">
+			<b-table :data="results" ref="table" detailed hoverable :default-sort="['name', 'asc']"
+				detail-key="id" :show-detail-icon="false">
+
+				<b-table-column field="name" label="Name" v-slot="props">
+					<a @click="props.toggleDetails(props.row)">
+						<% props.row.name %>
+					</a>
+				</b-table-column>
+
+				<b-table-column field="synopsis" label="Synopsis" v-slot="props">
+					<% props.row.synopsis %>
+				</b-table-column>
+
+				<b-table-column field="version" label="Version" v-slot="props">
+					<% props.row.version %>
+				</b-table-column>
+
+				<template #detail="props">
+					<div class="content">
+						<p>
+							<% props.row.description %>
+						</p>
+					</div>
+					<ul>
+						<li><b>Version:</b>
+							<% props.row.version %>
+						</li>
+						<li><b>Location:</b>
+							<a :href="packageLocationLink(props.row.location)"><% props.row.location %></a>
+						</li>
+						<li><b>Homepage:</b>
+							<% props.row.homePage %>
+						</li>
+						<li><b>Systems:</b>
+							<span v-if="props.row.systems && props.row.systems.length > 0">
+								<span v-for="(system, index) of props.row.systems" :key="index">
+									<span class="tag">
+										<% system %>
+									</span>
+								</span>
+							</span>
+						</li>
+						<li><b>License:</b>
+							<span v-if="props.row.license && props.row.license.length > 0">
+								<span v-for="(license, index) of props.row.license" :key="index">
+									<span class="tag">
+										<% license %>
+									</span>
+								</span>
+							</span>
+						</li>
+						<li><b>Dependencies:</b>
+							<span v-if="props.row.dependencies && props.row.dependencies.length > 0">
+								<span v-for="(dependency, index) of props.row.dependencies" :key="index">
+									<span class="tag">
+										<% dependency %>
+									</span>
+								</span>
+							</span>
+						</li>
+					</ul>
+				</template>
+			</b-table>
+		</div>
+	</div>
+</div>

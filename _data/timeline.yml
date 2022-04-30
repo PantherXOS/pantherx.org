@@ -60,6 +60,31 @@
   content: Latest beta release available on our Wiki
 -
   year: 2022
+  month: May
+  title: Beta 6
+  content: Minor progress release; Support for disk encryption
+-
+  year: 2022
+  month: TBD
+  title: Beta 7
+  content: Focus on Matrix integration (Desktop & Mobile)
+-
+  year: 2022
+  month: TBD
+  title: Beta 8
+  content: Encrypted Contacts and Calendar
+-
+  year: 2022
+  month: TBD
+  title: Beta 9
+  content: Time tracking features with Gitlab & GitHub integration
+-
+  year: 2022
+  month: TBD
+  title: Beta 10
+  content: Testing, testing, testing
+-
+  year: 2022
   month: TBD
   title: Golden Master
   content: PantherX is ready for prime-time - everyone can join the party!

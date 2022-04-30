@@ -4,7 +4,7 @@ namespace: about
 lang: en
 ---
 
-- **Less waste**: Make Desktop and Laptop upgradable for non-techies.
+- **Less waste**: Make Desktop and Laptop up-gradable for non-techies.
 - **Less drain**: A Panther Alpha plus 21inch screen use less than 35W.
 - **Less noise**: A silent computer, and a desktop environment that stays out of the way.
 

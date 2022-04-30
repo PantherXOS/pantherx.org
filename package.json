@@ -11,10 +11,10 @@
     "deploy": "npm run build; s3_website push"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "buefy": "^0.9",
+    "axios": "^0.21.4",
+    "buefy": "^0.9.20",
     "bulma": "^0.9",
-    "bulma-timeline": "^3.0.0",
+    "bulma-timeline": "^3.0.5",
     "gulp": "^4",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
@@ -22,7 +22,7 @@
     "gulp-image-resize": "^0.13.0",
     "gulp-imagemin": "^7.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "moment": "^2.29.1",
+    "moment": "^2.29.3",
     "pump": "^3.0.0",
     "vee-validate": "^2.2.15",
     "vue": "^2.6.14"
