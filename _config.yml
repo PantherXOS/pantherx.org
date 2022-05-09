@@ -33,6 +33,11 @@ nav:
     - title: PantherX for Business
       permalink: /panther-for-business/
 
+include:
+  - .well-known
+  - .well-known/matrix/client
+  - .well-known/matrix/server
+
 exclude:
   - src/
   - gulpfile.js
