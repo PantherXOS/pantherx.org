@@ -5,10 +5,6 @@
   mastodon:
     name: franz
     url: https://pantherx.social/@franz
-- name: Ali R.
-  position: Co-Founder
-  picture: ali.svg
-  type: I
 - name: Chaichan A.
   position: Co-Founder
   picture: chaichan.svg
@@ -31,3 +27,6 @@
   mastodon:
     name: fsajadi
     url: https://pantherx.social/@fsajadi
+- name: Pavel S.
+  position: Hardware
+  picture: pavel.svg

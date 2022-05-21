@@ -57,12 +57,12 @@
   year: 2022
   month: February
   title: Beta 5.1
-  content: Latest beta release available on our Wiki
+  content: Latest beta release available on our <a href="https://wiki.pantherx.org/">Wiki</a>
 -
   year: 2022
   month: May
   title: Beta 6
-  content: Minor progress release; Support for disk encryption
+  content: Minor progress release; Support for disk encryption and hardware templates
 -
   year: 2022
   month: TBD
