@@ -17,6 +17,7 @@ function RUN_CONTAINER_BASH {
 }
 
 function BUILD_PROJECT {
+  bundle install
   node_modules/.bin/gulp
 }
 
