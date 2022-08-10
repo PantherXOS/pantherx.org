@@ -32,6 +32,9 @@
 						<a href="https://community.pantherx.org" class="navbar-item">
 							Community
 						</a>
+						<a href="/news/" class="navbar-item">
+							News
+						</a>
 						{% assign pages = site.pages | where: "nav", "main" %}
 						{% for page in pages %}
 						<a href="{{ page.permalink }}" class="navbar-item">
