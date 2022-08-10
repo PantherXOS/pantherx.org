@@ -24,6 +24,11 @@ layout: default
 					{{ content }}
 				</div>
 
+				{% if page.community_url %}
+					<hr>
+					<a href="{{ page.community_url }}">Leave a comment (community.pantherx.org)</a>
+				{% endif %}
+
 			</div>
 			<div class="column is-3 is-offset-1">
 
