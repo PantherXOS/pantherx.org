@@ -4,7 +4,7 @@
 		<br><small>Type the <b>package name</b>, and find all related
 			information, including version, and dependencies.</small>
 	</p>
-	<p><small>Last update: 16th of September 2022</small></p>
+	<p><small>Last update: 1st November 2022</small></p>
 </div>
 
 <div id="package-search">
@@ -22,8 +22,8 @@
 		<p v-if="results && results.length === 0 && !isBusy">No results found for <% keyword %>...</p>
 
 		<div v-if="results && results.length > 0">
-			<b-table :data="results" ref="table" detailed hoverable :default-sort="['name', 'asc']"
-				detail-key="id" :show-detail-icon="false">
+			<b-table :data="results" ref="table" detailed hoverable :default-sort="['name', 'asc']" detail-key="id"
+				:show-detail-icon="false">
 
 				<b-table-column field="name" label="Name" v-slot="props">
 					<a @click="props.toggleDetails(props.row)">
@@ -50,7 +50,9 @@
 							<% props.row.version %>
 						</li>
 						<li><b>Location:</b>
-							<a :href="packageLocationLink(props.row.location)"><% props.row.location %></a>
+							<a :href="packageLocationLink(props.row.location)">
+								<% props.row.location %>
+							</a>
 						</li>
 						<li><b>Homepage:</b>
 							<% props.row.homePage %>

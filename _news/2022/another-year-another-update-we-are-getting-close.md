@@ -53,11 +53,11 @@ That being said, it's rather unlikely that we'll manage to release a golden mast
 
 #### Central Management
 
-Aside from our operating system, we continue to develop our business solution called "Central Management" that features a tight integration with PantherX and enables both new, and established businesses to migrate to, and experience what open source has to offer - without hiring a specialist.
+Aside from the operating system, we continue to develop our business solution called "Central Management" that features a tight integration with PantherX and enables both new, and established businesses to migrate to, and experience what open source has to offer - without hiring a specialist.
 
 Key features include:
-- Password-less authentication across all applications (incl. 3rd party)
-- Remote management and monitoring of PantherX Desktop and Server
+- Password-less authentication across all (web-)applications (incl. 3rd party)
+- Remote management and monitoring of PantherX Desktop and Server devices
 - Synchronization of all data, including desktop application accounts, across multiple desktops
 - Automatic backup, easy restore and assisted disaster recovery (total loss)
 - System Health Monitoring that discovers issues before they become a problem
