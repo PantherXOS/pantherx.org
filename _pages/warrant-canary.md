@@ -23,8 +23,8 @@ Hash: SHA256
 
 PantherX OS Warrant Canary
 
-Saturday, April 30. 2022 - 11:05 UTC:
-Cloudy, 25°C (77°F) in Lisbon, Portugal.
+Sunday, March 19. 2023 - 22:08 UTC:
+Clear sky, 14°C (56°F) in Lisbon, Portugal.
 
 1. We have not placed any backdoors into our software or hardware.
 2. We have not received, nor complied with any National Security Letters or FISA court orders.
@@ -32,23 +32,23 @@ Cloudy, 25°C (77°F) in Lisbon, Portugal.
 
 The below content is an excerpt from http://www.nytimes.com/ to certify the date of today.
 
-Governments Tighten Grip on Global Food Stocks, Sending Prices Higher
-Friday April 22. 2022 07:00:10 UTC
+Before Collapse of Silicon Valley Bank, the Fed Spotted Big Problems
+Sunday March 19. 2023 15:58:17 UTC
 -----BEGIN PGP SIGNATURE-----
 
-iQJHBAEBCAAxFiEEo2rUHuzHqHEQA10kUk/rGp0zycsFAmJtC+kTHGZyYW56QHBh
-bnRoZXJ4Lm9yZwAKCRBST+sanTPJyw8WD/9TZb32OT68cpgRFtyl4UOrdepHL/1B
-1ro2mAQrxSPESIWLQVyyUWurg9VAXLbDgC1zI6SEnIazTGFawGHhA8Sa9jJzxEb3
-8Fg7p5tchVkAcHZcE8eTkvEa92GnO6Imk+jUHtRcXM+5G6bTJBScRjBrifyTVJpv
-+BfsgwsVVaS1oBdli+L/7jl1hwZFexKaiOAqacRv8ycSE0Q7RO+CO07Po1HBFsO8
-17JnRbVEip2aktsdnwHmQ3zlJSIS2b+JEUsLuNv1hEGt3pKCiks8oHJwLg7CyOw4
-TwYA/w2teZhXAvDZ4EXOPQ8vAZBNr0Nzb/9sEN61owrV39wXZQULwD3HrR4BCGU9
-Zy3QGnaHphmTYi9cvalbosG4Z6c0Pno/sHzRS8tiMOTNJxNSpsVEKOGqQdm1bOmp
-iADVj8Q4UauMrXfCgcQ6M6IC17drLAObLRFKZp1d7ThgcnlivhZuqRgMgTVG1YoR
-aJXZYQaHET2epoqq55D5kfsRVu+zULrZzzHgUyLqCuJmq7Jgd4/aOb+vo7j1iIsV
-xOEryc1s0e6y2l90i/N4Qrcu5GYerieJy3X8eEJxZVyW50G3C0aR1zjuMLBnPxx2
-J5CqjJUTHIYOtJJBEqsAQQ05G9SBtusTKJF8AYnQUfsVuKj/Xz0zDwSYbY9P5xoJ
-bvCYgjpT69jaUw==
-=yoJV
+iQIzBAEBCAAdFiEEo2rUHuzHqHEQA10kUk/rGp0zycsFAmQXiV4ACgkQUk/rGp0z
+ycvTpBAArL2t6gTLQ1Rp2G8icx8WpKZvo9NEyb1Mmb5jezc7wKtdu5SO9LbLn6CT
+IV/StJceaaMEE2o/vvNgdkOOG/sGGvnzDWGgnCyZA1Xt6gmbPjWxtqYv+BKNmZUa
+Fzggvo9Xu7+3835M3S8r5mTqJPAPfiXDTE7r0cyQkDZBJdXVvOgzNmQ5VR7g6X2K
+Ba34Ws45mDwsr8W4gr89UaQ1/Xy35JtfrBmz3VDdBpNXRe1VhURg9Y47cMBoAagG
+kRfWmiaXNT9ObX6vbWNdqfcV0RRc+vfuW1w68X4Y3Gbaf330lvZ2KMcsyYGmoDbw
+hMSqi9LVlzpKtJ10x6mPNngmWdiQ9jnpy0Mj4zD2hM7P53hsBODKFEi+/YvA4XE6
+xF8wIax3K0jNUvbQEc7HaMN6/e5Yq/ubsuXxZ1apwduaNnJCpnXIHrViTRQYCggF
+vY+IaZ99YvwUpJUnhLe2wT0v7X009Wsn5/u4YzRJOg908TvBeKXbemK0k4dnGxTe
+sv5u3V8Gj8aHbLLcMYKq4Z+S7NRECCOROR0uMn9hx1GOkVUrFr1WItkBp+SlV3Mk
+wx8sXo29UVzvgpm+uvt3tVHeg2DMpSgomy8/v2EcXhSzTlcsAZs/dR43/1cmUEEZ
+IrOROkRILt4QAKgb3ZowD5H56GGZcYW7HKU2/9Ooh9BoY9zhYXg=
+=9JFH
 -----END PGP SIGNATURE-----
+
 ```
