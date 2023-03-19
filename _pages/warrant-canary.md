@@ -15,8 +15,6 @@ We believes that respect of privacy is of the utmost importance in today's world
 
 ## Warrant Canary
 
-The below "warrant canary" has been generated on: 2022-04-30
-
 ```
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
