@@ -4,14 +4,52 @@ namespace: security
 lang: en
 ---
 
-The built-in firewall protects your computer both on the system and application level, in- and out-bound. Unused ports are blocked by default, and applications that shouldn't connect, don't.
+Our default firewall is based on the high-performance packet filtering solution nftables and configured to block all but essential traffic which should suffice for most users.
 
-### System firewall
+### Open more ports
 
-The system firewall is a low-level firewall that reliably closes ports and prevents all communication, both in and out-bound. It's the first, and most important barrier between your computer, and the outside world.
+If you need to open additional ports, it's easy to do that via system configuration:
 
-### Application firewall
+```scheme
+#:open-ports '(("tcp" "4001"))
+```
 
-Unlike the system firewall, the application firewall can block specific applications from accessing the internet, while keeping the port open for other applications to use.
+### Customize or replace the firewall
 
-Together with the system firewall, the application firewall builds an effective barrier between the network (and internet) you're connected to, and your computer. This also reduces unnecessary chatter between individual, 3rd party applications, and developers that want to collect analytics about what you do - not so, on PantherX.
+For users with more advance use-cases, it's easy to provide a custom nftables configuration, or replace the firewall itself with iptables or others.
+
+Read more about network and firewall configuration via system config: [Guix Manual](https://guix.gnu.org/manual/devel/en/html_node/Networking-Setup.html)
+
+```scheme
+(define %custom-nftables-ruleset
+  (plain-file "nftables.conf"
+	      "
+flush ruleset
+
+table inet filter {
+  chain input {
+    type filter hook input priority 0; policy drop;
+
+    # early drop of invalid connections
+    ct state invalid drop
+
+    # allow established/related connections
+    ct state { established, related } accept
+
+    # allow from loopback
+    iifname lo accept
+
+    # allow icmp
+    ip protocol icmp accept
+    ip6 nexthdr icmpv6 accept
+
+    # allow ssh, http, https
+    tcp dport { ssh, http, https, 8448 } accept
+
+    # reject everything else
+    reject with icmpx type port-unreachable
+  }
+  ...
+}
+"))
+```

@@ -51,3 +51,123 @@ lang: en
     {% endfor %}
   </div>
 </section>
+
+
+<section class="section is-spacious even">
+  <div class="container is-medium">
+    <h2 class="title is-2">Timeline</h2>
+
+    <div class="timeline">
+      {% assign events = site.data.timeline | where: "year", "2017" %} {% for
+      event in events %}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">{{ event.month }} {{ event.year }}</p>
+          <p>
+            <b>{{ event.title }}</b>
+            {% if event.content %}<br />{{ event.content }}{% endif %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+
+      <header class="timeline-header">
+        <span class="tag is-primary">2018</span>
+      </header>
+
+    </div>
+
+    <div class="timeline">
+      {% assign events = site.data.timeline | where: "year", "2018" %} {% for
+      event in events %}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">{{ event.month }} {{ event.year }}</p>
+          <p>
+            <b>{{ event.title }}</b>
+            {% if event.content %}<br />{{ event.content }}{% endif %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+
+      <header class="timeline-header">
+        <span class="tag is-primary">2020</span>
+      </header>
+
+      {% assign events = site.data.timeline | where: "year", "2020" %} {% for
+      event in events %}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">{{ event.month }} {{ event.year }}</p>
+          <p>
+            <b>{{ event.title }}</b>
+            {% if event.content %}<br />{{ event.content }}{% endif %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+
+      <header class="timeline-header">
+        <span class="tag is-primary">2021</span>
+      </header>
+
+      {% assign events = site.data.timeline | where: "year", "2021" %} {% for
+      event in events %}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">{{ event.month }} {{ event.year }}</p>
+          <p>
+            <b>{{ event.title }}</b>
+            {% if event.content %}<br />{{ event.content }}{% endif %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+
+      <header class="timeline-header">
+        <span class="tag is-primary">2022</span>
+      </header>
+
+      {% assign events = site.data.timeline | where: "year", "2022" %} {% for
+      event in events %}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">{{ event.month }} {{ event.year }}</p>
+          <p>
+            <b>{{ event.title }}</b>
+            {% if event.content %}<br />{{ event.content }}{% endif %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+
+      <header class="timeline-header">
+        <span class="tag is-primary">2023</span>
+      </header>
+
+      {% assign events = site.data.timeline | where: "year", "2023" %} {% for
+      event in events %}
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">{{ event.month }} {{ event.year }}</p>
+          <p>
+            <b>{{ event.title }}</b>
+            {% if event.content %}<br />{{ event.content }}{% endif %}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+
+      <div class="timeline-header">
+        <span class="tag is-medium is-primary">Official Release</span>
+      </div>
+    </div>
+  </div>
+</section>

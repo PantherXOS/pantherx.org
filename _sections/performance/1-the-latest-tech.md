@@ -15,10 +15,6 @@ With PantherX, we've taken a good look at what's available on the market, and ho
 
 ### (Ready) for Gaming
 
-PantherX doesn't yet spot the full range of games you'd find on other, more established platforms, however it takes less than 5 minutes to install and start into Android, where you can play away, on the big screen, with 100% RAW performance.
+PantherX doesn't yet spot the full range of games you'd find on other, more established platforms, however it takes less than 5 minutes to install Steam, or other gaming platforms, to get rolling.
 
-### Software made for the hardware it runs
-
-PantherX has been designed to run on Panther Alpha, a powerful mini computer that's smaller than your wallet and uses less than 4W of power. All you need is some sort of display or TV, a mouse & keyboard and a power source - preferably a wall-plug but power banks work too.
-
-When you power on your Panther Alpha for the first time, you are greeted with a system, that works right-away, and for years to come, without slow-down, or failure.
+{% include image.html image="steam.jpg" alt="Steam on PantherX" %}

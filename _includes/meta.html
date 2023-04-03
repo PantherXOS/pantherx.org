@@ -3,7 +3,7 @@
 <meta name="image" content="/assets/images/px-desktop.jpg">
 <!-- Schema.org for Google -->
 <meta itemprop="name" content="{{ page.title }} | {{ site.title }}">
-<meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta itemprop="description" content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta itemprop="image" content="/assets/images/px-desktop.jpg">
 <!-- Twitter -->
 <meta name="twitter:card" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">

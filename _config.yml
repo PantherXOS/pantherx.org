@@ -1,5 +1,5 @@
 title: PantherX Operating System
-description: PantherX OS is a modern, secure, privacy-first operating system with a efficient desktop environment and thousands of applications.
+description: PantherX OS is a modern, secure, privacy-first operating system with lightweight LXQt desktop.
 baseurl: ""
 url: ""
 destination: _site
@@ -26,8 +26,6 @@ markdown: kramdown
 
 nav:
   platform:
-    - title: Panther Alpha (ext.)
-      permalink: http://www.panther-mpc.com/panther-alpha/
     - title: PantherX OS
       permalink: /#PantherX+Operating+System
     - title: PantherX for Business

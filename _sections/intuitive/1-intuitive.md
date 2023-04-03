@@ -15,7 +15,3 @@ Whether you're coming from Windows, MacOS or Linux, you'll feel right at home wi
 PantherX OS keeps track of the current system state, and informs you about important changes. With a clear overview of how you're connected to your network, what services are running and which applications are allowed to access the internet, and how, when and how much they utilize the connection.
 
 More experienced users can define their desired system in a configuration file, and set-up any Panther Alpha, from scratch, and without any additional experience - precise and replicable.
-
-### Automatic Issue Reporting with Feedback
-
-PantherX and all Panther applications have a user-friendly issue reporting feature, that helps us, resolve problems you encounter on PantherX, faster. We transparently keep you informed about progress made, whether you've reported the issue anonymously, or trough your Panther account.
