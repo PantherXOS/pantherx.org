@@ -9,10 +9,7 @@ Easy to use ecosystem that covers all your IT needs, at a fraction of the usual 
 
 ### Benefits
 
-- A _Panther Alpha_ MicroPC starts at less than €200
-- For a small monthly fee
-  - you get support for PantherX OS (by humans!)
-  - and encrypted backup storage
+- A suitable computer starts at less than €200
 - No learning curve for Windows and MacOS users
 - Works with all your files, and can share to Windows and MacOS
 - Supports all the tools you use: Dropbox, Google Apps, Skype, WhatsApp

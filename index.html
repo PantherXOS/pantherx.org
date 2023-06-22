@@ -16,48 +16,73 @@ subscribe: true
 <div id="tooltip">
   <section class="section is-spacious">
     <div class="container is-medium">
-      <!-- <h2 class="title is-2" id="PantherX+Operating+System">
-        Introducing
-      </h2>
-      <h3 class="subtitle is-3">for Panther Alpha</h3> -->
-      <div class="columns is-variable is-8">
-		<div class="column">
-			<img src="/assets/images/px-desktop-nov-2021@0.5x.jpg" alt="PantherX Desktop" />
-      <p>
-        A detailed installation guide is available on our wiki: <a href="https://wiki.pantherx.org/">download and install PantherX</a>. If you need help or want to share your experience, <a href="https://community.pantherx.org/">leave a message on our forum</a>.
-      </p>
-		</div>
-			<div class="column content">
-				<p>
-          PantherX OS is a modern operating system based on GNU Guix, with LXQt as default desktop environment, and non-free software enabled out of the box.
-          PantherX is designed to enable everyone without a PHD in computer science to enjoy a fast, flexible and private work & entertainment platform that runs for years, with little intervention.
-				</p>
-				<p>
-          It's kind of like docker-compose, but for your whole system.
-				</p>
-				<ul>
-          <li>No download or usage tracking</li>
-					<li>Always up to date, with rolling updates</li>
-					<li>No system breakage after major updates <small>(1)</small></li>
-					<li>Easy replication of your whole system, or individual user profiles</li>
-					<li>No more random config files, </li>
-					<li>Developer's dream, with virtual environments and 1st class docker support</li>
-					<li>Optional enterprise support</li>
-				</ul>
+        <!-- <h2 class="title is-2" id="PantherX+Operating+System">
+          Introducing
+        </h2>
+        <h3 class="subtitle is-3">for Panther Alpha</h3> -->
+        <div class="columns is-variable is-8">
+      <div class="column">
+        <img src="/assets/images/px-desktop-nov-2021@0.5x.jpg" alt="PantherX Desktop" />
+        <p>
+          A detailed installation guide is available on our wiki: <a href="https://wiki.pantherx.org/">download and install PantherX</a>. If you need help or want to share your experience, <a href="https://community.pantherx.org/">leave a message on our forum</a>.
+        </p>
+      </div>
+        <div class="column content">
+          <p>
+            PantherX OS is a modern operating system based on GNU Guix, with LXQt as default desktop environment, and non-free software enabled out of the box.
+            PantherX is designed to enable everyone without a PHD in computer science to enjoy a fast, flexible and private work & entertainment platform that runs for years, with little intervention.
+          </p>
+          <p>
+            It's kind of like docker-compose, but for your whole system.
+          </p>
+          <ul>
+            <li>No download or usage tracking</li>
+            <li>Always up to date, with rolling updates</li>
+            <li>No system breakage after major updates <small>(1)</small></li>
+            <li>Easy replication of your whole system, or individual user profiles</li>
+            <li>No more random config files, </li>
+            <li>Developer's dream, with virtual environments and 1st class docker support</li>
+            <li>Optional enterprise support</li>
+          </ul>
 
-				<p>
-					<small>
-						(1) Never say always; If things go wrong, you can roll-back instantly to any previous system state.
-					</small>
-				</p>
-			</div>
-		</div>
+          <p>
+            <small>
+              (1) Never say always; If things go wrong, you can roll-back instantly to any previous system state.
+            </small>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   {% include loop_topic.html priority='1' limit='5' type='general' %}
 
   <section class="section is-spacious even">
+    <div class="container is-medium">
+      <h2 class="title is-2">NEW: LXQt, XFCE, Gnome ... Mate - What do you want?</h2>
+      <h3 class="subtitle is-3">desktop switching made easy</h3>
+      <div class="content">
+        <p><b>Sometimes you just want something different for a while</b>...
+          <br/>PantherX now supports desktop environments including <b>XFCE, Mate, Gnome</b> and others. 
+          <br/>We provide comfy defaults, so you can free your mind to focus on other things. Read more about it <a href="/news/2023/a-new-direction-welcome-xfce-mate-and-others.html">here (news)</a>.</p>
+
+      </div>
+      <code type="scheme">
+(services (cons*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;; Add desktop<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(service px-desktop-service-type)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(service xfce-desktop-service-type)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(service mate-desktop-service-type)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%px-desktop-services))
+      </code>
+
+      <div class="content mt-3">
+        <p>Read more about how-to configure your own system: <a href="https://wiki.pantherx.org/System-configuration/"><button class="button is-small">System configuration</button></a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-spacious">
     <div class="container is-medium">
       <h2 class="title is-2">PantherX Editions</h2>
       <h3 class="subtitle is-3">crafted to satisfy your individual needs</h3>
@@ -280,7 +305,7 @@ subscribe: true
         </tr>
         <tr>
           <th>Dedicated Hardware</th>
-          <td colspan="3">Panther Alpha, Panther Alpha Pro, Panther Alpha</td>
+          <td colspan="3">Yes, depending on project requirements, including embedded and wearables.</td>
         </tr>
         <tr>
           <th>Pricing</th>
