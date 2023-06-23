@@ -1,0 +1,118 @@
+<div class="config-generator" id="config-generator">
+
+    <div class="content mt-3">
+      <p>Generate a system config right in your browser: <button class="button is-small" @click="isActive = !isActive">Generate System Config</button></p>
+    </div>
+
+    <div v-if="isActive" style="border:1px solid #bbb">
+      <form class="p-5">
+
+        <p class="title is-4">System</p>
+
+        <div class="field">
+          <label class="label">Type:</label>
+          <div class="control">
+            <div class="select">
+              <select v-model="type">
+                <option value="DESKTOP">Desktop</option>
+                <option value="SERVER">Server</option>
+                <option value="MINIMAL">Minimal</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="field" v-if="type === 'DESKTOP'">
+          <label class="label">Variant:</label>
+          <div class="control">
+            <div class="select">
+              <select v-model="variant">
+                <option value="DEFAULT">Default</option>
+                <option value="GNOME">GNOME</option>
+                <option value="XFCE">XFCE</option>
+                <option value="MATE">MATE</option>
+              </select>
+            </div>
+          </div>
+        </div>
+    
+        <div class="field">
+          <label class="label">Hostname:</label>
+          <div class="control">
+            <input class="input" type="text" v-model="hostname">
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Firmware:</label>
+          <div class="control">
+            <div class="select">
+              <select v-model="firmware">
+                <option value="bios">BIOS</option>
+                <option value="efi">EFI</option>
+              </select>
+            </div>
+          </div>
+        </div>
+    
+        <div class="field">
+          <label class="label">Timezone:</label>
+          <div class="control">
+            <input class="input" type="text" v-model="timezone">
+          </div>
+        </div>
+    
+        <div class="field">
+          <label class="label">Locale:</label>
+          <div class="control">
+            <input class="input" type="text" v-model="locale">
+          </div>
+        </div>
+    
+        <div class="field">
+          <label class="label">Encryption:</label>
+          <div class="control">
+            <input type="checkbox" v-model="use_disk_encryption"> Use Disk Encryption
+          </div>
+        </div>
+
+        <p class="title is-4 mt-6">User account</p>
+    
+        <div class="field">
+          <label class="label">Username:</label>
+          <div class="control">
+            <input class="input" type="text" v-model="username">
+          </div>
+        </div>
+    
+        <div class="field">
+          <label class="label">Password:</label>
+          <div class="control">
+            <input class="input" type="password" v-model="password">
+          </div>
+        </div>
+    
+        <div class="field">
+          <label class="label">Public Key:</label>
+          <div class="control">
+            <input class="input" type="text" v-model="public_key">
+          </div>
+        </div>
+    
+        <div class="field is-grouped">
+          <div class="control">
+            <button type="button" class="button is-primary" @click="generate">Generate</button>
+            <button v-if="config !== ''" type="button" class="button is-text" @click="copy">Copy</button>
+          </div>
+        </div>
+      </form>
+
+      <div v-if="config !== ''" id="new-config">
+<pre v-html="config"></pre>
+      </div>
+    </div>
+
+    <div v-if="isActive" class="content mt-3">
+      <p>Read more about how-to configure your own system: <a href="https://wiki.pantherx.org/System-configuration/">System configuration</a></p>
+    </div>
+</div>

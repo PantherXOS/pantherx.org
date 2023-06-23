@@ -13,7 +13,7 @@ quicklinks:
 subscribe: true
 ---
 
-<div id="tooltip">
+<div>
   <section class="section is-spacious">
     <div class="container is-medium">
         <!-- <h2 class="title is-2" id="PantherX+Operating+System">
@@ -65,20 +65,20 @@ subscribe: true
         <p><b>Sometimes you just want something different for a while</b>...
           <br/>PantherX now supports desktop environments including <b>XFCE, Mate, Gnome</b> and others. 
           <br/>We provide comfy defaults, so you can free your mind to focus on other things. Read more about it <a href="/news/2023/a-new-direction-welcome-xfce-mate-and-others.html">here (news)</a>.</p>
-
       </div>
-      <code type="scheme">
-(services (cons*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;; Add desktop<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(service px-desktop-service-type)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(service xfce-desktop-service-type)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(service mate-desktop-service-type)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%px-desktop-services))
-      </code>
+      <pre style="padding: 0 1rem 0 1rem;">
+        <code>
+(services (cons*
+          ;; Add desktop
+          (service px-desktop-service-type)        ;; LXQt desktop
+          (service xfce-desktop-service-type)      ;; XFCE desktop
+          (service mate-desktop-service-type)      ;; Mate desktop
+          %px-desktop-services))
+        </code>
+      </pre>
 
-      <div class="content mt-3">
-        <p>Read more about how-to configure your own system: <a href="https://wiki.pantherx.org/System-configuration/"><button class="button is-small">System configuration</button></a></p>
-      </div>
+      {% include config-generator.html %}
+
     </div>
   </section>
 

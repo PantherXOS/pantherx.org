@@ -19,22 +19,7 @@ For existing users, only a small change is required.
 
 Important: **These changes will go live on 23rd June 2023.**
 
-## Changes
-
-### Base
-
-Name `px-base-os`
-
-Foundation for all other OS.
-
-This provides stuff like px, px-install, gnutls and so on.
-
-Parts:
-- `%px-core-packages` (`%base-packages`)
-- `%px-core-services` (`%base-services`)
-
-
-### Desktop
+## Desktop OS
 
 Name: `px-desktop-os`
 
@@ -65,7 +50,8 @@ Desktop operating system with various desktop environments including:
 
 - LXQt
 - XFCE
-- MATE
+- Mate
+- Gnome
 
 and a set of matching package and services.
 
@@ -80,9 +66,9 @@ Options:
 - `%px-desktop-services`
   - `(service px-desktop-service-type)` ← PantherX Default (LXQt)
     - use `%px-desktop-packages` or `%px-desktop-packages-qt`
-  - `(service xfce-desktop-service-type)` ← XFCE (make sure to include `(gnu services desktop)`)
+  - `(service xfce-desktop-service-type)`
     - best with `px-desktop-packages-gtk`
-  - `(service mate-desktop-service-type)` ← Mate (make sure to include `(gnu services desktop)`)
+  - `(service mate-desktop-service-type)`
     - best with `px-desktop-packages-gtk`
 
 On the differentiation between `qt` and `gtk`, and why not desktop specific: 
@@ -92,7 +78,7 @@ On the differentiation between `qt` and `gtk`, and why not desktop specific:
 
 So far we've focused on LXQt and QT so the GTK-parts are very much WIP and we welcome suggestions and contributions.
 
-#### Installation
+### Desktop Installation
 
 ```bash
 px-install-run
@@ -104,7 +90,7 @@ This currently defaults to:
 - `%px-desktop-services` with `(service px-desktop-service-type)`
 - `%px-desktop-packages`
 
-### Server
+## Server OS
 
 Name: `px-server-os`
 
@@ -133,29 +119,28 @@ Defaults:
 - `%px-server-packages`
 - `%px-server-services`
 
-Options:
-- `%px-server-packages`
-- `%px-server-services`
-- `%px-server-iptables-services`
-  - Using iptables instead of nftables; great for Docker
-
-#### Installation
+### Server Installation
 
 ```bash
 px-install-run
 # Select SERVER
 ```
 
-This currently defaults to:
+## Base OS (Minimal)
 
-- `%px-server-services`
-- `%px-server-packages`
-  
+Name `px-base-os`
+
+Foundation for all other OS. This provides stuff like px, px-install, gnutls and so on. This is great, if you have very specific requirements, and as the base for application templates.
+
+Defaults:
+- `%px-core-packages` (`%base-packages`)
+- `%px-core-services` (`%base-services`)
+
 ## Migration
 
 For existing user, the change is real easy.
 
-1. Adjust your modules: https://community.pantherx.org/t/important-system-configuration-changes/110
+1. Adjust your modules: [Important system config changes](https://community.pantherx.org/t/important-system-configuration-changes/110)
 2. Continue to use LXQt or use a different environment
 
 PantherX Default:
@@ -195,3 +180,7 @@ For now, specifically I'm inviting people to:
 - Maintain and submit new packages
 - Become a community moderator
 - Contribute new services and configuration templates
+
+## Config generator
+
+If this is all a little too much to digest, we've got a new config generator that will help you get started: <a href="/configs/">Generate System Config</a>.
