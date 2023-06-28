@@ -140,8 +140,38 @@ Defaults:
 
 For existing user, the change is real easy.
 
-1. Adjust your modules: [Important system config changes](https://community.pantherx.org/t/important-system-configuration-changes/110)
-2. Continue to use LXQt or use a different environment
+### Modules
+
+```
+(use-modules (gnu)
+             (gnu system)
+             (px system install)
+             (px system))
+
+(px-server-os
+ (operating-system
+
+...
+
+))
+```
+
+These are the new, default modules:
+
+```
+(use-modules (gnu)
+             (gnu system)
+             (px system config))
+
+(px-server-os
+ (operating-system
+
+...
+
+))
+```
+
+### Services
 
 PantherX Default:
 

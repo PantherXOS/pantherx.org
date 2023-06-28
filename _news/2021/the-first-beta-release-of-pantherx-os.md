@@ -26,5 +26,4 @@ Have a great time on PantherX OS
 
 ### Links
 
-- Original post in our community forum: [PantherX Beta 1 is here](https://community.pantherx.org/t/pantherx-beta-1-is-here/40)
 - Get started on our Wiki: [Installation Guide](https://wiki.pantherx.org/Installation-guide/) (ISO link)

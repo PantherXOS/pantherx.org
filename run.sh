@@ -6,7 +6,7 @@ echo ""
 
 function RUN_CONTAINER_BASH {
   docker build --network host --tag ${CONTAINER} .
-  # docker run --detach --name gi nexinnotech
+  
   docker container run --rm -v ${PWD}:/usr/working \
   -e AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} \
   -e AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} \
