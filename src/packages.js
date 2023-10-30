@@ -13,7 +13,7 @@ let search = new Vue({
   methods: {
     search: async function () {
       this.isBusy = true
-      let url = 'https://px-package-index.dokku.pantherx.dev/applications'
+      let url = 'https://package-index.pantherx.org/applications'
       if (this.keyword) {
         console.log('searching..')
         url += `?keyword=${this.keyword}`
