@@ -8,18 +8,12 @@ contact:
   - title: team@pantherx.org
     url: mailto:team@pantherx.org?subject=Team Enquiry
     caption: Discuss ideas, ask questions, join us!
-  - title: support@pantherx.org
-    url: mailto:support@pantherx.org?subject=Support Enquiry
-    caption: Get help with PantherX
-  - title: pantherx.social
-    url: https://pantherx.social/
-    caption: Join us on the new Twitter - Mastodon
-  - title: chat.pantherx.org
-    url: https://matrix.to/#/#public:pantherx.org
-    caption: Chat with us on Matrix
-  - title: pantherx.dev
-    url: https://www.pantherx.dev/
-    caption: Hire us
+  - title: "#pantherx:tchncs.de"
+    url: https://matrix.to/#/#pantherx:tchncs.de
+    caption: Join us on Matrix
+  - title: "#pantherx"
+    url: https://libera.chat/guides/connect
+    caption: Join us on Libera IRC
 
 # Build settings
 markdown: kramdown

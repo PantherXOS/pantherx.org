@@ -3,8 +3,8 @@
   picture: franz.svg
   type: I
   mastodon:
-    name: franz
-    url: https://pantherx.social/@franz
+    name: franzs
+    url: https://social.tchncs.de/@franzs
 - name: Chaichan A.
   position: Co-Founder
   picture: chaichan.svg
@@ -12,21 +12,12 @@
 - name: Reza A.
   position: PX Apps
   picture: reza.svg
-  mastodon:
-    name: ramajd
-    url: https://pantherx.social/@ramajd
 - name: Hamzeh N.
   position: PX Apps
   picture: hamzeh.svg
-  mastodon:
-    name: hnasajpour
-    url: https://pantherx.social/@hnasajpour
 - name: Fakrhi S.
   position: PX Desktop
   picture: fakhri.svg
-  mastodon:
-    name: fsajadi
-    url: https://pantherx.social/@fsajadi
 - name: Pavel S.
   position: Hardware
   picture: pavel.svg
