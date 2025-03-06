@@ -34,28 +34,20 @@ exclude:
   - src/
   - gulpfile.js
   - package.json
-  - package-lock.json
+  - pnpm-lock.yaml
   - yarn.lock
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .idea
+  - .bundler/
   - .bit.json
   - .bitmap
   - yarn-error.log
   - bit.json
-  - s3_website.yml
   - project.config
-  - run.sh
 
 collections:
   pages:
-    output: true
-  features:
     output: true
   sections:
     output: false

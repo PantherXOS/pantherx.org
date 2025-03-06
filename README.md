@@ -27,3 +27,9 @@ Watch:
 ```bash
 BUNDLE_PATH=.bundler bundle exec jekyll serve -d .site
 ```
+
+## Deployment
+
+```bash
+bash deploy.sh
+```

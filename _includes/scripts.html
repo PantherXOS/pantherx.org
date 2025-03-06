@@ -9,14 +9,6 @@
 <script src="/assets/js/packages.min.js"></script>
 {% endif %}
 
-<!-- {% if page.permalink == "/contact/" %}
-<script src="/assets/js/contact.min.js"></script>
-{% endif %} -->
-
-{% if page.layout == "news" or page.title == "News" %}
-<script src="/assets/js/mastodon.min.js"></script>
-{% endif %}
-
 {% if page.permalink == "/configs/" or page.home == true %}
 <script>
     function _modules(config) {
@@ -31,35 +23,18 @@
         }
     
         content += `
-             (px system config))`;
-        
-        if (config.public_key !== 'NONE') {
-            content += `
-    
-(use-service-modules ssh)`;
-        }
+             (px system panther))`;
         
         return content;
     }
-    
-    function _public_key(config) {
-        if (config.public_key === 'NONE') {
-            return '';
-        } else {
-            return `
-    (define %ssh-public-key
-      "${config.public_key}")
-    `;
-        }
-    }
-    
+
     function _type(type) {
         if (type === 'MINIMAL') {
-            return 'px-core-os';
+            return '%panther-os';
         } else if (type === 'DESKTOP') {
-            return 'px-desktop-os';
+            return '%panther-desktop-os';
         } else if (type === 'SERVER') {
-            return 'px-server-os';
+            return '%panther-server-os';
         } else {
             throw new Error('Unknown type: ' + type);
         }
@@ -99,21 +74,6 @@
         }
     
         return '';
-    }
-    
-    function _options(config) {
-        if (config.public_key === 'NONE') {
-            return '';
-        } else {
-            return `
-   ;; Open additional ports as needed
-   #:open-ports '(("tcp" "ssh"))
-    
-   ;; Public key for root and users
-   #:root-ssh-keys (list %ssh-public-key)
-   #:user-ssh-keys (list %ssh-public-key)
-    `;
-        }
     }
     
     function _file_systems(config) {
@@ -162,33 +122,33 @@
     }
     
     function _packages(config) {
-        let identifier = 'px-core-packages';
+        let identifier = '%panther-base-packages';
         if (config.type === 'DESKTOP') {
-            identifier = 'px-desktop-packages';
+            identifier = '%panther-desktop-packages';
             if (config.variant === 'XFCE' || config.variant === 'MATE') {
-                identifier = 'px-desktop-packages-gtk';
+                identifier = '%panther-desktop-packages';
             }
         } else if (config.type === 'SERVER') {
-            identifier = 'px-server-packages';
+            identifier = '%panther-base-packages';
         } else if (config.type === 'MINIMAL') {
-            identifier = 'px-core-packages';
+            identifier = '%panther-base-packages';
         } else {
             throw new Error('Unknown type: ' + config.type);
         }
         return `
    ;; Globally-installed packages
    (packages (cons*
-             %${identifier}))`;
+             ${identifier}))`;
     }
     
     function _services(config) {
-        let identifier = 'px-core-services';
+        let identifier = '%panther-base-services';
         if (config.type === 'DESKTOP') {
-            identifier = 'px-desktop-services';
+            identifier = '%panther-desktop-services';
         } else if (config.type === 'SERVER') {
-            identifier = 'px-server-services';
+            identifier = '%panther-base-services';
         } else if (config.type === 'MINIMAL') {
-            identifier = 'px-core-services';
+            identifier = '%panther-base-services';
         } else {
             throw new Error('Unknown type: ' + config.type);
         }
@@ -197,8 +157,8 @@
    ;; Services
    (services (cons*`;
     
-        if (config.type === 'DESKTOP') {
-            let service = '(service px-desktop-service-type)';
+        if (config.type === 'LXQT') {
+            let service = '(service lxqt-desktop-service-type)';
             if (config.variant === 'XFCE') {
                 service = '(service xfce-desktop-service-type)';
             } else if (config.variant === 'MATE') {
@@ -213,7 +173,7 @@
         }
     
         content += `
-             %${identifier}))`;
+             ${identifier}))`;
         
         return content;
     }
@@ -221,25 +181,22 @@
     function operating_system_config(config) {
         return `;; PantherX OS Configuration
 ;;
-;; Update: px update apply
-;; Apply changes: guix system reconfigure /etc/system.scm
+;; Download update: guix pull
+;; Apply changes or updates: guix system reconfigure /etc/system.scm
 
 ${_modules(config)}
-${_public_key(config)}
-(${_type(config.type)}
- (operating-system
-  (host-name "${config.hostname}")
-  (timezone "${config.timezone}")
-  (locale "${config.locale}")
+
+(operating-system
+ (inherit ${_type(config.type)})
+ (host-name "${config.hostname}")
+ (timezone "${config.timezone}")
+ (locale "${config.locale}")
 ${_bootloader(config.firmware, config.disk.dev_name)}
 ${_file_systems(config)}
 
-  (swap-devices '("/swapfile"))
 ${_users(config)}
 ${_packages(config)}
 ${_services(config)}
- )
-${_options(config)}
 )`;
     }
     

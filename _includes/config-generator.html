@@ -15,7 +15,6 @@
             <div class="select">
               <select v-model="type">
                 <option value="DESKTOP">Desktop</option>
-                <option value="SERVER">Server</option>
                 <option value="MINIMAL">Minimal</option>
               </select>
             </div>
@@ -27,7 +26,7 @@
           <div class="control">
             <div class="select">
               <select v-model="variant">
-                <option value="DEFAULT">Default</option>
+                <option value="DEFAULT">LXQT</option>
                 <option value="GNOME">GNOME</option>
                 <option value="XFCE">XFCE</option>
                 <option value="MATE">MATE</option>
@@ -89,13 +88,6 @@
           <label class="label">Password:</label>
           <div class="control">
             <input class="input" type="password" v-model="password">
-          </div>
-        </div>
-    
-        <div class="field">
-          <label class="label">Public Key:</label>
-          <div class="control">
-            <input class="input" type="text" v-model="public_key">
           </div>
         </div>
     

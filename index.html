@@ -29,7 +29,7 @@ subscribe: true
       </div>
         <div class="column content">
           <p>
-            PantherX OS is a modern operating system based on GNU Guix, with LXQt as default desktop environment, and non-free software enabled out of the box.
+            PantherX OS is a modern operating system based on GNU Guix and non-free software enabled out of the box.
             PantherX is designed to enable everyone without a PHD in computer science to enjoy a fast, flexible and private work & entertainment platform that runs for years, with little intervention.
           </p>
           <p>
@@ -55,7 +55,7 @@ subscribe: true
     </div>
   </section>
 
-  {% include loop_topic.html priority='1' limit='5' type='general' %}
+  <!-- {% include loop_topic.html priority='1' limit='5' type='general' %} -->
 
   <section class="section is-spacious even">
     <div class="container is-medium">
@@ -70,10 +70,11 @@ subscribe: true
         <code>
 (services (cons*
           ;; Add desktop
-          (service px-desktop-service-type)        ;; LXQt desktop
+          (service lxqt-desktop-service-type)      ;; LXQt desktop
           (service xfce-desktop-service-type)      ;; XFCE desktop
           (service mate-desktop-service-type)      ;; Mate desktop
-          %px-desktop-services))
+          (service gnome-desktop-service-type)     ;; Gnome desktop
+          %panther-desktop-services))
         </code>
       </pre>
 
@@ -82,7 +83,7 @@ subscribe: true
     </div>
   </section>
 
-  <section class="section is-spacious">
+  <!-- <section class="section is-spacious">
     <div class="container is-medium">
       <h2 class="title is-2">PantherX Editions</h2>
       <h3 class="subtitle is-3">crafted to satisfy your individual needs</h3>
@@ -318,7 +319,7 @@ subscribe: true
         </tr>
       </table>
     </div>
-  </section>
+  </section> -->
 
   {% include loop_topic.html priority='1' limit='5' type='use' even=true %}
 
