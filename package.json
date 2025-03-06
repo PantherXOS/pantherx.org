@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "main": "index.html",
   "repository": "https://git.pantherx.org/marketing/pantherx.org.git",
-  "author": "Franz Geffke <franz@pantherx.org>",
+  "author": "Franz Geffke <m@f-a.nz>",
   "license": "MIT",
   "scripts": {
     "dev": "bundle exec jekyll serve",

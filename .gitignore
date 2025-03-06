@@ -15,3 +15,5 @@ assets/images
 vendor/
 .jekyll-cache
 project.config
+.bundler
+.site

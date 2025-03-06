@@ -6,45 +6,24 @@ This is the PantherX Website.
 
 ## Development
 
-Create a `project.config` file with the following content (`AWS_*` only for S3):
-
-```
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_CLOUDFRONT_DISTRIBUTION_ID=
-AWS_DEFAULT_REGION=
-AWS_S3_BUCKET=
-CONTAINER=
-```
-
-Run Docker, develop and deploy with:
+Install:
 
 ```bash
-bash run.sh
+guix shell node pnpm graphicsmagick imagemagick ruby@2 bundler make gcc-toolchain@12 libxml2 libxslt pkg-config libsass python
+# bundle config build.nokogiri --use-system-libraries
+BUNDLE_PATH=.bundler bundle install
+pnpm install
 ```
 
-## Details
-
-Ensure you have the following applications configured:
-
-1. `node.js` (with `npm`)
-2. `bundler` (ruby)
-
-Install development dependencies:
-
-```bash
-npm install
-bundle install --path vendor
-```
-
-Compile assets:
+Build:
 
 ```bash
 node_modules/.bin/gulp
+BUNDLE_PATH=.bundler bundle exec jekyll build -d .site
 ```
 
-Run the site (live-compile)
+Watch:
 
-```
-bundle exec jekyll serve
+```bash
+BUNDLE_PATH=.bundler bundle exec jekyll serve -d .site
 ```
